@@ -1358,7 +1358,7 @@
 
         <div>
           <label for="adminPasswordInput" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1">Password</label>
-          <input type="password" id="adminPasswordInput" placeholder="••••••••••••" required class="w-full px-4 py-2.5 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
+          <input type="password" id="adminPasswordInput" placeholder="Enter password (e.g. admin or 9999)" required class="w-full px-4 py-2.5 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
         </div>
 
         <button type="submit" id="adminLoginSubmitBtn" class="w-full py-3 px-4 rounded-xl text-sm font-bold text-white bg-brand-charcoal hover:bg-black transition-all shadow-md active:scale-98 flex items-center justify-center gap-2">
@@ -1368,7 +1368,7 @@
       </form>
 
       <p class="text-[11px] text-center text-brand-softGray">
-        Protected with PBKDF2-HMAC-SHA256 password hashing &amp; HttpOnly session tokens.
+        Login: Username: <strong>admin</strong> | Password: <strong>admin</strong> or <strong>9999</strong>
       </p>
     </div>
 
@@ -1385,6 +1385,9 @@
           <button id="adminRefreshBtn" class="p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors" title="Refresh Leads">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
           </button>
+          <button id="openChangePwBtn" class="p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors" title="Change Admin Password">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg>
+          </button>
           <button id="exportCsvBtn" class="px-2.5 py-1 rounded-lg bg-brand-charcoal hover:bg-black text-white font-semibold transition-colors flex items-center gap-1 shadow-sm">
             <svg class="w-3.5 h-3.5 text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
             <span>Export CSV</span>
@@ -1399,6 +1402,19 @@
       </div>
 
       <!-- Search & Filter Bar -->
+      <!-- Change Password In-Drawer Card (Initially Hidden) -->
+      <div id="changePasswordBox" class="hidden p-4 border-b border-brand-borderLight bg-amber-50 space-y-3 text-xs">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-amber-900">Change Admin Password</span>
+          <button id="cancelChangePwBtn" class="text-slate-400 hover:text-brand-charcoal text-xs">✕</button>
+        </div>
+        <input type="password" id="newAdminPasswordInput" placeholder="Enter new secret password..." class="w-full px-3 py-2 rounded-lg border border-amber-200 text-xs text-brand-charcoal bg-white focus:outline-none focus:ring-1 focus:ring-amber-500">
+        <div class="flex justify-end gap-2">
+          <button id="saveNewPasswordBtn" class="px-3 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold transition-colors">
+            Save New Password
+          </button>
+        </div>
+      </div>
       <div class="p-3 border-b border-brand-borderLight bg-slate-50 flex gap-2 text-xs">
         <div class="relative flex-1">
           <input type="text" id="adminSearchInput" placeholder="Search by name, email, phone, or ref..." class="w-full pl-8 pr-3 py-1.5 rounded-lg border border-brand-borderLight text-xs text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-periwinkle bg-white">
@@ -1820,7 +1836,48 @@
         if (adminSessionUsername) adminSessionUsername.textContent = username || 'admin';
       }
 
-      // Handle Admin Login Submission
+      
+      // Change Password Controller
+      const openChangePwBtn = document.getElementById('openChangePwBtn');
+      const changePasswordBox = document.getElementById('changePasswordBox');
+      const cancelChangePwBtn = document.getElementById('cancelChangePwBtn');
+      const saveNewPasswordBtn = document.getElementById('saveNewPasswordBtn');
+      const newAdminPasswordInput = document.getElementById('newAdminPasswordInput');
+
+      if (openChangePwBtn && changePasswordBox) {
+        openChangePwBtn.addEventListener('click', () => {
+          changePasswordBox.classList.toggle('hidden');
+          if (!changePasswordBox.classList.contains('hidden') && newAdminPasswordInput) {
+            newAdminPasswordInput.focus();
+          }
+        });
+      }
+
+      if (cancelChangePwBtn && changePasswordBox) {
+        cancelChangePwBtn.addEventListener('click', () => {
+          changePasswordBox.classList.add('hidden');
+        });
+      }
+
+      if (saveNewPasswordBtn && newAdminPasswordInput) {
+        saveNewPasswordBtn.addEventListener('click', () => {
+          const newPw = newAdminPasswordInput.value.trim();
+          if (!newPw || newPw.length < 3) {
+            showToast('Password must be at least 3 characters.', 'error');
+            return;
+          }
+          try {
+            localStorage.setItem('vrajix_admin_custom_password', newPw);
+            showToast('New Admin password saved successfully!');
+            changePasswordBox.classList.add('hidden');
+            newAdminPasswordInput.value = '';
+          } catch(e) {
+            showToast('Unable to save password in browser.', 'error');
+          }
+        });
+      }
+
+// Handle Admin Login Submission
       if (adminLoginForm) {
         adminLoginForm.addEventListener('submit', async (e) => {
           e.preventDefault();
@@ -1857,14 +1914,18 @@
               adminLoginError.classList.remove('hidden');
             }
           } catch(err) {
-            // Offline / Sandbox Canvas Fallback: Check verified admin seed credentials locally!
-            if (username === 'admin' && (password === 'VrajixAdmin2026!#' || password === 'admin123')) {
-              currentAdminSession = { username: 'admin', token: 'local-demo-token' };
-              showToast('Authenticated in Local Preview Mode!');
+            // Friendly Client Authentication Fallback
+            const validPasswords = ['vrajixadmin2026!#', 'admin', 'admin123', '9999', 'vrajix'];
+            let customPw = null;
+            try { customPw = localStorage.getItem('vrajix_admin_custom_password'); } catch(e){}
+            if (customPw) validPasswords.push(customPw.toLowerCase().trim());
+            if (username.toLowerCase() === 'admin' && validPasswords.includes(password.toLowerCase().trim())) {
+              currentAdminSession = { username: 'admin', token: 'local-session-token' };
+              showToast('Admin authenticated successfully!');
               showDashboardView('admin');
               fetchServerLeads();
             } else {
-              adminLoginError.textContent = 'Invalid credentials. Default: admin / VrajixAdmin2026!#';
+              adminLoginError.textContent = 'Invalid credentials. Try Username: admin | Password: admin or 9999';
               adminLoginError.classList.remove('hidden');
             }
           } finally {
@@ -2310,21 +2371,44 @@
 
           let finalRefId = generatedRef;
 
-          // Dispatch to Server-Side Cloudflare Worker / API
+          // Direct Web3Forms Instant Email Dispatch to vrajix11@gmail.com
           try {
-            const apiRes = await fetch('/api/enquiry', {
+            fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
+              body: JSON.stringify({
+                access_key: '732d8f35-74ee-44f2-bf2b-4079e4a1e26e',
+                subject: `New VRAJIX Project Enquiry [${finalRefId}]: ${nameVal} - ${serviceVal}`,
+                from_name: 'VRAJIX Studio Website',
+                'Reference ID': finalRefId,
+                'Customer Name': nameVal,
+                'Customer Email': emailVal,
+                'Customer Phone': phoneVal,
+                'Selected Service': serviceVal,
+                'Estimated Budget': budgetVal,
+                'Target Timeline': timelineVal,
+                'Project Brief': detailsVal
+              })
+            }).then(res => res.json()).then(data => {
+              console.log('Web3Forms dispatch to vrajix11@gmail.com success:', data);
+            }).catch(err => {
+              console.warn('Web3Forms background note:', err);
+            });
+          } catch (e) {
+            console.warn('Email dispatch error:', e);
+          }
+
+          // Also notify Cloudflare Worker if deployed
+          try {
+            fetch('/api/enquiry', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(payload)
-            });
-
-            if (apiRes.ok) {
-              const result = await apiRes.json();
-              if (result.refId) finalRefId = result.refId;
-            }
-          } catch (netErr) {
-            console.warn('Server-side API note (offline or static preview):', netErr);
-          }
+            }).catch(() => {});
+          } catch(e) {}
 
           lastSubmittedRecord = {
             refId: finalRefId,
@@ -2335,8 +2419,20 @@
             budget: budgetVal,
             timeline: timelineVal,
             details: detailsVal,
+            status: 'New',
             timestamp: new Date().toISOString()
           };
+
+          // Save to Local Database for Admin Drawer
+          try {
+            let existing = [];
+            const raw = localStorage.getItem('vrajix_enquiries_db_v1');
+            if (raw) existing = JSON.parse(raw);
+            existing.push(lastSubmittedRecord);
+            localStorage.setItem('vrajix_enquiries_db_v1', JSON.stringify(existing));
+          } catch(e) {
+            console.warn('Local save error:', e);
+          }
 
           // Reset UI
           submitBtnText.textContent = 'Submit Project Enquiry';
