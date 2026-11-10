@@ -932,7 +932,7 @@
                   <svg class="w-4 h-4 text-brand-periwinkle" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                   <span>vrajix11@gmail.com</span>
                 </a>
-                <a href="https://wa.me/910000000000?text=Hi%20VRAJIX%20team%2C%20I%20would%20like%20to%20discuss%20a%20project%20enquiry." target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-4 rounded-xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-xs font-bold text-emerald-800 flex items-center justify-center gap-2 transition-colors">
+                <a href="https://wa.me/917983129724?text=Hi%20VRAJIX%20team%2C%20I%20would%20like%20to%20discuss%20a%20project%20enquiry." target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-4 rounded-xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-xs font-bold text-emerald-800 flex items-center justify-center gap-2 transition-colors">
                   <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
                   <span>Chat on WhatsApp</span>
                 </a>
@@ -987,8 +987,8 @@
                     <label for="clientPhone" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Phone Number <span class="text-red-500">*</span>
                     </label>
-                    <input type="tel" id="clientPhone" name="Customer_Phone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
-                    <p id="phoneError" class="text-[11px] text-red-500 mt-1 hidden">Please provide a valid contact number.</p>
+                    <input type="tel" id="clientPhone" name="Customer_Phone" required placeholder="10-digit mobile number" maxlength="10" inputmode="numeric" pattern="[0-9]{10}" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
+                    <p id="phoneError" class="text-[11px] text-red-500 mt-1 hidden">Please enter a valid 10-digit mobile number.</p>
                   </div>
 
                   <div>
@@ -1143,10 +1143,10 @@
                   </div>
                   <div>
                     <p class="text-xs font-bold uppercase tracking-wider text-brand-softGray">Direct WhatsApp</p>
-                    <p class="text-sm font-bold text-brand-charcoal">+91 00000 00000</p>
+                    <p class="text-sm font-bold text-brand-charcoal">+91 79831 29724</p>
                   </div>
                 </div>
-                <a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-white border border-brand-borderLight hover:bg-slate-100 transition-colors">
+                <a href="https://wa.me/917983129724" target="_blank" rel="noopener noreferrer" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-white border border-brand-borderLight hover:bg-slate-100 transition-colors">
                   Open
                 </a>
               </div>
@@ -1266,7 +1266,7 @@
           <p class="font-display font-bold text-sm uppercase tracking-wider text-white mb-4">Direct Contact</p>
           <ul class="space-y-2.5 text-xs text-slate-400">
             <li><a href="mailto:vrajix11@gmail.com" class="hover:text-white transition-colors">vrajix11@gmail.com</a></li>
-            <li><a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp: +91 00000 00000</a></li>
+            <li><a href="https://wa.me/917983129724" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp: +91 79831 29724</a></li>
             <li class="pt-2 text-slate-500 font-mono text-[11px]">Tarun Sharma (Founder) & Himesh Sharma (Co-Founder)</li>
             
           </ul>
@@ -2080,7 +2080,16 @@
       const charCount = document.getElementById('charCount');
       if (detailsInput && charCount) {
         detailsInput.addEventListener('input', () => {
-          charCount.textContent = `${detailsInput.value.length} characters`;
+          charCount.textContent = `${detailsInput.value.length}
+
+      // Real-time Phone Number Strict Restriction (Only digits 0-9, Max 10 digits)
+      const phoneInput = document.getElementById('clientPhone');
+      if (phoneInput) {
+        phoneInput.addEventListener('input', () => {
+          phoneInput.value = phoneInput.value.replace(/\D/g, '').slice(0, 10);
+        });
+      }
+ characters`;
         });
       }
 
@@ -2129,7 +2138,7 @@
             hasError = true;
           }
 
-          if (!phoneVal || phoneVal.length < 8) {
+          if (!phoneVal || !/^[6-9]\d{9}$/.test(phoneVal)) {
             document.getElementById('phoneError').classList.remove('hidden');
             hasError = true;
           }
@@ -2277,7 +2286,7 @@
           const msg = encodeURIComponent(
             `Hi VRAJIX Team (Himesh & Tarun),\nI have submitted a project enquiry on your website.\n\n*Reference ID:* ${lastSubmittedRecord.refId}\n*Name:* ${lastSubmittedRecord.name}\n*Email:* ${lastSubmittedRecord.email}\n*Service:* ${lastSubmittedRecord.service}\n*Budget:* ${lastSubmittedRecord.budget}\n*Timeline:* ${lastSubmittedRecord.timeline}\n*Requirements:* ${lastSubmittedRecord.details}`
           );
-          window.open(`https://wa.me/910000000000?text=${msg}`, '_blank');
+          window.open(`https://wa.me/917983129724?text=${msg}`, '_blank');
         });
       }
 
