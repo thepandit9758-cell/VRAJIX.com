@@ -955,14 +955,20 @@
               </div>
 
               <!-- Form Element -->
-              <form id="projectEnquiryForm" novalidate class="space-y-6">
+              <form id="projectEnquiryForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                <!-- Web3Forms Direct Access Key Integration -->
+                <input type="hidden" name="access_key" value="732d8f35-74ee-44f2-bf2b-4079e4a1e26e">
+                <input type="hidden" name="subject" value="New VRAJIX Project Enquiry!">
+                <input type="hidden" name="from_name" value="VRAJIX Studio Website">
+                <input type="hidden" name="Reference_ID" id="web3FormsRefId" value="">
+                
                 <!-- Row 1: Full Name & Email -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label for="clientName" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Full Name <span class="text-red-500">*</span>
                     </label>
-                    <input type="text" id="clientName" name="clientName" required placeholder="e.g. Rahul Verma" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
+                    <input type="text" id="clientName" name="Customer_Name" required placeholder="e.g. Rahul Verma" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
                     <p id="nameError" class="text-[11px] text-red-500 mt-1 hidden">Please provide your full name.</p>
                   </div>
 
@@ -970,7 +976,7 @@
                     <label for="clientEmail" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Email Address <span class="text-red-500">*</span>
                     </label>
-                    <input type="email" id="clientEmail" name="clientEmail" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
+                    <input type="email" id="clientEmail" name="Customer_Email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
                     <p id="emailError" class="text-[11px] text-red-500 mt-1 hidden">Please provide a valid email address.</p>
                   </div>
                 </div>
@@ -981,7 +987,7 @@
                     <label for="clientPhone" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Phone Number <span class="text-red-500">*</span>
                     </label>
-                    <input type="tel" id="clientPhone" name="clientPhone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
+                    <input type="tel" id="clientPhone" name="Customer_Phone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
                     <p id="phoneError" class="text-[11px] text-red-500 mt-1 hidden">Please provide a valid contact number.</p>
                   </div>
 
@@ -989,7 +995,7 @@
                     <label for="requiredService" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Required Service <span class="text-red-500">*</span>
                     </label>
-                    <select id="requiredService" name="requiredService" required class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
+                    <select id="requiredService" name="Requested_Service" required class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
                       <option value="" disabled selected>Select a Service</option>
                       <optgroup label="Website Development">
                         <option value="Website Development - Business Websites">Business Website</option>
@@ -1017,7 +1023,7 @@
                     <label for="projectBudget" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Estimated Budget Range
                     </label>
-                    <select id="projectBudget" name="projectBudget" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
+                    <select id="projectBudget" name="Estimated_Budget" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
                       <option value="₹25,000 - ₹50,000">₹25,000 – ₹50,000 (Starter / MVP)</option>
                       <option value="₹50,000 - ₹1,50,000" selected>₹50,000 – ₹1,50,000 (Growth / Custom)</option>
                       <option value="₹1,50,000 - ₹3,50,000">₹1,50,000 – ₹3,50,000 (Enterprise App)</option>
@@ -1029,7 +1035,7 @@
                     <label for="projectTimeline" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Target Timeline
                     </label>
-                    <select id="projectTimeline" name="projectTimeline" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
+                    <select id="projectTimeline" name="Target_Timeline" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all">
                       <option value="Urgent (1-2 Weeks)">Urgent (1–2 Weeks)</option>
                       <option value="Standard (3-4 Weeks)" selected>Standard (3–4 Weeks)</option>
                       <option value="Comprehensive (1-2 Months)">Comprehensive (1–2 Months)</option>
@@ -1043,7 +1049,7 @@
                   <label for="projectDetails" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                     Project Details & Requirements <span class="text-red-500">*</span>
                   </label>
-                  <textarea id="projectDetails" name="projectDetails" rows="4" required placeholder="Describe your product idea, target audience, preferred features, existing websites, or any specific technical requirements..." class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all"></textarea>
+                  <textarea id="projectDetails" name="Project_Details" rows="4" required placeholder="Describe your product idea, target audience, preferred features, existing websites, or any specific technical requirements..." class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle focus:border-transparent transition-all"></textarea>
                   <div class="flex justify-between items-center mt-1">
                     <p id="detailsError" class="text-[11px] text-red-500 hidden">Please provide at least 15 characters of project detail.</p>
                     <p class="text-[11px] text-brand-softGray ml-auto" id="charCount">0 characters</p>
@@ -2177,54 +2183,66 @@
 
             updateEnquiryCounters();
 
-            // Dispatch Email Directly to vrajix11@gmail.com (Instant Inbox Notification)
+                        // Dispatch Email Directly to vrajix11@gmail.com via Web3Forms API
             try {
-              fetch('https://formsubmit.co/ajax/vrajix11@gmail.com', {
+              const refElem = document.getElementById('web3FormsRefId');
+              if (refElem) refElem.value = refId;
+
+              fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
                   'Accept': 'application/json'
                 },
                 body: JSON.stringify({
-                  _subject: `New VRAJIX Project Enquiry [${refId}]: ${nameVal} - ${serviceVal}`,
+                  access_key: '732d8f35-74ee-44f2-bf2b-4079e4a1e26e',
+                  subject: `New VRAJIX Project Enquiry [${refId}]: ${nameVal} - ${serviceVal}`,
+                  from_name: 'VRAJIX Studio Website',
                   'Reference ID': refId,
                   'Customer Name': nameVal,
                   'Customer Email': emailVal,
                   'Customer Phone': phoneVal,
                   'Selected Service': serviceVal,
-                  'Project Budget': budgetVal,
+                  'Estimated Budget': budgetVal,
                   'Target Timeline': timelineVal,
-                  'Project Brief': detailsVal,
-                  _template: 'table'
+                  'Project Details': detailsVal
                 })
-              }).catch(err => console.warn('Email dispatch background note:', err));
+              }).then(res => res.json()).then(result => {
+                console.log('Web3Forms email sent to vrajix11@gmail.com:', result);
+              }).catch(err => console.warn('Web3Forms dispatch note:', err));
             } catch(e) {
-              console.warn('Email dispatch error:', e);
+              console.warn('Web3Forms error:', e);
             }
 
-            // Dispatch Email Directly to vrajix11@gmail.com (Instant Inbox Notification)
+                        // Dispatch Email Directly to vrajix11@gmail.com via Web3Forms API
             try {
-              fetch('https://formsubmit.co/ajax/vrajix11@gmail.com', {
+              const refElem = document.getElementById('web3FormsRefId');
+              if (refElem) refElem.value = refId;
+
+              fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
                   'Accept': 'application/json'
                 },
                 body: JSON.stringify({
-                  _subject: `New VRAJIX Project Enquiry [${refId}]: ${nameVal} - ${serviceVal}`,
+                  access_key: '732d8f35-74ee-44f2-bf2b-4079e4a1e26e',
+                  subject: `New VRAJIX Project Enquiry [${refId}]: ${nameVal} - ${serviceVal}`,
+                  from_name: 'VRAJIX Studio Website',
                   'Reference ID': refId,
                   'Customer Name': nameVal,
                   'Customer Email': emailVal,
                   'Customer Phone': phoneVal,
                   'Selected Service': serviceVal,
-                  'Project Budget': budgetVal,
+                  'Estimated Budget': budgetVal,
                   'Target Timeline': timelineVal,
-                  'Project Brief': detailsVal,
-                  _template: 'table'
+                  'Project Details': detailsVal
                 })
-              }).catch(err => console.warn('Email dispatch background note:', err));
+              }).then(res => res.json()).then(result => {
+                console.log('Web3Forms email sent to vrajix11@gmail.com:', result);
+              }).catch(err => console.warn('Web3Forms dispatch note:', err));
             } catch(e) {
-              console.warn('Email dispatch error:', e);
+              console.warn('Web3Forms error:', e);
             }
 
             // Reset UI states
