@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VRAJIX — Independent Digital Studio | Make it matter.</title>
-  <meta name="description" content="VRAJIX is a premium independent digital studio founded by Himesh Sharma and Tarun Sharma. We engineer high-impact websites, mobile applications, and digital growth solutions.">
+
+  <!-- Primary SEO -->
+  <title>VRAJIX | Website & App Development Studio</title>
+
+  <meta name="description" content="VRAJIX is an independent digital studio founded by Himesh Sharma and Tarun Sharma. We build modern business websites, web applications and mobile apps.">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="VRAJIX">
+  <meta name="theme-color" content="#0F172A">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://vrajix.pages.dev/">
+
+  <!-- Open Graph SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VRAJIX | Website & App Development Studio">
+  <meta property="og:description" content="We build modern websites, web applications and mobile apps that help businesses grow.">
+  <meta property="og:url" content="https://vrajix.pages.dev/">
+  <meta property="og:site_name" content="VRAJIX">
+
+  <!-- Twitter SEO -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="VRAJIX | Website & App Development Studio">
+  <meta name="twitter:description" content="Modern websites, web applications and mobile apps by VRAJIX.">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Three.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -42,25 +70,29 @@
       }
     }
   </script>
+
   <style>
     /* Custom Scrollbar & Fine Polish */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #F1F5F9; }
     ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
     .glass-nav {
       background: rgba(248, 249, 250, 0.92);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
     }
+
     .badge-dot {
       animation: pulseDot 2s infinite ease-in-out;
     }
+
     @keyframes pulseDot {
       0%, 100% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.4; transform: scale(0.85); }
     }
-    
+
     /* 3D Perspective Card Tilt */
     .tilt-card {
       transform-style: preserve-3d;
@@ -74,6 +106,7 @@
     }
   </style>
 </head>
+
 <body class="bg-brand-offwhite text-brand-charcoal font-sans antialiased selection:bg-brand-limeLight selection:text-brand-charcoal min-h-screen flex flex-col">
 
   <!-- Toast Notification System -->
