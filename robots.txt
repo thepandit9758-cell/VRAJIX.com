@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vrajix.pages.dev/sitemap.xml
