@@ -2,7 +2,11 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <!-- VRAJIX Organization Structured Data -->
+  <!-- Character Encoding & Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- VRAJIX Organization Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -24,9 +28,6 @@
     ]
   }
   </script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary SEO -->
   <title>VRAJIX | Website & App Development Studio</title>
@@ -52,17 +53,33 @@
   <meta name="twitter:title" content="VRAJIX | Website & App Development Studio">
   <meta name="twitter:description" content="Modern websites, web applications and mobile apps by VRAJIX.">
 
-  <!-- Google Fonts -->
+  <!-- Resource Hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
 
-  <!-- Three.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Google Fonts - Optimized Loading -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'"
+  >
 
-  <!-- Tailwind CSS CDN -->
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    >
+  </noscript>
+
+  <!-- Three.js - Deferred Loading -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-
+  <!-- Tailwind Configuration -->
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -94,26 +111,48 @@
     }
   </script>
 
+  <!-- Custom Styles -->
   <style>
-    /* Custom Scrollbar & Fine Polish */
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #F1F5F9; }
-    ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
 
+    ::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94A3B8;
+    }
+
+    /* Glass Navigation */
     .glass-nav {
       background: rgba(248, 249, 250, 0.92);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
     }
 
+    /* Animated Badge */
     .badge-dot {
       animation: pulseDot 2s infinite ease-in-out;
     }
 
     @keyframes pulseDot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.85);
+      }
     }
 
     /* 3D Perspective Card Tilt */
@@ -123,8 +162,12 @@
       will-change: transform;
     }
 
+    /* Background Grid */
     .grid-pattern {
-      background-image: radial-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+      background-image: radial-gradient(
+        rgba(15, 23, 42, 0.06) 1px,
+        transparent 1px
+      );
       background-size: 28px 28px;
     }
   </style>
@@ -210,114 +253,285 @@
   <!-- MAIN CONTENT CONTAINER -->
   <main class="flex-grow">
 
-    <!-- 1. HERO SECTION -->
-    <section id="home" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden grid-pattern">
-      <!-- Decorative Glow Orbs -->
-      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-periwinkle/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="absolute top-1/3 right-10 w-72 h-72 bg-brand-lime/15 rounded-full blur-3xl pointer-events-none"></div>
+    
+<!-- 1. OPTIMIZED HERO SECTION -->
+<section id="home" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden grid-pattern">
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <!-- Top Status Pill -->
-        <div class="flex items-center justify-start mb-6">
-          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white border border-brand-borderLight shadow-sm text-xs font-semibold text-brand-charcoal">
-            <span class="w-2.5 h-2.5 rounded-full bg-brand-lime badge-dot"></span>
-            <span>Independent Digital Studio</span>
-            <span class="text-brand-softGray">•</span>
-            <span class="text-brand-periwinkle font-bold">Accepting Q4 & Q1 Projects</span>
-          </div>
-        </div>
+  <!-- Lightweight Decorative Glow Effects -->
+  <div
+    class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full pointer-events-none opacity-60"
+    style="background:radial-gradient(circle,rgba(99,102,241,0.13) 0%,transparent 70%);"
+    aria-hidden="true">
+  </div>
 
-        <!-- 2-Column Hero: Headline + Interactive 3D Studio Canvas -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          
-          <!-- Left: Headline & Actions (7 Cols) -->
-          <div class="lg:col-span-7">
-            <h1 class="font-display font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight text-brand-charcoal leading-tight mb-6">
-              Digital Solutions That <span class="relative inline-block text-brand-periwinkle underline decoration-brand-lime decoration-4 underline-offset-8">Make It Matter.</span>
-            </h1>
-            <p class="text-lg sm:text-xl text-brand-softGray max-w-xl font-normal leading-relaxed mb-10">
-              VRAJIX is a modern creative technology studio delivering high-performance websites, custom mobile applications, and data-driven digital growth for startups and established enterprises.
-            </p>
+  <div
+    class="absolute top-1/3 right-10 w-72 h-72 rounded-full pointer-events-none opacity-60"
+    style="background:radial-gradient(circle,rgba(132,204,22,0.12) 0%,transparent 70%);"
+    aria-hidden="true">
+  </div>
 
-            <!-- Primary CTAs -->
-            <div class="flex flex-wrap items-center gap-4">
-              <a href="#enquiry" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-brand-charcoal bg-brand-lime hover:bg-brand-limeHover hover:text-white transition-all shadow-md active:scale-95 group">
-                Start Your Project
-                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-              </a>
-              <a href="#work" class="inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-semibold text-brand-charcoal bg-white border border-brand-borderLight hover:border-brand-periwinkle hover:text-brand-periwinkle transition-all shadow-sm">
-                Explore Our Work
-              </a>
-              <a href="mailto:vrajix11@gmail.com" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-softGray hover:text-brand-charcoal px-3 py-2 transition-colors">
-                <svg class="w-4 h-4 text-brand-periwinkle" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                <span>vrajix11@gmail.com</span>
-              </a>
-            </div>
-          </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-          <!-- Right: Interactive 3D Studio Viewport (5 Cols) -->
-          <div class="lg:col-span-5">
-            <div class="relative bg-gradient-to-b from-brand-charcoal via-slate-900 to-brand-charcoal rounded-3xl p-5 border border-slate-700/60 shadow-2xl overflow-hidden group">
-              <!-- Glow backdrop -->
-              <div class="absolute -top-10 -right-10 w-48 h-48 bg-brand-periwinkle/30 rounded-full blur-3xl pointer-events-none"></div>
-              <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-brand-lime/20 rounded-full blur-3xl pointer-events-none"></div>
+    <!-- Top Status Pill -->
+    <div class="flex items-center justify-start mb-6">
+      <div class="inline-flex flex-wrap items-center gap-2.5 px-4 py-2 rounded-full bg-white border border-brand-borderLight shadow-sm text-xs font-semibold text-brand-charcoal">
 
-              <!-- Top Bar of 3D Canvas Card -->
-              <div class="relative z-10 flex items-center justify-between pb-3 border-b border-white/10 text-xs">
-                <div class="flex items-center gap-2 text-white font-mono">
-                  <span class="w-2.5 h-2.5 rounded-full bg-brand-lime badge-dot"></span>
-                  <span class="font-bold text-white tracking-wide">3D STUDIO ENGINE</span>
-                </div>
-                <div class="flex items-center gap-1.5">
-                  <button id="toggleWireframe3d" class="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-[10px] font-mono text-slate-300 hover:text-white transition-colors" title="Toggle Wireframe">
-                    Wireframe
-                  </button>
-                  <button id="resetView3d" class="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-[10px] font-mono text-slate-300 hover:text-white transition-colors" title="Reset Rotation">
-                    Reset
-                  </button>
-                </div>
-              </div>
+        <span class="w-2.5 h-2.5 rounded-full bg-brand-lime badge-dot" aria-hidden="true"></span>
 
-              <!-- Canvas Container -->
-             <div class="relative w-full h-72 sm:h-80 cursor-grab active:cursor-grabbing" id="heroThreeContainer" aria-label="Interactive 3D studio visualization">
-                <canvas id="threeCanvas" class="w-full h-full block rounded-2xl"></canvas>
-                <div class="absolute bottom-3 left-3 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg text-[10px] font-mono text-slate-300 border border-white/10 pointer-events-none">
-                  Drag to rotate • Touch enabled
-                </div>
-                <div class="absolute bottom-3 right-3 flex items-center gap-1">
-                  <button class="color-dot-3d w-3.5 h-3.5 rounded-full bg-brand-periwinkle border-2 border-white/40 hover:scale-125 transition-transform" data-color="0x6366f1" title="Periwinkle"></button>
-                  <button class="color-dot-3d w-3.5 h-3.5 rounded-full bg-brand-lime border-2 border-white/40 hover:scale-125 transition-transform" data-color="0x84cc16" title="Lime"></button>
-                  <button class="color-dot-3d w-3.5 h-3.5 rounded-full bg-cyan-400 border-2 border-white/40 hover:scale-125 transition-transform" data-color="0x22d3ee" title="Cyan"></button>
-                </div>
-              </div>
+        <span>Independent Digital Studio</span>
 
-              <!-- Footer of 3D Card -->
-              <div class="relative z-10 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-400">
-                <span>Interactive WebGL Architecture</span>
-                <span class="font-mono text-brand-lime">60 FPS Native</span>
-              </div>
-            </div>
-          </div>
+        <span class="text-brand-softGray" aria-hidden="true">•</span>
 
-        </div>
+        <span class="text-brand-periwinkle font-bold">
+          Accepting Q4 &amp; Q1 Projects
+        </span>
 
-        <!-- Metric Badges & Capabilities Banner (Clean 3-Pillar) -->
-        <div class="mt-14 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-10 border-t border-brand-borderLight/80">
-          <div class="bg-white/80 p-5 rounded-2xl border border-brand-borderLight shadow-sm">
-            <p class="font-display font-extrabold text-3xl sm:text-4xl text-brand-charcoal">100%</p>
-            <p class="text-xs sm:text-sm font-semibold text-brand-softGray mt-1">Direct IP & Code Ownership</p>
-          </div>
-          <div class="bg-white/80 p-5 rounded-2xl border border-brand-borderLight shadow-sm">
-            <p class="font-display font-extrabold text-3xl sm:text-4xl text-brand-periwinkle">&lt; 1.2s</p>
-            <p class="text-xs sm:text-sm font-semibold text-brand-softGray mt-1">Average Core Web Vitals</p>
-          </div>
-          <div class="bg-white/80 p-5 rounded-2xl border border-brand-borderLight shadow-sm">
-            <p class="font-display font-extrabold text-3xl sm:text-4xl text-brand-charcoal">Cross-Platform</p>
-            <p class="text-xs sm:text-sm font-semibold text-brand-softGray mt-1">Web & Mobile Application Architecture</p>
-          </div>
+      </div>
+    </div>
+
+    <!-- Main Hero Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+      <!-- Left: Headline and Actions -->
+      <div class="lg:col-span-7">
+
+        <h1 class="font-display font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight text-brand-charcoal leading-tight mb-6">
+          Digital Solutions That
+          <span class="relative inline-block text-brand-periwinkle underline decoration-brand-lime decoration-4 underline-offset-8">
+            Make It Matter.
+          </span>
+        </h1>
+
+        <!-- Important: Keep this text visible immediately.
+             Do not lazy-load or hide the hero content. -->
+        <p class="text-lg sm:text-xl text-brand-softGray max-w-xl font-normal leading-relaxed mb-10">
+          VRAJIX is a modern creative technology studio delivering high-performance websites, custom mobile applications, and data-driven digital growth for startups and established enterprises.
+        </p>
+
+        <!-- Primary CTAs -->
+        <div class="flex flex-wrap items-center gap-4">
+
+          <a
+            href="#enquiry"
+            class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-brand-charcoal bg-brand-lime hover:bg-brand-limeHover hover:text-white transition-colors shadow-md group">
+
+            Start Your Project
+
+            <svg
+              class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true">
+
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3">
+              </path>
+
+            </svg>
+          </a>
+
+          <a
+            href="#work"
+            class="inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-semibold text-brand-charcoal bg-white border border-brand-borderLight hover:border-brand-periwinkle hover:text-brand-periwinkle transition-colors shadow-sm">
+
+            Explore Our Work
+          </a>
+
+          <a
+            href="mailto:vrajix11@gmail.com"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-brand-softGray hover:text-brand-charcoal px-3 py-2 transition-colors">
+
+            <svg
+              class="w-4 h-4 text-brand-periwinkle"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true">
+
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+              </path>
+
+            </svg>
+
+            <span>vrajix11@gmail.com</span>
+          </a>
+
         </div>
       </div>
-    </section>
+
+      <!-- Right: Interactive 3D Studio -->
+      <div class="lg:col-span-5">
+
+        <div class="relative bg-gradient-to-b from-brand-charcoal via-slate-900 to-brand-charcoal rounded-3xl p-5 border border-slate-700/60 shadow-xl overflow-hidden">
+
+          <!-- Lightweight Background Glows -->
+          <div
+            class="absolute -top-10 -right-10 w-48 h-48 rounded-full pointer-events-none"
+            style="background:radial-gradient(circle,rgba(99,102,241,0.22),transparent 70%);"
+            aria-hidden="true">
+          </div>
+
+          <div
+            class="absolute -bottom-10 -left-10 w-48 h-48 rounded-full pointer-events-none"
+            style="background:radial-gradient(circle,rgba(132,204,22,0.15),transparent 70%);"
+            aria-hidden="true">
+          </div>
+
+          <!-- 3D Canvas Header -->
+          <div class="relative z-10 flex items-center justify-between pb-3 border-b border-white/10 text-xs">
+
+            <div class="flex items-center gap-2 text-white font-mono">
+
+              <span class="w-2.5 h-2.5 rounded-full bg-brand-lime badge-dot" aria-hidden="true"></span>
+
+              <span class="font-bold tracking-wide">
+                3D STUDIO ENGINE
+              </span>
+
+            </div>
+
+            <div class="flex items-center gap-1.5">
+
+              <button
+                type="button"
+                id="toggleWireframe3d"
+                class="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-[10px] font-mono text-slate-300 hover:text-white transition-colors"
+                title="Toggle Wireframe"
+                aria-label="Toggle 3D wireframe">
+
+                Wireframe
+              </button>
+
+              <button
+                type="button"
+                id="resetView3d"
+                class="px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-[10px] font-mono text-slate-300 hover:text-white transition-colors"
+                title="Reset Rotation"
+                aria-label="Reset 3D view">
+
+                Reset
+              </button>
+
+            </div>
+          </div>
+
+          <!-- Canvas Container -->
+          <div
+            class="relative w-full h-72 sm:h-80 cursor-grab active:cursor-grabbing"
+            id="heroThreeContainer"
+            role="group"
+            aria-label="Interactive 3D studio visualization">
+
+            <canvas
+              id="threeCanvas"
+              width="640"
+              height="480"
+              class="w-full h-full block rounded-2xl"
+              aria-label="3D studio model. Use the controls to change its appearance.">
+            </canvas>
+
+            <!-- Interaction Hint -->
+            <div class="absolute bottom-3 left-3 bg-black/60 px-3 py-1.5 rounded-lg text-[10px] font-mono text-slate-300 border border-white/10 pointer-events-none">
+              Drag to rotate • Touch enabled
+            </div>
+
+            <!-- Color Controls -->
+            <div class="absolute bottom-3 right-3 flex items-center gap-2">
+
+              <button
+                type="button"
+                class="color-dot-3d w-3.5 h-3.5 rounded-full bg-brand-periwinkle border-2 border-white/40 hover:scale-125 transition-transform"
+                data-color="0x6366f1"
+                title="Periwinkle"
+                aria-label="Change 3D color to Periwinkle">
+              </button>
+
+              <button
+                type="button"
+                class="color-dot-3d w-3.5 h-3.5 rounded-full bg-brand-lime border-2 border-white/40 hover:scale-125 transition-transform"
+                data-color="0x84cc16"
+                title="Lime"
+                aria-label="Change 3D color to Lime">
+              </button>
+
+              <button
+                type="button"
+                class="color-dot-3d w-3.5 h-3.5 rounded-full bg-cyan-400 border-2 border-white/40 hover:scale-125 transition-transform"
+                data-color="0x22d3ee"
+                title="Cyan"
+                aria-label="Change 3D color to Cyan">
+              </button>
+
+            </div>
+          </div>
+
+          <!-- 3D Card Footer -->
+          <div class="relative z-10 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-400">
+
+            <span>Interactive WebGL Architecture</span>
+
+            <span class="font-mono text-brand-lime">
+              Real-Time 3D
+            </span>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Metrics Banner -->
+    <div class="mt-14 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-10 border-t border-brand-borderLight/80">
+
+      <div class="bg-white/80 p-5 rounded-2xl border border-brand-borderLight shadow-sm">
+
+        <p class="font-display font-extrabold text-3xl sm:text-4xl text-brand-charcoal">
+          100%
+        </p>
+
+        <p class="text-xs sm:text-sm font-semibold text-brand-softGray mt-1">
+          Direct IP &amp; Code Ownership
+        </p>
+
+      </div>
+
+      <div class="bg-white/80 p-5 rounded-2xl border border-brand-borderLight shadow-sm">
+
+        <p class="font-display font-extrabold text-3xl sm:text-4xl text-brand-periwinkle">
+          Performance
+        </p>
+
+        <p class="text-xs sm:text-sm font-semibold text-brand-softGray mt-1">
+          Speed-Focused Development
+        </p>
+
+      </div>
+
+      <div class="bg-white/80 p-5 rounded-2xl border border-brand-borderLight shadow-sm">
+
+        <p class="font-display font-extrabold text-3xl sm:text-4xl text-brand-charcoal">
+          Cross-Platform
+        </p>
+
+        <p class="text-xs sm:text-sm font-semibold text-brand-softGray mt-1">
+          Web &amp; Mobile Application Architecture
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     <!-- 2. SERVICES SECTION -->
     <section id="services" class="py-20 md:py-28 bg-white border-y border-brand-borderLight">
@@ -1828,202 +2042,329 @@
             updateEnquiryCounters();
 
       // ==========================================
-      // THREE.JS INTERACTIVE 3D STUDIO SCENE
-      // ==========================================
-      const threeContainer = document.getElementById('heroThreeContainer');
-      const threeCanvas = document.getElementById('threeCanvas');
+      // // ==========================================
+// OPTIMIZED THREE.JS INTERACTIVE 3D STUDIO
+// ==========================================
 
-      if (threeContainer && threeCanvas && typeof THREE !== 'undefined') {
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(45, threeContainer.clientWidth / threeContainer.clientHeight, 0.1, 1000);
-        camera.position.z = 5.2;
+function initVrajix3DStudio() {
+  const threeContainer = document.getElementById('heroThreeContainer');
+  const threeCanvas = document.getElementById('threeCanvas');
 
-        const renderer = new THREE.WebGLRenderer({
-          canvas: threeCanvas,
-          antialias: true,
-          alpha: true
-        });
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        renderer.setSize(threeContainer.clientWidth, threeContainer.clientHeight);
+  if (
+    !threeContainer ||
+    !threeCanvas ||
+    typeof THREE === 'undefined' ||
+    threeCanvas.dataset.initialized === 'true'
+  ) {
+    return;
+  }
 
-        // Core 3D Studio Polyhedron (Icosahedron)
-        const geometry = new THREE.IcosahedronGeometry(1.6, 0);
-        let currentMaterialColor = 0x6366f1; // Periwinkle
+  const width = threeContainer.clientWidth;
+  const height = threeContainer.clientHeight;
 
-        const material = new THREE.MeshStandardMaterial({
-          color: currentMaterialColor,
-          roughness: 0.25,
-          metalness: 0.65,
-          wireframe: false,
-          flatShading: true
-        });
-        const mainMesh = new THREE.Mesh(geometry, material);
-        scene.add(mainMesh);
+  if (!width || !height) return;
 
-        // Outer Wireframe Cage (Electric Lime Accent)
-        const wireframeGeometry = new THREE.WireframeGeometry(new THREE.IcosahedronGeometry(1.95, 1));
-        const wireframeMaterial = new THREE.LineBasicMaterial({
-          color: 0x84cc16,
-          transparent: true,
-          opacity: 0.4
-        });
-        const wireframeMesh = new THREE.LineSegments(wireframeGeometry, wireframeMaterial);
-        scene.add(wireframeMesh);
+  threeCanvas.dataset.initialized = 'true';
 
-        // Floating Particle Dust Ring
-        const particleCount = 75;
-        const particleGeometry = new THREE.BufferGeometry();
-        const positions = new Float32Array(particleCount * 3);
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
-        for (let i = 0; i < particleCount * 3; i += 3) {
-          const radius = 2.4 + Math.random() * 0.8;
-          const theta = Math.random() * Math.PI * 2;
-          const phi = (Math.random() - 0.5) * Math.PI;
+  // Scene and Camera
+  const scene = new THREE.Scene();
 
-          positions[i] = radius * Math.cos(theta) * Math.cos(phi);
-          positions[i + 1] = radius * Math.sin(phi);
-          positions[i + 2] = radius * Math.sin(theta) * Math.cos(phi);
-        }
+  const camera = new THREE.PerspectiveCamera(
+    45,
+    width / height,
+    0.1,
+    100
+  );
 
-        particleGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-        const particleMaterial = new THREE.PointsMaterial({
-          color: 0xa3e635,
-          size: 0.04,
-          transparent: true,
-          opacity: 0.8
-        });
-        const particles = new THREE.Points(particleGeometry, particleMaterial);
-        scene.add(particles);
+  camera.position.z = 5.2;
 
-        // Studio Lighting
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
-        scene.add(ambientLight);
+  // Lightweight Renderer
+  const renderer = new THREE.WebGLRenderer({
+    canvas: threeCanvas,
+    antialias: !isMobile,
+    alpha: true,
+    powerPreference: 'low-power'
+  });
 
-        const pointLight1 = new THREE.PointLight(0x6366f1, 2.5, 50);
-        pointLight1.position.set(5, 5, 5);
-        scene.add(pointLight1);
+  renderer.setPixelRatio(
+    Math.min(window.devicePixelRatio || 1, isMobile ? 1 : 1.5)
+  );
 
-        const pointLight2 = new THREE.PointLight(0x84cc16, 2.0, 50);
-        pointLight2.position.set(-5, -5, 3);
-        scene.add(pointLight2);
+  renderer.setSize(width, height, false);
 
-        // Mouse Drag & Touch Interactivity
-        let isDragging = false;
-        let previousMousePosition = { x: 0, y: 0 };
-        let rotationVelocity = { x: 0.003, y: 0.005 };
+  // Main 3D Object
+  const geometry = new THREE.IcosahedronGeometry(1.6, 0);
 
-        function onMouseDown(e) {
-          isDragging = true;
-          previousMousePosition = { x: e.clientX, y: e.clientY };
-        }
+  const material = new THREE.MeshStandardMaterial({
+    color: 0x6366f1,
+    roughness: 0.3,
+    metalness: 0.55,
+    wireframe: false,
+    flatShading: true
+  });
 
-        function onMouseMove(e) {
-          if (!isDragging) return;
-          const deltaX = e.clientX - previousMousePosition.x;
-          const deltaY = e.clientY - previousMousePosition.y;
+  const mainMesh = new THREE.Mesh(geometry, material);
+  scene.add(mainMesh);
 
-          mainMesh.rotation.y += deltaX * 0.008;
-          mainMesh.rotation.x += deltaY * 0.008;
-          wireframeMesh.rotation.y += deltaX * 0.006;
-          wireframeMesh.rotation.x += deltaY * 0.006;
+  // Outer Wireframe
+  const wireframeGeometry = new THREE.WireframeGeometry(
+    new THREE.IcosahedronGeometry(1.95, 1)
+  );
 
-          rotationVelocity = { x: deltaY * 0.001, y: deltaX * 0.001 };
-          previousMousePosition = { x: e.clientX, y: e.clientY };
-        }
+  const wireframeMaterial = new THREE.LineBasicMaterial({
+    color: 0x84cc16,
+    transparent: true,
+    opacity: 0.4
+  });
 
-        function onMouseUp() {
-          isDragging = false;
-        }
+  const wireframeMesh = new THREE.LineSegments(
+    wireframeGeometry,
+    wireframeMaterial
+  );
 
-        // Touch handlers for mobile phones
-        function onTouchStart(e) {
-          if (e.touches.length === 1) {
-            isDragging = true;
-            previousMousePosition = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-          }
-        }
+  scene.add(wireframeMesh);
 
-        function onTouchMove(e) {
-          if (!isDragging || e.touches.length !== 1) return;
-          const deltaX = e.touches[0].clientX - previousMousePosition.x;
-          const deltaY = e.touches[0].clientY - previousMousePosition.y;
+  // Floating Particles
+  const particleCount = isMobile ? 35 : 60;
+  const positions = new Float32Array(particleCount * 3);
 
-          mainMesh.rotation.y += deltaX * 0.008;
-          mainMesh.rotation.x += deltaY * 0.008;
-          wireframeMesh.rotation.y += deltaX * 0.006;
-          wireframeMesh.rotation.x += deltaY * 0.006;
+  for (let i = 0; i < particleCount * 3; i += 3) {
+    const radius = 2.4 + Math.random() * 0.8;
+    const theta = Math.random() * Math.PI * 2;
+    const phi = (Math.random() - 0.5) * Math.PI;
 
-          rotationVelocity = { x: deltaY * 0.001, y: deltaX * 0.001 };
-          previousMousePosition = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-        }
+    positions[i] = radius * Math.cos(theta) * Math.cos(phi);
+    positions[i + 1] = radius * Math.sin(phi);
+    positions[i + 2] = radius * Math.sin(theta) * Math.cos(phi);
+  }
 
-        threeContainer.addEventListener('mousedown', onMouseDown);
-        window.addEventListener('mousemove', onMouseMove);
-        window.addEventListener('mouseup', onMouseUp);
-        threeContainer.addEventListener('touchstart', onTouchStart, { passive: true });
-        window.addEventListener('touchmove', onTouchMove, { passive: true });
-        window.addEventListener('touchend', onMouseUp);
+  const particleGeometry = new THREE.BufferGeometry();
 
-        // Control Buttons
-        const toggleWireframeBtn = document.getElementById('toggleWireframe3d');
-        if (toggleWireframeBtn) {
-          toggleWireframeBtn.addEventListener('click', () => {
-            material.wireframe = !material.wireframe;
-            toggleWireframeBtn.textContent = material.wireframe ? 'Solid' : 'Wireframe';
-            showToast(`3D Mesh: ${material.wireframe ? 'Wireframe Mode' : 'Solid Shader Mode'}`);
-          });
-        }
+  particleGeometry.setAttribute(
+    'position',
+    new THREE.BufferAttribute(positions, 3)
+  );
 
-        const resetViewBtn = document.getElementById('resetView3d');
-        if (resetViewBtn) {
-          resetViewBtn.addEventListener('click', () => {
-            mainMesh.rotation.set(0, 0, 0);
-            wireframeMesh.rotation.set(0, 0, 0);
-            rotationVelocity = { x: 0.003, y: 0.005 };
-            showToast('3D Studio viewport reset.');
-          });
-        }
+  const particleMaterial = new THREE.PointsMaterial({
+    color: 0xa3e635,
+    size: 0.04,
+    transparent: true,
+    opacity: 0.8
+  });
 
-        // Color Palettes
-        document.querySelectorAll('.color-dot-3d').forEach(dot => {
-          dot.addEventListener('click', () => {
-            const hex = parseInt(dot.getAttribute('data-color'), 16);
-            material.color.setHex(hex);
-            pointLight1.color.setHex(hex);
-            showToast(`3D Studio Theme updated!`);
-          });
-        });
+  const particles = new THREE.Points(
+    particleGeometry,
+    particleMaterial
+  );
 
-        // Responsive Resize
-        window.addEventListener('resize', () => {
-          if (!threeContainer) return;
-          const width = threeContainer.clientWidth;
-          const height = threeContainer.clientHeight;
-          camera.aspect = width / height;
-          camera.updateProjectionMatrix();
-          renderer.setSize(width, height);
-        });
+  scene.add(particles);
 
-        // Animation Loop
-        let animationFrameId;
-        function animate() {
-          animationFrameId = requestAnimationFrame(animate);
+  // Lighting
+  scene.add(new THREE.AmbientLight(0xffffff, 0.7));
 
-          if (!isDragging) {
-            mainMesh.rotation.x += rotationVelocity.x || 0.002;
-            mainMesh.rotation.y += rotationVelocity.y || 0.004;
-            wireframeMesh.rotation.x -= 0.002;
-            wireframeMesh.rotation.y -= 0.003;
-          }
+  const pointLight1 = new THREE.PointLight(0x6366f1, 2.5, 50);
+  pointLight1.position.set(5, 5, 5);
+  scene.add(pointLight1);
 
-          particles.rotation.y += 0.001;
-          particles.rotation.x += 0.0005;
+  const pointLight2 = new THREE.PointLight(0x84cc16, 2, 50);
+  pointLight2.position.set(-5, -5, 3);
+  scene.add(pointLight2);
 
-          renderer.render(scene, camera);
-        }
-        animate();
+  // Rotation Controls
+  let isDragging = false;
+  let previousPointer = { x: 0, y: 0 };
+
+  let rotationVelocity = {
+    x: 0.002,
+    y: 0.004
+  };
+
+  threeContainer.style.touchAction = 'pan-y';
+
+  threeContainer.addEventListener('pointerdown', (event) => {
+    isDragging = true;
+
+    previousPointer = {
+      x: event.clientX,
+      y: event.clientY
+    };
+
+    if (event.pointerType === 'mouse') {
+      threeContainer.setPointerCapture(event.pointerId);
+    }
+  });
+
+  threeContainer.addEventListener('pointermove', (event) => {
+    if (!isDragging) return;
+
+    const deltaX = event.clientX - previousPointer.x;
+    const deltaY = event.clientY - previousPointer.y;
+
+    mainMesh.rotation.y += deltaX * 0.008;
+    mainMesh.rotation.x += deltaY * 0.008;
+
+    wireframeMesh.rotation.y += deltaX * 0.006;
+    wireframeMesh.rotation.x += deltaY * 0.006;
+
+    rotationVelocity = {
+      x: deltaY * 0.001,
+      y: deltaX * 0.001
+    };
+
+    previousPointer = {
+      x: event.clientX,
+      y: event.clientY
+    };
+  });
+
+  function stopDragging() {
+    isDragging = false;
+  }
+
+  threeContainer.addEventListener('pointerup', stopDragging);
+  threeContainer.addEventListener('pointercancel', stopDragging);
+  threeContainer.addEventListener('lostpointercapture', stopDragging);
+
+  // Wireframe Button
+  const toggleWireframeBtn = document.getElementById('toggleWireframe3d');
+
+  if (toggleWireframeBtn) {
+    toggleWireframeBtn.addEventListener('click', () => {
+      material.wireframe = !material.wireframe;
+
+      toggleWireframeBtn.textContent =
+        material.wireframe ? 'Solid' : 'Wireframe';
+
+      if (typeof showToast === 'function') {
+        showToast(
+          `3D Mesh: ${material.wireframe ? 'Wireframe Mode' : 'Solid Shader Mode'}`
+        );
+      }
+    });
+  }
+
+  // Reset Button
+  const resetViewBtn = document.getElementById('resetView3d');
+
+  if (resetViewBtn) {
+    resetViewBtn.addEventListener('click', () => {
+      mainMesh.rotation.set(0, 0, 0);
+      wireframeMesh.rotation.set(0, 0, 0);
+
+      rotationVelocity = {
+        x: 0.002,
+        y: 0.004
+      };
+
+      if (typeof showToast === 'function') {
+        showToast('3D Studio viewport reset.');
+      }
+    });
+  }
+
+  // Color Palette
+  document.querySelectorAll('.color-dot-3d').forEach((dot) => {
+    dot.addEventListener('click', () => {
+      const hex = parseInt(dot.getAttribute('data-color'), 16);
+
+      if (!Number.isNaN(hex)) {
+        material.color.setHex(hex);
+        pointLight1.color.setHex(hex);
       }
 
+      if (typeof showToast === 'function') {
+        showToast('3D Studio Theme updated!');
+      }
+    });
+  });
+
+  // Responsive Resize
+  function resizeRenderer() {
+    const newWidth = threeContainer.clientWidth;
+    const newHeight = threeContainer.clientHeight;
+
+    if (!newWidth || !newHeight) return;
+
+    camera.aspect = newWidth / newHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(newWidth, newHeight, false);
+  }
+
+  if (typeof ResizeObserver !== 'undefined') {
+    const resizeObserver = new ResizeObserver(resizeRenderer);
+    resizeObserver.observe(threeContainer);
+  } else {
+    window.addEventListener('resize', resizeRenderer, { passive: true });
+  }
+
+  // Pause animation when not visible
+  let isVisible = true;
+  let isPageActive = !document.hidden;
+
+  if (typeof IntersectionObserver !== 'undefined') {
+    const observer = new IntersectionObserver((entries) => {
+      isVisible = entries[0].isIntersecting;
+    });
+
+    observer.observe(threeContainer);
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    isPageActive = !document.hidden;
+  });
+
+  // Optimized Animation Loop (approximately 30 FPS)
+  let animationFrameId;
+  let lastRenderTime = 0;
+
+  function animate(timestamp) {
+    animationFrameId = requestAnimationFrame(animate);
+
+    if (!isVisible || !isPageActive) return;
+
+    if (timestamp - lastRenderTime < 33) return;
+
+    lastRenderTime = timestamp;
+
+    if (!isDragging) {
+      mainMesh.rotation.x += rotationVelocity.x;
+      mainMesh.rotation.y += rotationVelocity.y;
+
+      wireframeMesh.rotation.x -= 0.002;
+      wireframeMesh.rotation.y -= 0.003;
+    }
+
+    particles.rotation.y += 0.001;
+    particles.rotation.x += 0.0005;
+
+    renderer.render(scene, camera);
+  }
+
+  renderer.render(scene, camera);
+  animationFrameId = requestAnimationFrame(animate);
+}
+
+// Initialize after page load
+function scheduleVrajix3D() {
+  const start3D = () => {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(initVrajix3DStudio, { timeout: 2000 });
+    } else {
+      setTimeout(initVrajix3DStudio, 1000);
+    }
+  };
+
+  if (document.readyState === 'complete') {
+    start3D();
+  } else {
+    window.addEventListener('load', start3D, { once: true });
+  }
+}
+
+scheduleVrajix3D();
       // ==========================================
       // 3D CARD PERSPECTIVE TILT EFFECTS
       // ==========================================
