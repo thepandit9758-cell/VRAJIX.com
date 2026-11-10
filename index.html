@@ -2177,6 +2177,56 @@
 
             updateEnquiryCounters();
 
+            // Dispatch Email Directly to vrajix11@gmail.com (Instant Inbox Notification)
+            try {
+              fetch('https://formsubmit.co/ajax/vrajix11@gmail.com', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                  _subject: `New VRAJIX Project Enquiry [${refId}]: ${nameVal} - ${serviceVal}`,
+                  'Reference ID': refId,
+                  'Customer Name': nameVal,
+                  'Customer Email': emailVal,
+                  'Customer Phone': phoneVal,
+                  'Selected Service': serviceVal,
+                  'Project Budget': budgetVal,
+                  'Target Timeline': timelineVal,
+                  'Project Brief': detailsVal,
+                  _template: 'table'
+                })
+              }).catch(err => console.warn('Email dispatch background note:', err));
+            } catch(e) {
+              console.warn('Email dispatch error:', e);
+            }
+
+            // Dispatch Email Directly to vrajix11@gmail.com (Instant Inbox Notification)
+            try {
+              fetch('https://formsubmit.co/ajax/vrajix11@gmail.com', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                  _subject: `New VRAJIX Project Enquiry [${refId}]: ${nameVal} - ${serviceVal}`,
+                  'Reference ID': refId,
+                  'Customer Name': nameVal,
+                  'Customer Email': emailVal,
+                  'Customer Phone': phoneVal,
+                  'Selected Service': serviceVal,
+                  'Project Budget': budgetVal,
+                  'Target Timeline': timelineVal,
+                  'Project Brief': detailsVal,
+                  _template: 'table'
+                })
+              }).catch(err => console.warn('Email dispatch background note:', err));
+            } catch(e) {
+              console.warn('Email dispatch error:', e);
+            }
+
             // Reset UI states
             submitBtnText.textContent = 'Submit Project Enquiry';
             submitSpinner.classList.add('hidden');
