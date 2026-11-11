@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VRAJIX — Independent Digital Studio | High-Impact Web &amp; Mobile Engineering</title>
-  <meta name="description" content="VRAJIX is an independent digital studio founded by Tarun Sharma (Founder) &amp; Himesh Sharma (Co-Founder). We engineer high-impact websites and mobile platforms with direct IP code ownership.">
+  <meta name="description" content="VRAJIX is a modern creative technology studio delivering high-performance websites, custom mobile applications, and data-driven digital growth. Founded by Tarun Sharma (Founder) &amp; Himesh Sharma (Co-Founder).">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://vrajix.pages.dev/">
 
@@ -17,7 +17,6 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://vrajix.pages.dev/">
   <meta name="twitter:title" content="VRAJIX — Independent Digital Studio">
   <meta name="twitter:description" content="High-impact web and mobile engineering with direct IP code ownership.">
 
@@ -42,13 +41,6 @@
       "name": "Himesh Sharma",
       "jobTitle": "Co-Founder"
     },
-    "knowsAbout": [
-      "Website Development",
-      "Mobile Applications",
-      "Cloud Systems Architecture",
-      "UI/UX Design",
-      "Direct IP Code Ownership"
-    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "email": "vrajix11@gmail.com",
@@ -61,15 +53,14 @@
   <!-- Non-blocking Google Fonts (Plus Jakarta Sans & Space Grotesk) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
   </noscript>
 
-  <!-- Production Pre-compiled Design System (Inlined for 0ms First Contentful Paint & PageSpeed 99+) -->
+  <!-- Complete Inlined Production Design System (Mobile & Laptop 100% Responsive) -->
   <style id="vrajix-production-styles">
-/* VRAJIX Production Design System v3.0 */
 :root {
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
@@ -101,7 +92,7 @@ img, svg, canvas { display: block; vertical-align: middle; }
 img { max-width: 100%; height: auto; }
 [hidden] { display: none !important; }
 
-/* Display & Positioning */
+/* Display & Layout */
 .block { display: block; }
 .inline-block { display: inline-block; }
 .inline-flex { display: inline-flex; }
@@ -115,25 +106,17 @@ img { max-width: 100%; height: auto; }
 .inset-0 { inset: 0px; }
 .inset-y-0 { top: 0px; bottom: 0px; }
 .top-0 { top: 0px; }
+.top-2 { top: 0.5rem; }
 .top-4 { top: 1rem; }
-.top-5 { top: 1.25rem; }
-.top-1\/4 { top: 25%; }
-.top-1\/3 { top: 33.333333%; }
+.bottom-2 { bottom: 0.5rem; }
 .bottom-3 { bottom: 0.75rem; }
 .bottom-4 { bottom: 1rem; }
+.left-0 { left: 0px; }
 .left-3 { left: 0.75rem; }
 .left-4 { left: 1rem; }
-.left-1\/2 { left: 50%; }
 .right-0 { right: 0px; }
 .right-3 { right: 0.75rem; }
 .right-4 { right: 1rem; }
-.right-5 { right: 1.25rem; }
-.right-10 { right: 2.5rem; }
-.-top-10 { top: -2.5rem; }
-.-bottom-10 { bottom: -2.5rem; }
-.-left-10 { left: -2.5rem; }
-.-right-10 { right: -2.5rem; }
-.-mt-1 { margin-top: -0.25rem; }
 .z-10 { z-index: 10; }
 .z-40 { z-index: 40; }
 .z-50 { z-index: 50; }
@@ -150,6 +133,7 @@ img { max-width: 100%; height: auto; }
 .justify-between { justify-content: space-between; }
 .justify-start { justify-content: flex-start; }
 .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .gap-1 { gap: 0.25rem; }
 .gap-1\.5 { gap: 0.375rem; }
@@ -165,7 +149,6 @@ img { max-width: 100%; height: auto; }
 .space-y-0\.5 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.125rem; }
 .space-y-1 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.25rem; }
 .space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; }
-.space-y-2\.5 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.625rem; }
 .space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem; }
 .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
 .space-y-5 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.25rem; }
@@ -183,15 +166,11 @@ img { max-width: 100%; height: auto; }
 .w-8 { width: 2rem; }
 .w-10 { width: 2.5rem; }
 .w-12 { width: 3rem; }
-.w-48 { width: 12rem; }
-.w-72 { width: 18rem; }
-.w-96 { width: 24rem; }
 .w-full { width: 100%; }
 .h-1\.5 { height: 0.375rem; }
 .h-2 { height: 0.5rem; }
 .h-2\.5 { height: 0.625rem; }
 .h-3 { height: 0.75rem; }
-.h-3\.5 { height: 0.875rem; }
 .h-4 { height: 1rem; }
 .h-5 { height: 1.25rem; }
 .h-6 { height: 1.5rem; }
@@ -200,9 +179,8 @@ img { max-width: 100%; height: auto; }
 .h-12 { height: 3rem; }
 .h-20 { height: 5rem; }
 .h-48 { height: 12rem; }
-.h-72 { height: 18rem; }
-.h-96 { height: 24rem; }
 .h-full { height: 100%; }
+.max-w-xs { max-width: 20rem; }
 .max-w-sm { max-width: 24rem; }
 .max-w-md { max-width: 28rem; }
 .max-w-xl { max-width: 36rem; }
@@ -219,9 +197,7 @@ img { max-width: 100%; height: auto; }
 .m-0 { margin: 0px; }
 .mx-auto { margin-left: auto; margin-right: auto; }
 .ml-auto { margin-left: auto; }
-.ml-1\.5 { margin-left: 0.375rem; }
-.ml-2 { margin-left: 0.5rem; }
-.ml-3 { margin-left: 0.75rem; }
+.mr-1 { margin-right: 0.25rem; }
 .mt-0\.5 { margin-top: 0.125rem; }
 .mt-1 { margin-top: 0.25rem; }
 .mt-2 { margin-top: 0.5rem; }
@@ -229,18 +205,16 @@ img { max-width: 100%; height: auto; }
 .mt-4 { margin-top: 1rem; }
 .mt-6 { margin-top: 1.5rem; }
 .mt-8 { margin-top: 2rem; }
-.mt-14 { margin-top: 3.5rem; }
 .mb-1 { margin-bottom: 0.25rem; }
 .mb-2 { margin-bottom: 0.5rem; }
 .mb-3 { margin-bottom: 0.75rem; }
 .mb-4 { margin-bottom: 1rem; }
-.mb-5 { margin-bottom: 1.25rem; }
 .mb-6 { margin-bottom: 1.5rem; }
 .mb-8 { margin-bottom: 2rem; }
-.mb-10 { margin-bottom: 2.5rem; }
 .mb-12 { margin-bottom: 3rem; }
-.mb-14 { margin-bottom: 3.5rem; }
 .mb-16 { margin-bottom: 4rem; }
+.-mt-1 { margin-top: -0.25rem; }
+
 .p-1 { padding: 0.25rem; }
 .p-1\.5 { padding: 0.375rem; }
 .p-2 { padding: 0.5rem; }
@@ -249,9 +223,7 @@ img { max-width: 100%; height: auto; }
 .p-4 { padding: 1rem; }
 .p-5 { padding: 1.25rem; }
 .p-6 { padding: 1.5rem; }
-.p-7 { padding: 1.75rem; }
 .p-8 { padding: 2rem; }
-.px-1\.5 { padding-left: 0.375rem; padding-right: 0.375rem; }
 .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
 .px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
 .px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
@@ -274,11 +246,10 @@ img { max-width: 100%; height: auto; }
 .pt-1 { padding-top: 0.25rem; }
 .pt-2 { padding-top: 0.5rem; }
 .pt-3 { padding-top: 0.75rem; }
+.pt-4 { padding-top: 1rem; }
 .pt-6 { padding-top: 1.5rem; }
 .pt-8 { padding-top: 2rem; }
-.pt-10 { padding-top: 2.5rem; }
-.pt-12 { padding-top: 3rem; }
-.pt-16 { padding-top: 4rem; }
+.pt-28 { padding-top: 7rem; }
 .pb-2 { padding-bottom: 0.5rem; }
 .pb-3 { padding-bottom: 0.75rem; }
 .pb-4 { padding-bottom: 1rem; }
@@ -301,6 +272,7 @@ img { max-width: 100%; height: auto; }
 .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
 .text-2xl { font-size: 1.5rem; line-height: 2rem; }
 .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
 .font-normal { font-weight: 400; }
 .font-medium { font-weight: 500; }
 .font-semibold { font-weight: 600; }
@@ -309,6 +281,7 @@ img { max-width: 100%; height: auto; }
 .font-black { font-weight: 900; }
 .text-left { text-align: left; }
 .text-center { text-align: center; }
+.text-right { text-align: right; }
 .uppercase { text-transform: uppercase; }
 .italic { font-style: italic; }
 .tracking-tighter { letter-spacing: -0.05em; }
@@ -327,8 +300,8 @@ img { max-width: 100%; height: auto; }
 
 /* Colors */
 .text-white { color: #ffffff; }
+.text-white\/80 { color: rgba(255, 255, 255, 0.8); }
 .text-brand-charcoal { color: var(--color-brand-charcoal); }
-.text-brand-charcoal\/80 { color: rgba(15, 23, 42, 0.8); }
 .text-brand-lime { color: var(--color-brand-lime); }
 .text-brand-limeHover { color: var(--color-brand-limeHover); }
 .text-brand-periwinkle { color: var(--color-brand-periwinkle); }
@@ -337,104 +310,60 @@ img { max-width: 100%; height: auto; }
 .text-slate-300 { color: #cbd5e1; }
 .text-slate-400 { color: #94a3b8; }
 .text-slate-500 { color: #64748b; }
-.text-slate-600 { color: #475569; }
-.text-emerald-300 { color: #6ee7b7; }
-.text-emerald-400 { color: #34d399; }
-.text-emerald-600 { color: #059669; }
-.text-emerald-700 { color: #047857; }
 .text-emerald-800 { color: #065f46; }
-.text-emerald-900 { color: #064e3b; }
 .text-emerald-950 { color: #022c22; }
 .text-red-500 { color: #ef4444; }
 .text-red-600 { color: #dc2626; }
-.text-blue-800 { color: #1e40af; }
-.text-amber-800 { color: #92400e; }
-.text-slate-700 { color: #334155; }
 
 .bg-white { background-color: #ffffff; }
-.bg-white\/5 { background-color: rgba(255, 255, 255, 0.05); }
-.bg-white\/10 { background-color: rgba(255, 255, 255, 0.1); }
-.bg-white\/20 { background-color: rgba(255, 255, 255, 0.2); }
-.bg-white\/80 { background-color: rgba(255, 255, 255, 0.8); }
 .bg-transparent { background-color: transparent; }
 .bg-black { background-color: #000000; }
 .bg-black\/60 { background-color: rgba(0, 0, 0, 0.6); }
-
 .bg-brand-charcoal { background-color: var(--color-brand-charcoal); }
-.bg-brand-charcoal\/70 { background-color: rgba(15, 23, 42, 0.7); }
+.bg-brand-charcoal\/80 { background-color: rgba(15, 23, 42, 0.8); }
 .bg-brand-charcoal\/90 { background-color: rgba(15, 23, 42, 0.9); }
 .bg-brand-offwhite { background-color: var(--color-brand-offwhite); }
 .bg-brand-lime { background-color: var(--color-brand-lime); }
-.bg-brand-lime\/15 { background-color: rgba(132, 204, 22, 0.15); }
-.bg-brand-lime\/20 { background-color: rgba(132, 204, 22, 0.2); }
 .bg-brand-limeLight { background-color: var(--color-brand-limeLight); }
 .bg-brand-periwinkle { background-color: var(--color-brand-periwinkle); }
-.bg-brand-periwinkle\/10 { background-color: rgba(99, 102, 241, 0.1); }
-.bg-brand-periwinkle\/20 { background-color: rgba(99, 102, 241, 0.2); }
-.bg-brand-periwinkle\/30 { background-color: rgba(99, 102, 241, 0.3); }
-.bg-brand-periwinkleLight { background-color: var(--color-brand-periwinkleLight); }
-
+.bg-purple-500 { background-color: #a855f7; }
 .bg-slate-50 { background-color: #f8fafc; }
 .bg-slate-100 { background-color: #f1f5f9; }
-.bg-slate-100\/80 { background-color: rgba(241, 245, 249, 0.8); }
 .bg-slate-200 { background-color: #e2e8f0; }
-.bg-slate-800\/80 { background-color: rgba(30, 41, 59, 0.8); }
+.bg-slate-800 { background-color: #1e293b; }
 .bg-slate-900 { background-color: #0f172a; }
 .bg-emerald-50 { background-color: #ecfdf5; }
 .bg-emerald-100 { background-color: #d1fae5; }
 .bg-emerald-500 { background-color: #10b981; }
-.bg-emerald-500\/20 { background-color: rgba(16, 185, 129, 0.2); }
-.bg-emerald-500\/80 { background-color: rgba(16, 185, 129, 0.8); }
 .bg-emerald-600 { background-color: #059669; }
-.bg-indigo-50 { background-color: #eef2ff; }
 .bg-red-50 { background-color: #fef2f2; }
-.bg-red-600 { background-color: #dc2626; }
-.bg-blue-100 { background-color: #dbeafe; }
-.bg-amber-100 { background-color: #fef3c7; }
-.bg-cyan-400 { background-color: #22d3ee; }
 
 .bg-gradient-to-t { background-image: linear-gradient(to top, var(--tw-gradient-stops, transparent, transparent)); }
-.bg-gradient-to-b { background-image: linear-gradient(to bottom, var(--tw-gradient-stops, transparent, transparent)); }
 .bg-gradient-to-br { background-image: linear-gradient(to bottom right, var(--tw-gradient-stops, transparent, transparent)); }
-.from-brand-charcoal { --tw-gradient-from: #0F172A; --tw-gradient-to: rgba(15, 23, 42, 0); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
 .from-brand-charcoal\/80 { --tw-gradient-from: rgba(15, 23, 42, 0.8); --tw-gradient-to: rgba(15, 23, 42, 0); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
 .from-slate-900 { --tw-gradient-from: #0f172a; --tw-gradient-to: rgba(15, 23, 42, 0); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
 .via-transparent { --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to); }
-.via-slate-900 { --tw-gradient-stops: var(--tw-gradient-from), #0f172a, var(--tw-gradient-to); }
-.via-slate-950 { --tw-gradient-stops: var(--tw-gradient-from), #020617, var(--tw-gradient-to); }
-.via-indigo-950 { --tw-gradient-stops: var(--tw-gradient-from), #1e1b4b, var(--tw-gradient-to); }
 .to-transparent { --tw-gradient-to: transparent; }
-.to-brand-charcoal { --tw-gradient-to: #0F172A; }
-.to-slate-900 { --tw-gradient-to: #0f172a; }
 .to-indigo-950 { --tw-gradient-to: #1e1b4b; }
+.to-emerald-950 { --tw-gradient-to: #022c22; }
+.to-brand-charcoal { --tw-gradient-to: #0F172A; }
 
 /* Borders & Shadows */
 .border { border-width: 1px; }
-.border-2 { border-width: 2px; }
-.border-t { border-top-width: 1px; }
 .border-b { border-bottom-width: 1px; }
+.border-t { border-top-width: 1px; }
 .border-l { border-left-width: 1px; }
-.border-y { border-top-width: 1px; border-bottom-width: 1px; }
 .border-brand-borderLight { border-color: var(--color-brand-borderLight); }
-.border-brand-borderLight\/60 { border-color: rgba(226, 232, 240, 0.6); }
-.border-brand-borderLight\/80 { border-color: rgba(226, 232, 240, 0.8); }
-.border-brand-charcoal { border-color: var(--color-brand-charcoal); }
-.border-slate-100 { border-color: #f1f5f9; }
+.border-brand-lime { border-color: var(--color-brand-lime); }
 .border-slate-200 { border-color: #e2e8f0; }
-.border-slate-300 { border-color: #cbd5e1; }
-.border-slate-700\/60 { border-color: rgba(51, 65, 85, 0.6); }
 .border-slate-800 { border-color: #1e293b; }
-.border-emerald-100 { border-color: #d1fae5; }
 .border-emerald-200 { border-color: #a7f3d0; }
 .border-emerald-300 { border-color: #6ee7b7; }
-.border-blue-300 { border-color: #93c5fd; }
-.border-amber-300 { border-color: #fcd34d; }
+.border-red-200 { border-color: #fecaca; }
 .border-white\/10 { border-color: rgba(255, 255, 255, 0.1); }
 .border-white\/20 { border-color: rgba(255, 255, 255, 0.2); }
-.border-white\/40 { border-color: rgba(255, 255, 255, 0.4); }
 
 .rounded { border-radius: 0.25rem; }
-.rounded-md { border-radius: 0.375rem; }
 .rounded-lg { border-radius: 0.5rem; }
 .rounded-xl { border-radius: 0.75rem; }
 .rounded-2xl { border-radius: 1rem; }
@@ -449,9 +378,6 @@ img { max-width: 100%; height: auto; }
 
 .backdrop-blur-sm { backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
 .backdrop-blur-md { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-.blur-3xl { filter: blur(64px); }
-.opacity-25 { opacity: 0.25; }
-.opacity-75 { opacity: 0.75; }
 .overflow-hidden { overflow: hidden; }
 .overflow-y-auto { overflow-y: auto; }
 .cursor-pointer { cursor: pointer; }
@@ -460,143 +386,143 @@ img { max-width: 100%; height: auto; }
 .object-cover { object-fit: cover; }
 .object-top { object-position: top; }
 
-.transform { transform: translate(var(--tw-translate-x, 0), var(--tw-translate-y, 0)) rotate(var(--tw-rotate, 0)) scaleX(var(--tw-scale-x, 1)) scaleY(var(--tw-scale-y, 1)); }
-.-translate-x-1\/2 { transform: translateX(-50%); }
-.-translate-y-1\/2 { transform: translateY(-50%); }
+.transform { transform: translate(var(--tw-translate-x, 0), var(--tw-translate-y, 0)) scaleX(var(--tw-scale-x, 1)) scaleY(var(--tw-scale-y, 1)); }
 .translate-x-full { transform: translateX(100%); }
 .transition-all { transition-property: all; transition-duration: 150ms; }
 .transition-colors { transition-property: color, background-color, border-color; transition-duration: 150ms; }
 .transition-transform { transition-property: transform; transition-duration: 150ms; }
-.duration-200 { transition-duration: 200ms; }
 .duration-300 { transition-duration: 300ms; }
 .duration-500 { transition-duration: 500ms; }
 
 .animate-spin { animation: spin 1s linear infinite; }
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
-/* Interactive States */
+/* Hover & Focus */
 .hover\:bg-black:hover { background-color: #000000; }
-.hover\:bg-white\/20:hover { background-color: rgba(255, 255, 255, 0.2); }
-.hover\:bg-white\/30:hover { background-color: rgba(255, 255, 255, 0.3); }
 .hover\:bg-slate-50:hover { background-color: #f8fafc; }
 .hover\:bg-slate-100:hover { background-color: #f1f5f9; }
 .hover\:bg-slate-200:hover { background-color: #e2e8f0; }
 .hover\:bg-red-100:hover { background-color: #fee2e2; }
 .hover\:bg-brand-limeHover:hover { background-color: var(--color-brand-limeHover); }
+.hover\:bg-emerald-700:hover { background-color: #047857; }
+.hover\:bg-indigo-600:hover { background-color: #4f46e5; }
 .hover\:text-white:hover { color: #ffffff; }
 .hover\:text-brand-charcoal:hover { color: var(--color-brand-charcoal); }
 .hover\:text-brand-periwinkle:hover { color: var(--color-brand-periwinkle); }
+.hover\:text-brand-lime:hover { color: var(--color-brand-lime); }
 .hover\:border-brand-periwinkle:hover { border-color: var(--color-brand-periwinkle); }
+.hover\:border-brand-lime:hover { border-color: var(--color-brand-lime); }
 .hover\:shadow-xl:hover { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+.hover\:scale-105:hover { transform: scale(1.05); }
 .hover\:scale-125:hover { transform: scale(1.25); }
+.hover\:underline:hover { text-decoration-line: underline; }
 .group:hover .group-hover\:scale-105 { transform: scale(1.05); }
 .group:hover .group-hover\:translate-x-1 { transform: translateX(0.25rem); }
-.group:hover .group-hover\:bg-brand-periwinkle { background-color: var(--color-brand-periwinkle); }
+.group:hover .group-hover\:text-brand-periwinkle { color: var(--color-brand-periwinkle); }
 .focus\:outline-none:focus { outline: 2px solid transparent; }
 .focus\:ring-1:focus { box-shadow: 0 0 0 1px var(--color-brand-periwinkle); }
 .focus\:ring-2:focus { box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.4); }
+.active\:scale-95:active { transform: scale(0.95); }
 .active\:scale-98:active { transform: scale(0.98); }
 
-/* Responsive Media Queries */
+/* Responsive Breakpoints (Phone & Laptop) */
 @media (min-width: 640px) {
+  .sm\:block { display: block; }
+  .sm\:inline-block { display: inline-block; }
   .sm\:flex-row { flex-direction: row; }
   .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .sm\:gap-6 { gap: 1.5rem; }
-  .sm\:h-80 { height: 20rem; }
-  .sm\:mt-20 { margin-top: 5rem; }
-  .sm\:p-8 { padding: 2rem; }
-  .sm\:p-10 { padding: 2.5rem; }
   .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-  .sm\:text-xl { font-size: 1.25rem; }
-  .sm\:text-3xl { font-size: 1.875rem; }
-  .sm\:text-4xl { font-size: 2.25rem; }
-  .sm\:text-5xl { font-size: 3rem; }
+  .sm\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+  .sm\:text-5xl { font-size: 3rem; line-height: 1; }
+  .sm\:text-6xl { font-size: 3.75rem; line-height: 1; }
 }
 @media (min-width: 768px) {
   .md\:flex { display: flex; }
   .md\:hidden { display: none; }
-  .md\:flex-row { flex-direction: row; }
-  .md\:items-end { align-items: flex-end; }
   .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .md\:grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-  .md\:py-28 { padding-top: 7rem; padding-bottom: 7rem; }
-  .md\:pt-20 { padding-top: 5rem; }
+  .md\:pt-36 { padding-top: 9rem; }
   .md\:pb-32 { padding-bottom: 8rem; }
+  .md\:py-28 { padding-top: 7rem; padding-bottom: 7rem; }
 }
 @media (min-width: 1024px) {
-  .lg\:inline-flex { display: inline-flex; }
   .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .lg\:grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .lg\:grid-cols-12 { grid-template-columns: repeat(12, minmax(0, 1fr)); }
-  .lg\:col-span-2 { grid-column: span 2 / span 2; }
   .lg\:col-span-5 { grid-column: span 5 / span 5; }
   .lg\:col-span-7 { grid-column: span 7 / span 7; }
+  .lg\:gap-8 { gap: 2rem; }
   .lg\:gap-10 { gap: 2.5rem; }
-  .lg\:gap-16 { gap: 4rem; }
+  .lg\:gap-12 { gap: 3rem; }
   .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
-  .lg\:text-6xl { font-size: 3.75rem; }
+  .lg\:p-10 { padding: 2.5rem; }
+  .lg\:text-6xl { font-size: 3.75rem; line-height: 1; }
 }
 
 .glass-nav { background: rgba(248, 249, 250, 0.94); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
-.tilt-card { transform-style: preserve-3d; transition: transform 0.15s ease-out; will-change: transform; }
 .grid-pattern { background-image: radial-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px); background-size: 28px 28px; }
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #F1F5F9; }
 ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
   </style>
 
-  <!-- Three.js Library (Deferred to keep FCP < 0.6s and PageSpeed 99+) -->
+  <!-- Three.js (Deferred for PageSpeed 99+) -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body class="bg-brand-offwhite text-brand-charcoal antialiased selection:bg-brand-limeLight selection:text-brand-charcoal">
 
-  <!-- NAVIGATION BAR -->
+  <!-- EXACT ORIGINAL NAVBAR HEADER (As shown in Image 1) -->
   <header class="fixed top-0 left-0 right-0 z-40 glass-nav border-b border-brand-borderLight transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <!-- Studio Brand Logo -->
-      <a href="#home" class="flex items-center gap-2 group focus:outline-none">
-        <span class="font-display font-black text-2xl tracking-tight text-brand-charcoal group-hover:text-brand-periwinkle transition-colors">
-          VRAJIX
+      
+      <!-- Brand Logo: Black Rounded Square [V] + VRAJIX • + MAKE IT MATTER. -->
+      <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+        <span class="w-10 h-10 rounded-xl bg-brand-charcoal text-white flex items-center justify-center font-display font-black text-xl tracking-tighter shadow-md group-hover:scale-105 transition-transform">
+          V
         </span>
-        <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span>
-        <span class="text-xs font-mono text-brand-softGray uppercase tracking-wider hidden sm:inline-block">
-          Digital Studio
-        </span>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1.5 leading-none">
+            <span class="font-display font-black text-2xl tracking-tight text-brand-charcoal group-hover:text-brand-periwinkle transition-colors">
+              VRAJIX
+            </span>
+            <span class="w-2 h-2 rounded-full bg-brand-lime"></span>
+          </div>
+          <span class="text-[10px] tracking-widest uppercase font-mono font-bold text-brand-softGray mt-1">
+            MAKE IT MATTER.
+          </span>
+        </div>
       </a>
 
-      <!-- Desktop Navigation Links -->
+      <!-- Desktop Navigation Links (Exact Original: Home, Services, Our Work, Founders, Process, Contact) -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-brand-charcoal">
+        <a href="#home" class="hover:text-brand-periwinkle transition-colors">Home</a>
         <a href="#services" class="hover:text-brand-periwinkle transition-colors">Services</a>
         <a href="#work" class="hover:text-brand-periwinkle transition-colors">Our Work</a>
         <a href="#founders" class="hover:text-brand-periwinkle transition-colors">Founders</a>
-        <a href="#process" class="hover:text-brand-periwinkle transition-colors">Delivery</a>
-        <a href="#faq" class="hover:text-brand-periwinkle transition-colors">FAQ</a>
+        <a href="#process" class="hover:text-brand-periwinkle transition-colors">Process</a>
+        <a href="#enquiry" class="hover:text-brand-periwinkle transition-colors">Contact</a>
       </nav>
 
-      <!-- Desktop Action CTA & Admin Drawer Trigger -->
-      <div class="hidden md:flex items-center gap-4">
-        <!-- Admin Inquiries Lock Button -->
-        <button id="toggleAdminBtn" class="p-2.5 rounded-xl border border-brand-borderLight hover:border-brand-periwinkle text-brand-softGray hover:text-brand-charcoal bg-white transition-all shadow-sm" title="Studio Admin Vault" aria-label="Open Studio Admin Vault">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+      <!-- Desktop Right Controls (Exact Original: Enquiries Pill + Get Started Button) -->
+      <div class="hidden md:flex items-center gap-3">
+        <!-- Enquiries 0 Button (Opens Admin Vault) -->
+        <button id="toggleAdminBtn" class="py-2.5 px-4 rounded-xl border border-brand-borderLight hover:border-brand-periwinkle text-brand-charcoal bg-white font-semibold text-xs transition-all shadow-sm flex items-center gap-2" title="Studio Admin Vault">
+          <svg class="w-4 h-4 text-brand-softGray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+          <span>Enquiries</span>
+          <span id="navEnquiryBadge" class="w-5 h-5 rounded-full bg-brand-periwinkle text-white text-[10px] font-mono font-bold flex items-center justify-center">0</span>
         </button>
 
-        <!-- Direct WhatsApp Chat Link -->
-        <a href="https://wa.me/917983129724?text=Hi%20VRAJIX%20team%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl border border-brand-borderLight hover:border-brand-lime text-brand-charcoal hover:text-brand-limeHover bg-white transition-all shadow-sm" title="Chat on WhatsApp (+91 79831 29724)" aria-label="Chat on WhatsApp">
-          <svg class="w-4 h-4 text-brand-lime" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.587 1.956.884 3.03.884 3.183 0 5.77-2.586 5.77-5.766.001-3.181-2.585-5.77-5.769-5.77zm3.385 8.169c-.145.409-.838.775-1.15.825-.313.05-.726.075-2.285-.568-1.559-.643-2.548-2.23-2.626-2.333-.078-.104-.627-.834-.627-1.59 0-.756.398-1.127.538-1.28.14-.153.308-.192.411-.192.103 0 .206.002.296.007.094.005.221-.036.345.263.129.313.438 1.07.477 1.149.039.079.064.171.013.273-.051.103-.077.167-.154.257-.077.09-.162.201-.232.27-.077.077-.158.162-.068.317.09.154.398.657.854 1.064.587.524 1.082.686 1.236.763.154.077.244.064.334-.039.09-.103.386-.449.489-.603.103-.154.206-.129.345-.077.14.051.884.417 1.036.493.153.077.255.115.293.179.038.064.038.373-.107.782z"/></svg>
-        </a>
-
-        <!-- Consultation Button -->
-        <a href="#enquiry" class="py-2.5 px-5 rounded-xl bg-brand-charcoal text-white hover:bg-black transition-all font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg active:scale-95 flex items-center gap-2">
-          <span>Book Consultation</span>
-          <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span>
+        <!-- Get Started -> Button (Smoothly scrolls to enquiry form) -->
+        <a href="#enquiry" id="navGetStartedBtn" class="py-2.5 px-5 rounded-xl bg-brand-lime hover:bg-brand-limeHover text-brand-charcoal font-bold text-xs uppercase tracking-wider transition-all shadow-md active:scale-95 flex items-center gap-1.5">
+          <span>Get Started</span>
+          <span class="text-sm font-bold">→</span>
         </a>
       </div>
 
-      <!-- Mobile Menu Button -->
+      <!-- Mobile Hamburger & Admin Trigger -->
       <div class="flex items-center gap-2 md:hidden">
-        <button id="mobileAdminBtn" class="p-2 rounded-xl border border-brand-borderLight text-brand-softGray bg-white" aria-label="Open Studio Admin Vault">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+        <button id="mobileAdminBtn" class="p-2.5 rounded-xl border border-brand-borderLight text-brand-charcoal bg-white flex items-center gap-1.5 text-xs font-bold" aria-label="Open Studio Admin Vault">
+          <svg class="w-4 h-4 text-brand-softGray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+          <span id="mobileNavBadge" class="w-4 h-4 rounded-full bg-brand-periwinkle text-white text-[10px] font-mono flex items-center justify-center">0</span>
         </button>
         <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="p-2.5 rounded-xl border border-brand-borderLight bg-white text-brand-charcoal focus:outline-none">
           <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -612,98 +538,93 @@ img { max-width: 100%; height: auto; }
         <a href="#services" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50">Services</a>
         <a href="#work" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50">Our Work</a>
         <a href="#founders" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50">Founders</a>
-        <a href="#process" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50">Delivery</a>
-        <a href="#faq" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50">FAQ</a>
+        <a href="#process" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50">Process</a>
+        <a href="#enquiry" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50">Contact</a>
       </nav>
       <div class="pt-3 border-t border-brand-borderLight flex flex-col gap-2">
-        <a href="https://wa.me/917983129724" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl border border-brand-lime text-brand-charcoal font-bold text-sm text-center flex items-center justify-center gap-2">
-          <span>WhatsApp (+91 79831 29724)</span>
-        </a>
-        <a href="#enquiry" class="mobile-nav-link w-full py-3 px-4 rounded-xl bg-brand-charcoal text-white font-bold text-sm text-center">
-          Book Project Consultation
+        <a href="#enquiry" class="mobile-nav-link w-full py-3 px-4 rounded-xl bg-brand-lime text-brand-charcoal font-bold text-sm text-center shadow-md">
+          Get Started →
         </a>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO SECTION -->
+    <!-- EXACT ORIGINAL HERO SECTION (As shown in Image 1) -->
     <section id="home" class="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden border-b border-brand-borderLight grid-pattern">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           <!-- Hero Text Content -->
           <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-charcoal text-white text-xs font-mono uppercase tracking-wider shadow-sm">
+            <!-- Pill Tag: Independent Digital Studio • Accepting Q4 & Q1 Projects -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-brand-borderLight text-xs font-semibold text-brand-charcoal shadow-sm">
               <span class="w-2 h-2 rounded-full bg-brand-lime animate-pulse"></span>
-              <span>Bespoke Digital Engineering • 100% Direct IP Ownership</span>
+              <span>Independent Digital Studio • Accepting Q4 &amp; Q1 Projects</span>
             </div>
 
+            <!-- Big Heading: Digital Solutions That Make It Matter. -->
             <h1 class="font-display font-black text-4xl sm:text-6xl lg:text-6xl text-brand-charcoal tracking-tight leading-tight">
-              We Architect &amp; Build <br class="hidden sm:block">
-              <span class="underline decoration-brand-lime decoration-4 underline-offset-8">Digital Solutions</span> <br>
-              That Make It Matter.
+              Digital Solutions That <br>
+              <span class="text-brand-periwinkle underline decoration-brand-lime decoration-4 underline-offset-8">Make It Matter.</span>
             </h1>
 
+            <!-- Subtitle -->
             <p class="text-base sm:text-lg text-brand-softGray max-w-2xl leading-relaxed">
-              VRAJIX is an independent digital studio engineering high-impact web and mobile platforms with direct IP code ownership. No bloated stacks. Pure, high-performance architecture.
+              VRAJIX is a modern creative technology studio delivering high-performance websites, custom mobile applications, and data-driven digital growth for startups and established enterprises.
             </p>
 
-            <!-- Hero CTAs -->
+            <!-- Buttons Row: Start Your Project -> | Explore Our Work | vrajix11@gmail.com -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-              <a href="#enquiry" class="py-4 px-8 rounded-xl text-base font-bold text-brand-charcoal bg-brand-lime hover:bg-brand-limeHover hover:text-white transition-all shadow-md active:scale-98 text-center flex items-center justify-center gap-2">
+              <a href="#enquiry" class="hero-cta-btn py-4 px-8 rounded-xl text-base font-bold text-brand-charcoal bg-brand-lime hover:bg-brand-limeHover hover:text-white transition-all shadow-md active:scale-98 text-center flex items-center justify-center gap-2">
                 <span>Start Your Project</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                <span class="text-lg">→</span>
               </a>
               <a href="#work" class="py-4 px-8 rounded-xl text-base font-bold text-brand-charcoal bg-white border border-brand-borderLight hover:border-brand-periwinkle hover:text-brand-periwinkle transition-all shadow-sm text-center">
-                Explore Client Systems
+                Explore Our Work
               </a>
-            </div>
-
-            <!-- Quick Trust Bar -->
-            <div class="pt-6 border-t border-brand-borderLight flex flex-wrap items-center gap-8 text-xs font-semibold text-brand-softGray">
-              <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-brand-lime"></span>
-                <span>Verified Direct IP Ownership</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-brand-periwinkle"></span>
-                <span>Direct Partner Engineering</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-brand-charcoal"></span>
-                <span>Direct Lead Hotline (+91 79831 29724)</span>
-              </div>
+              <a href="mailto:vrajix11@gmail.com" class="py-4 px-4 text-sm font-semibold text-brand-softGray hover:text-brand-charcoal flex items-center justify-center gap-1.5 transition-colors">
+                <span>✉</span>
+                <span class="underline">vrajix11@gmail.com</span>
+              </a>
             </div>
           </div>
 
-          <!-- Hero 3D Interactive Canvas -->
+          <!-- Hero 3D Card (Exact Original: 3D STUDIO ENGINE) -->
           <div class="lg:col-span-5 relative flex justify-center">
-            <div class="w-full max-w-md aspect-square rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl relative overflow-hidden flex flex-col justify-between p-4 group">
-              <!-- Top 3D Control Bar -->
+            <div class="w-full max-w-md aspect-square rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl relative overflow-hidden flex flex-col justify-between p-5 group">
+              <!-- Top Header: 3D STUDIO ENGINE (left) + Wireframe & Reset (right) -->
               <div class="flex items-center justify-between text-xs text-white/80 z-10">
                 <div class="flex items-center gap-2">
                   <span class="w-2 h-2 rounded-full bg-brand-lime animate-pulse"></span>
-                  <span class="font-mono text-[11px] uppercase tracking-wider text-slate-300">VRAJIX 3D Studio Core</span>
+                  <span class="font-mono text-xs font-bold tracking-wider text-white uppercase">3D STUDIO ENGINE</span>
                 </div>
-                <!-- 3D Palette Colors -->
-                <div class="flex items-center gap-1.5">
-                  <button id="colorPeriwinkle" class="color-dot-3d w-4 h-4 rounded-full bg-brand-periwinkle border border-white/20 hover:scale-125 transition-transform" data-color="6366f1" aria-label="Switch 3D crystal to Indigo Periwinkle"></button>
-                  <button id="colorLime" class="color-dot-3d w-4 h-4 rounded-full bg-brand-lime border border-white/20 hover:scale-125 transition-transform" data-color="84cc16" aria-label="Switch 3D crystal to Emerald Lime"></button>
-                  <button id="colorPurple" class="color-dot-3d w-4 h-4 rounded-full bg-purple-500 border border-white/20 hover:scale-125 transition-transform" data-color="a855f7" aria-label="Switch 3D crystal to Royal Purple"></button>
+                <div class="flex items-center gap-3 font-mono text-[11px] text-slate-400">
+                  <button id="toggleWireframe3d" class="hover:text-brand-lime transition-colors">Wireframe</button>
+                  <button id="resetView3d" class="hover:text-brand-periwinkle transition-colors">Reset</button>
                 </div>
               </div>
 
-              <!-- Canvas Element -->
-              <div class="w-full h-full relative cursor-grab active:cursor-grabbing" id="heroThreeContainer">
+              <!-- 3D Canvas -->
+              <div class="w-full h-full relative cursor-grab active:cursor-grabbing my-auto" id="heroThreeContainer">
                 <canvas id="threeCanvas" class="w-full h-full block rounded-2xl"></canvas>
               </div>
 
-              <!-- Bottom 3D Toggles -->
-              <div class="flex items-center justify-between text-[11px] font-mono text-slate-400 z-10 pt-2 border-t border-slate-800/80">
-                <button id="toggleWireframe3d" class="hover:text-brand-lime transition-colors" aria-label="Toggle 3D crystal wireframe mode">Wireframe</button>
-                <span>Rotate: Drag / Touch</span>
-                <button id="resetView3d" class="hover:text-brand-periwinkle transition-colors" aria-label="Reset 3D crystal orientation">Reset</button>
+              <!-- Bottom Bar: Drag to rotate + 3 Color Dots + WebGL Architecture + 60 FPS Native -->
+              <div class="space-y-2 z-10 pt-2 border-t border-slate-800">
+                <div class="flex items-center justify-between text-[11px] text-slate-400">
+                  <span>Drag to rotate • Touch enabled</span>
+                  <!-- 3 Color Palette Dots -->
+                  <div class="flex items-center gap-1.5">
+                    <button class="color-dot-3d w-3.5 h-3.5 rounded-full bg-brand-periwinkle border border-white/20 hover:scale-125 transition-transform" data-color="6366f1" title="Periwinkle"></button>
+                    <button class="color-dot-3d w-3.5 h-3.5 rounded-full bg-brand-lime border border-white/20 hover:scale-125 transition-transform" data-color="84cc16" title="Lime"></button>
+                    <button class="color-dot-3d w-3.5 h-3.5 rounded-full bg-cyan-400 border border-white/20 hover:scale-125 transition-transform" data-color="22d3ee" title="Cyan"></button>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between text-[10px] font-mono text-slate-500">
+                  <span>Interactive WebGL Architecture</span>
+                  <span class="text-brand-lime">60 FPS Native</span>
+                </div>
               </div>
             </div>
           </div>
@@ -712,7 +633,7 @@ img { max-width: 100%; height: auto; }
       </div>
     </section>
 
-    <!-- CORE SERVICES SECTION (Streamlined: Web & App Dev) -->
+    <!-- CORE SERVICES SECTION -->
     <section id="services" class="py-20 md:py-28 bg-white border-b border-brand-borderLight">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -728,7 +649,6 @@ img { max-width: 100%; height: auto; }
           </p>
         </div>
 
-        <!-- Two Core Capabilities Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
           <!-- Pillar 1: Website Development -->
           <div class="bg-brand-offwhite rounded-3xl p-8 lg:p-10 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
@@ -803,10 +723,8 @@ img { max-width: 100%; height: auto; }
           </p>
         </div>
 
-        <!-- Portfolio Cards Grid -->
         <div id="portfolioGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="web" data-date="2026-02" data-roi="340" data-featured="1">
+          <div class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
             <div class="space-y-4">
               <div class="w-full h-48 rounded-2xl bg-gradient-to-br from-slate-900 to-indigo-950 p-6 flex flex-col justify-between text-white">
                 <span class="text-[10px] font-mono uppercase tracking-widest text-brand-lime">Web Platform</span>
@@ -827,8 +745,7 @@ img { max-width: 100%; height: auto; }
             </div>
           </div>
 
-          <!-- Card 2 -->
-          <div class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="mobile" data-date="2026-03" data-roi="280" data-featured="2">
+          <div class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
             <div class="space-y-4">
               <div class="w-full h-48 rounded-2xl bg-gradient-to-br from-slate-900 to-emerald-950 p-6 flex flex-col justify-between text-white">
                 <span class="text-[10px] font-mono uppercase tracking-widest text-brand-lime">Mobile Application</span>
@@ -849,8 +766,7 @@ img { max-width: 100%; height: auto; }
             </div>
           </div>
 
-          <!-- Card 3 -->
-          <div class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-category="cloud" data-date="2026-01" data-roi="420" data-featured="3">
+          <div class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
             <div class="space-y-4">
               <div class="w-full h-48 rounded-2xl bg-gradient-to-br from-slate-900 to-brand-charcoal p-6 flex flex-col justify-between text-white">
                 <span class="text-[10px] font-mono uppercase tracking-widest text-brand-periwinkle">Cloud Architecture</span>
@@ -874,7 +790,7 @@ img { max-width: 100%; height: auto; }
       </div>
     </section>
 
-    <!-- FOUNDERS SECTION (Strict Hierarchy: Card 1 = Tarun Sharma (Founder), Card 2 = Himesh Sharma (Co-Founder)) -->
+    <!-- FOUNDERS SECTION -->
     <section id="founders" class="py-20 md:py-28 bg-white border-b border-brand-borderLight">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -890,9 +806,7 @@ img { max-width: 100%; height: auto; }
           </p>
         </div>
 
-        <!-- Equal Founders Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 max-w-4xl mx-auto">
-
           <!-- Founder 1: Tarun Sharma (Founder) -->
           <div class="bg-brand-offwhite rounded-3xl p-8 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
             <div>
@@ -968,12 +882,11 @@ img { max-width: 100%; height: auto; }
               <span class="text-xs font-mono text-brand-lime font-bold">VRAJIX Studio</span>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- DELIVERY PROCESS SECTION -->
+    <!-- DELIVERY PROCESS -->
     <section id="process" class="py-20 md:py-28 bg-brand-offwhite border-b border-brand-borderLight">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
@@ -1071,7 +984,6 @@ img { max-width: 100%; height: auto; }
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
-          <!-- Left Column: Studio Contact Details -->
           <div class="lg:col-span-5 space-y-6">
             <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-lime mb-1">
               <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span>
@@ -1085,7 +997,6 @@ img { max-width: 100%; height: auto; }
             </p>
 
             <div class="space-y-4 pt-4">
-              <!-- Contact Item 1: WhatsApp -->
               <div class="p-5 rounded-2xl bg-white border border-brand-borderLight shadow-sm flex items-center justify-between">
                 <div>
                   <p class="text-[11px] font-bold uppercase tracking-wider text-brand-softGray">Direct WhatsApp Hotline</p>
@@ -1096,7 +1007,6 @@ img { max-width: 100%; height: auto; }
                 </a>
               </div>
 
-              <!-- Contact Item 2: Email -->
               <div class="p-5 rounded-2xl bg-white border border-brand-borderLight shadow-sm flex items-center justify-between">
                 <div>
                   <p class="text-[11px] font-bold uppercase tracking-wider text-brand-softGray">Official Studio Email</p>
@@ -1109,14 +1019,12 @@ img { max-width: 100%; height: auto; }
             </div>
           </div>
 
-          <!-- Right Column: Project Enquiry Form -->
           <div class="lg:col-span-7">
             <div class="bg-white rounded-3xl p-8 lg:p-10 border border-brand-borderLight shadow-xl relative">
               <form id="projectEnquiryForm" novalidate class="space-y-6">
                 <!-- Anti-Spam Honeypot Field -->
                 <input type="text" name="_hp_company" style="display:none!important" tabindex="-1" autocomplete="off">
 
-                <!-- Row 1: Name & Email -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label for="clientName" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
@@ -1135,7 +1043,6 @@ img { max-width: 100%; height: auto; }
                   </div>
                 </div>
 
-                <!-- Row 2: Phone & Required Service -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label for="clientPhone" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
@@ -1159,7 +1066,6 @@ img { max-width: 100%; height: auto; }
                   </div>
                 </div>
 
-                <!-- Row 3: Budget & Timeline -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label for="projectBudget" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
@@ -1186,7 +1092,6 @@ img { max-width: 100%; height: auto; }
                   </div>
                 </div>
 
-                <!-- Row 4: Project Details -->
                 <div>
                   <div class="flex items-center justify-between mb-2">
                     <label for="projectDetails" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal">
@@ -1198,19 +1103,18 @@ img { max-width: 100%; height: auto; }
                   <p id="detailsError" class="text-[11px] text-red-500 mt-1 hidden">Please provide at least 10 characters describing your project.</p>
                 </div>
 
-                <!-- Submit Button -->
                 <div>
                   <button type="submit" id="submitEnquiryBtn" class="w-full py-4 px-6 rounded-xl text-base font-bold text-brand-charcoal bg-brand-lime hover:bg-brand-limeHover hover:text-white transition-all shadow-md active:scale-98 flex items-center justify-center gap-2">
                     <span id="submitBtnText">Submit Project Enquiry</span>
                     <svg id="submitSpinner" class="w-5 h-5 animate-spin hidden" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path></svg>
                   </button>
                   <p class="text-[11px] text-center text-brand-softGray mt-3">
-                    Direct dual-delivery to founders Tarun Sharma &amp; Himesh Sharma with 24h response guarantee.
+                    Dispatched directly to founders Tarun Sharma &amp; Himesh Sharma with 24h response guarantee.
                   </p>
                 </div>
               </form>
 
-              <!-- Success Alert Box (Initially Hidden) -->
+              <!-- Success Box -->
               <div id="enquirySuccessBox" class="hidden mt-6 p-6 rounded-2xl bg-emerald-50 border border-emerald-200">
                 <div class="flex items-start gap-4">
                   <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
@@ -1224,7 +1128,6 @@ img { max-width: 100%; height: auto; }
                       </p>
                     </div>
 
-                    <!-- Direct WhatsApp Connect Button -->
                     <div class="pt-2">
                       <button id="sendCopyWhatsApp" class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors shadow-sm flex items-center justify-center gap-2">
                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.587 1.956.884 3.03.884 3.183 0 5.77-2.586 5.77-5.766.001-3.181-2.585-5.77-5.769-5.77zm3.385 8.169c-.145.409-.838.775-1.15.825-.313.05-.726.075-2.285-.568-1.559-.643-2.548-2.23-2.626-2.333-.078-.104-.627-.834-.627-1.59 0-.756.398-1.127.538-1.28.14-.153.308-.192.411-.192.103 0 .206.002.296.007.094.005.221-.036.345.263.129.313.438 1.07.477 1.149.039.079.064.171.013.273-.051.103-.077.167-.154.257-.077.09-.162.201-.232.27-.077.077-.158.162-.068.317.09.154.398.657.854 1.064.587.524 1.082.686 1.236.763.154.077.244.064.334-.039.09-.103.386-.449.489-.603.103-.154.206-.129.345-.077.14.051.884.417 1.036.493.153.077.255.115.293.179.038.064.038.373-.107.782z"/></svg>
@@ -1255,8 +1158,8 @@ img { max-width: 100%; height: auto; }
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
         <div class="space-y-4">
           <div class="flex items-center gap-2">
-            <span class="w-8 h-8 rounded-lg bg-white text-brand-charcoal font-black flex items-center justify-center">V</span>
-            <span class="font-display font-black text-xl text-white">VRAJIX</span>
+            <span class="font-display font-black text-2xl text-white">VRAJIX</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span>
           </div>
           <p class="text-xs text-slate-400 leading-relaxed">
             Independent Digital Studio engineering web platforms and mobile applications with 100% direct IP code ownership.
@@ -1328,7 +1231,7 @@ img { max-width: 100%; height: auto; }
     </div>
   </div>
 
-  <!-- STUDIO ADMIN INQUIRIES DRAWER (Strictly Secured: 9999 BLOCKED once custom password is saved!) -->
+  <!-- STUDIO ADMIN INQUIRIES DRAWER (STRICT PASSWORD SECURITY + FORGOT PASSWORD OTP TO EMAIL) -->
   <div id="enquiriesDrawer" class="fixed inset-y-0 right-0 z-50 w-full max-w-md bg-white shadow-2xl border-l border-brand-borderLight transform translate-x-full transition-transform duration-300 flex flex-col">
     <!-- Drawer Header -->
     <div class="p-6 border-b border-brand-borderLight flex items-center justify-between bg-slate-50">
@@ -1344,7 +1247,7 @@ img { max-width: 100%; height: auto; }
       </button>
     </div>
 
-    <!-- VIEW 1: ADMIN LOGIN VIEW (Shown when unauthenticated) -->
+    <!-- VIEW 1: ADMIN LOGIN VIEW -->
     <div id="adminLoginView" class="p-6 flex-grow flex flex-col justify-center space-y-5">
       <div class="text-center space-y-2">
         <div class="w-12 h-12 rounded-2xl bg-brand-charcoal text-white mx-auto flex items-center justify-center shadow-md">
@@ -1356,6 +1259,7 @@ img { max-width: 100%; height: auto; }
 
       <div id="adminLoginError" class="hidden p-3 rounded-xl bg-red-50 border border-red-200 text-xs text-red-600 font-medium text-center"></div>
 
+      <!-- Main Login Form -->
       <form id="adminLoginForm" class="space-y-4" onsubmit="return false;">
         <div>
           <label for="adminUsernameInput" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1">Username</label>
@@ -1365,6 +1269,7 @@ img { max-width: 100%; height: auto; }
         <div>
           <div class="flex items-center justify-between mb-1">
             <label for="adminPasswordInput" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal">Password</label>
+            <!-- FORGOT PASSWORD LINK -->
             <button type="button" id="openForgotPwBtn" class="text-[11px] text-brand-periwinkle hover:underline font-semibold">Forgot Password?</button>
           </div>
           <input type="password" id="adminPasswordInput" placeholder="••••••••••••" required class="w-full px-4 py-2.5 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
@@ -1390,10 +1295,12 @@ img { max-width: 100%; height: auto; }
           A secure verification code will be sent to your registered studio email: <strong class="text-brand-charcoal font-mono">vrajix11@gmail.com</strong>.
         </p>
 
+        <!-- Step 1: Send Code Button -->
         <button type="button" id="sendResetCodeBtn" class="w-full py-2.5 px-4 rounded-xl bg-brand-periwinkle hover:bg-indigo-600 text-white font-bold text-xs transition-colors shadow-sm flex items-center justify-center gap-1.5">
           <span>Send Reset Code to vrajix11@gmail.com</span>
         </button>
 
+        <!-- Step 2: Verification Input Form (Shown after sending code) -->
         <div id="verifyCodeGroup" class="hidden space-y-3 pt-2 border-t border-slate-200">
           <div>
             <label class="block text-[10px] font-bold uppercase tracking-wider text-brand-charcoal mb-1">Enter Code from Email</label>
@@ -1414,34 +1321,41 @@ img { max-width: 100%; height: auto; }
       </p>
     </div>
 
-    <!-- VIEW 2: AUTHENTICATED LEAD DASHBOARD VIEW (Shown when authenticated) -->
+    <!-- VIEW 2: AUTHENTICATED LEAD DASHBOARD VIEW -->
     <div id="adminDashboardView" class="hidden flex-grow flex flex-col overflow-hidden">
       <!-- Session Bar & Controls -->
       <div class="p-4 border-b border-brand-borderLight bg-white flex items-center justify-between text-xs">
         <div class="flex items-center gap-2">
-          <span class="font-bold text-brand-charcoal">Authenticated:</span>
+          <span class="font-bold text-brand-charcoal">Admin:</span>
           <span id="adminSessionUsername" class="font-mono text-brand-periwinkle font-semibold">admin</span>
         </div>
         <div class="flex items-center gap-2">
           <span class="text-xs text-brand-softGray mr-1">Total: <strong id="drawerRecordCount" class="text-brand-periwinkle font-mono font-bold">0</strong></span>
+          
           <!-- Key Icon to Change Password -->
           <button id="openChangePwBtn" class="p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors" title="Change Admin Password" aria-label="Change Admin Password">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg>
           </button>
-          <button id="exportCsvBtn" class="px-2.5 py-1 rounded-lg bg-brand-charcoal hover:bg-black text-white font-semibold transition-colors flex items-center gap-1 shadow-sm">
+
+          <!-- Export CSV Button -->
+          <button id="exportCsvBtn" class="px-2.5 py-1 rounded-lg bg-brand-charcoal hover:bg-black text-white font-semibold transition-colors flex items-center gap-1 shadow-sm" title="Export Enquiries to CSV">
             <svg class="w-3.5 h-3.5 text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
             <span>Export CSV</span>
           </button>
-          <button id="clearRecordsBtn" class="px-2.5 py-1 rounded-lg bg-red-50 hover:bg-red-100 text-red-600 font-semibold transition-colors">
+
+          <!-- Clear All Button -->
+          <button id="clearRecordsBtn" class="px-2.5 py-1 rounded-lg bg-red-50 hover:bg-red-100 text-red-600 font-semibold transition-colors" title="Clear all stored leads">
             Clear All
           </button>
+
+          <!-- Logout Button -->
           <button id="adminLogoutBtn" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-brand-charcoal font-semibold transition-colors">
             Logout
           </button>
         </div>
       </div>
 
-      <!-- Change Password In-Drawer Card -->
+      <!-- Change Password In-Drawer Card (Inside Dashboard) -->
       <div id="changePasswordBox" class="hidden p-5 border-b border-brand-borderLight bg-slate-100 space-y-3 text-xs">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-1.5 font-bold text-brand-charcoal">
@@ -1495,7 +1409,6 @@ img { max-width: 100%; height: auto; }
 
   <!-- JAVASCRIPT APPLICATION LOGIC -->
   <script>
-    // Global Safe HTML Escaper (XSS & Injection Protection)
     function escapeHtml(str) {
       if (str === null || str === undefined) return '';
       return String(str)
@@ -1508,8 +1421,9 @@ img { max-width: 100%; height: auto; }
 
     let currentAdminSession = null;
     let cachedLeads = [];
+    let generatedResetCode = null;
+    let resetCodeExpires = 0;
 
-    // Toast Utility
     function showToast(message, type = 'success') {
       const container = document.getElementById('toastContainer');
       if (!container) return;
@@ -1535,7 +1449,7 @@ img { max-width: 100%; height: auto; }
 
     document.addEventListener('DOMContentLoaded', () => {
 
-      // THREE.JS 3D STUDIO SCENE (Deferred for 99+ PageSpeed)
+      // THREE.JS 3D STUDIO ENGINE
       function initThreeScene() {
         const threeContainer = document.getElementById('heroThreeContainer');
         const threeCanvas = document.getElementById('threeCanvas');
@@ -1724,7 +1638,6 @@ img { max-width: 100%; height: auto; }
         });
       }
 
-      // Initialize Three.js cleanly when deferred library is loaded
       if (typeof THREE !== 'undefined') {
         initThreeScene();
       } else {
@@ -1732,6 +1645,31 @@ img { max-width: 100%; height: auto; }
           if (typeof THREE !== 'undefined') initThreeScene();
         });
       }
+
+      // Smooth scroll for Get Started and Start Your Project buttons
+      function scrollToEnquiry() {
+        const enquirySection = document.getElementById('enquiry');
+        if (enquirySection) {
+          enquirySection.scrollIntoView({ behavior: 'smooth' });
+          const nameInput = document.getElementById('clientName');
+          if (nameInput) setTimeout(() => nameInput.focus(), 600);
+        }
+      }
+
+      const navGetStartedBtn = document.getElementById('navGetStartedBtn');
+      if (navGetStartedBtn) {
+        navGetStartedBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          scrollToEnquiry();
+        });
+      }
+
+      document.querySelectorAll('.hero-cta-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          scrollToEnquiry();
+        });
+      });
 
       // Mobile Menu Toggle
       const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -1763,8 +1701,8 @@ img { max-width: 100%; height: auto; }
       }
 
       // ======================================================================
-      // ADMIN DRAWER & PASSWORD SECURITY CONTROLLER
-      // STRICT RULE: Once admin changes password, '9999' is BLOCKED 100%!
+      // ADMIN DRAWER & STRICT PASSWORD SECURITY
+      // 9999 is STRICTLY BLOCKED! Once admin changes password, ONLY custom password works!
       // ======================================================================
       const toggleAdminBtn = document.getElementById('toggleAdminBtn');
       const mobileAdminBtn = document.getElementById('mobileAdminBtn');
@@ -1787,12 +1725,37 @@ img { max-width: 100%; height: auto; }
       const enquiriesListContainer = document.getElementById('enquiriesListContainer');
       const clearRecordsBtn = document.getElementById('clearRecordsBtn');
 
-      // Change Password Elements
+      // Change Password Inside Dashboard
       const openChangePwBtn = document.getElementById('openChangePwBtn');
       const changePasswordBox = document.getElementById('changePasswordBox');
       const cancelChangePwBtn = document.getElementById('cancelChangePwBtn');
       const saveNewPasswordBtn = document.getElementById('saveNewPasswordBtn');
       const newAdminPasswordInput = document.getElementById('newAdminPasswordInput');
+
+      // Forgot Password Outside on Login Screen
+      const openForgotPwBtn = document.getElementById('openForgotPwBtn');
+      const forgotPasswordPanel = document.getElementById('forgotPasswordPanel');
+      const closeForgotPwBtn = document.getElementById('closeForgotPwBtn');
+      const sendResetCodeBtn = document.getElementById('sendResetCodeBtn');
+      const verifyCodeGroup = document.getElementById('verifyCodeGroup');
+      const emailOtpInput = document.getElementById('emailOtpInput');
+      const resetNewPasswordInput = document.getElementById('resetNewPasswordInput');
+      const confirmResetPasswordBtn = document.getElementById('confirmResetPasswordBtn');
+
+      function updateNavCounters() {
+        let count = 0;
+        try {
+          const raw = localStorage.getItem('vrajix_enquiries_db_v1');
+          if (raw) count = JSON.parse(raw).length;
+        } catch(e) {}
+        const navB = document.getElementById('navEnquiryBadge');
+        const mobB = document.getElementById('mobileNavBadge');
+        const drB = document.getElementById('drawerRecordCount');
+        if (navB) navB.textContent = count;
+        if (mobB) mobB.textContent = count;
+        if (drB) drB.textContent = count;
+      }
+      updateNavCounters();
 
       function openDrawer() {
         enquiriesDrawer.classList.remove('translate-x-full');
@@ -1818,6 +1781,7 @@ img { max-width: 100%; height: auto; }
         if (adminDashboardView) adminDashboardView.classList.add('hidden');
         if (adminPasswordInput) adminPasswordInput.value = '';
         if (adminLoginError) adminLoginError.classList.add('hidden');
+        if (forgotPasswordPanel) forgotPasswordPanel.classList.add('hidden');
       }
 
       function showDashboardView(username) {
@@ -1826,12 +1790,11 @@ img { max-width: 100%; height: auto; }
         if (adminSessionUsername) adminSessionUsername.textContent = username || 'admin';
       }
 
-      // Password Verification Logic:
-      // If a custom password has been set, ONLY that custom password works. 9999 is NEVER accepted!
+      // STRICT PASSWORD VERIFICATION
+      // 9999 is NEVER accepted under any circumstance!
       function verifyAdminPassword(inputPassword) {
         const cleaned = (inputPassword || '').trim();
-        // 9999 is STRICTLY BLOCKED 100%!
-        if (cleaned === '9999') return false;
+        if (cleaned === '9999') return false; // 9999 is STRICTLY BLOCKED!
 
         let customPw = null;
         try {
@@ -1843,11 +1806,11 @@ img { max-width: 100%; height: auto; }
           return cleaned === customPw.trim();
         }
 
-        // Default initial password before admin changes it
+        // Default initial password before admin sets their own
         return cleaned === 'admin';
       }
 
-      // Change Password Handler
+      // Change Password Inside Dashboard
       function executePasswordChange() {
         const newPw = newAdminPasswordInput.value.trim();
         if (!newPw || newPw.length < 3) {
@@ -1856,7 +1819,7 @@ img { max-width: 100%; height: auto; }
         }
         try {
           localStorage.setItem('vrajix_admin_custom_password', newPw);
-          showToast('Admin password changed successfully! 9999 is now blocked.');
+          showToast('Admin password updated successfully! 9999 is blocked.');
           if (changePasswordBox) changePasswordBox.classList.add('hidden');
           newAdminPasswordInput.value = '';
         } catch(e) {
@@ -1886,19 +1849,12 @@ img { max-width: 100%; height: auto; }
             e.preventDefault();
             executePasswordChange();
           }
+        });
+      }
 
-      // FORGOT PASSWORD HANDLER (OTP to vrajix11@gmail.com)
-      const openForgotPwBtn = document.getElementById('openForgotPwBtn');
-      const forgotPasswordPanel = document.getElementById('forgotPasswordPanel');
-      const closeForgotPwBtn = document.getElementById('closeForgotPwBtn');
-      const sendResetCodeBtn = document.getElementById('sendResetCodeBtn');
-      const verifyCodeGroup = document.getElementById('verifyCodeGroup');
-      const emailOtpInput = document.getElementById('emailOtpInput');
-      const resetNewPasswordInput = document.getElementById('resetNewPasswordInput');
-      const confirmResetPasswordBtn = document.getElementById('confirmResetPasswordBtn');
-      let generatedResetCode = null;
-      let resetCodeExpires = 0;
-
+      // ======================================================================
+      // FORGOT PASSWORD VIA EMAIL (DISPATCHES OTP CODE DIRECTLY TO vrajix11@gmail.com)
+      // ======================================================================
       if (openForgotPwBtn && forgotPasswordPanel) {
         openForgotPwBtn.addEventListener('click', () => {
           forgotPasswordPanel.classList.toggle('hidden');
@@ -1916,6 +1872,7 @@ img { max-width: 100%; height: auto; }
         sendResetCodeBtn.addEventListener('click', () => {
           sendResetCodeBtn.disabled = true;
           sendResetCodeBtn.textContent = 'Dispatching to vrajix11@gmail.com...';
+
           generatedResetCode = String(Math.floor(100000 + Math.random() * 900000));
           resetCodeExpires = Date.now() + 15 * 60 * 1000;
 
@@ -1928,7 +1885,7 @@ img { max-width: 100%; height: auto; }
               from_name: 'VRAJIX Security Service',
               name: 'VRAJIX Studio Security',
               email: 'vrajix11@gmail.com',
-              message: `Your VRAJIX Admin Password Reset Security Code is: ${generatedResetCode}\n\nEnter this 6-digit code on your website admin drawer along with your new password. This code expires in 15 minutes.`
+              message: `Your VRAJIX Admin Password Reset Security Code is: ${generatedResetCode}\\n\\nEnter this 6-digit code on your website to set your new secret password. This code expires in 15 minutes.`
             })
           }).then(res => res.json()).then(data => {
             showToast('Security code sent to vrajix11@gmail.com! Check Inbox & Spam.');
@@ -1936,7 +1893,7 @@ img { max-width: 100%; height: auto; }
             if (verifyCodeGroup) verifyCodeGroup.classList.remove('hidden');
             if (emailOtpInput) emailOtpInput.focus();
           }).catch(err => {
-            showToast('Failed to dispatch code. Check internet connection.', 'error');
+            showToast('Failed to dispatch code. Please check internet connection.', 'error');
             sendResetCodeBtn.disabled = false;
             sendResetCodeBtn.textContent = 'Send Reset Code to vrajix11@gmail.com';
           });
@@ -1975,9 +1932,6 @@ img { max-width: 100%; height: auto; }
           } catch(e) {
             showToast('Unable to save password in browser.', 'error');
           }
-        });
-      }
-
         });
       }
 
@@ -2030,6 +1984,7 @@ img { max-width: 100%; height: auto; }
         } catch(e) {}
         cachedLeads = records;
         renderLeadsList(cachedLeads);
+        updateNavCounters();
       }
 
       function renderLeadsList(leads) {
@@ -2059,7 +2014,7 @@ img { max-width: 100%; height: auto; }
         }
 
         enquiriesListContainer.innerHTML = '';
-        filtered.slice().reverse().forEach((lead, idx) => {
+        filtered.slice().reverse().forEach((lead) => {
           const card = document.createElement('div');
           card.className = 'p-4 rounded-xl border border-brand-borderLight bg-slate-50 space-y-2 text-xs hover:border-brand-periwinkle transition-colors';
           
@@ -2089,15 +2044,22 @@ img { max-width: 100%; height: auto; }
       if (adminSearchInput) adminSearchInput.addEventListener('input', () => renderLeadsList(cachedLeads));
       if (adminStatusFilter) adminStatusFilter.addEventListener('change', () => renderLeadsList(cachedLeads));
 
-      // CSV Export
+      // CSV EXPORT (Downloads Excel-compatible file immediately)
       if (exportCsvBtn) {
         exportCsvBtn.addEventListener('click', () => {
-          if (!cachedLeads || cachedLeads.length === 0) {
-            showToast('No enquiries to export.', 'error');
+          let records = [];
+          try {
+            const raw = localStorage.getItem('vrajix_enquiries_db_v1');
+            if (raw) records = JSON.parse(raw);
+          } catch(e) {}
+
+          if (!records || records.length === 0) {
+            showToast('No enquiries to export yet.', 'error');
             return;
           }
+
           const headers = ['RefID', 'Name', 'Email', 'Phone', 'Service', 'Budget', 'Timeline', 'Requirements', 'Date'];
-          const rows = cachedLeads.map(l => [
+          const rows = records.map(l => [
             `"${l.refId || ''}"`,
             `"${(l.name || '').replace(/"/g, '""')}"`,
             `"${l.email || ''}"`,
@@ -2108,7 +2070,8 @@ img { max-width: 100%; height: auto; }
             `"${(l.details || '').replace(/"/g, '""')}"`,
             `"${l.timestamp || ''}"`
           ]);
-          const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(r => r.join(','))].join('\r\n');
+
+          const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(r => r.join(','))].join('\\r\\n');
           const encodedUri = encodeURI(csvContent);
           const link = document.createElement('a');
           link.setAttribute('href', encodedUri);
@@ -2116,11 +2079,11 @@ img { max-width: 100%; height: auto; }
           document.body.appendChild(link);
           link.click();
           link.remove();
-          showToast('Enquiries exported to CSV.');
+          showToast('Enquiries exported to CSV successfully!');
         });
       }
 
-      // Clear Records Button (Two-click confirmation, no alert/confirm)
+      // CLEAR ALL (Two-click safe confirmation)
       let clearConfirmPending = false;
       if (clearRecordsBtn) {
         clearRecordsBtn.addEventListener('click', () => {
@@ -2139,9 +2102,10 @@ img { max-width: 100%; height: auto; }
             try { localStorage.removeItem('vrajix_enquiries_db_v1'); } catch(e) {}
             cachedLeads = [];
             renderLeadsList([]);
+            updateNavCounters();
             clearRecordsBtn.textContent = 'Clear All';
             clearRecordsBtn.className = 'px-2.5 py-1 rounded-lg bg-red-50 hover:bg-red-100 text-red-600 font-semibold transition-colors';
-            showToast('Lead records cleared.');
+            showToast('All stored records cleared.');
           }
         });
       }
@@ -2150,7 +2114,7 @@ img { max-width: 100%; height: auto; }
       const phoneInput = document.getElementById('clientPhone');
       if (phoneInput) {
         phoneInput.addEventListener('input', () => {
-          phoneInput.value = phoneInput.value.replace(/\D/g, '').slice(0, 10);
+          phoneInput.value = phoneInput.value.replace(/\\D/g, '').slice(0, 10);
         });
       }
 
@@ -2165,7 +2129,7 @@ img { max-width: 100%; height: auto; }
       // ======================================================================
       // MULTI-ROUTE REDUNDANT LEAD DISPATCH SYSTEM
       // Route 1: Web3Forms API
-      // Route 2: FormSubmit AJAX Fallback
+      // Route 2: FormSubmit AJAX Backup
       // Route 3: Direct WhatsApp Connect
       // ======================================================================
       const form = document.getElementById('projectEnquiryForm');
@@ -2204,13 +2168,13 @@ img { max-width: 100%; height: auto; }
             hasError = true;
           }
 
-          const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/;
           if (!emailVal || !emailRegex.test(emailVal)) {
             document.getElementById('emailError').classList.remove('hidden');
             hasError = true;
           }
 
-          if (!phoneVal || !/^[6-9]\d{9}$/.test(phoneVal)) {
+          if (!phoneVal || !/^[6-9]\\d{9}$/.test(phoneVal)) {
             document.getElementById('phoneError').textContent = 'Please enter a valid 10-digit mobile number.';
             document.getElementById('phoneError').classList.remove('hidden');
             hasError = true;
@@ -2257,48 +2221,10 @@ img { max-width: 100%; height: auto; }
             if (raw) existing = JSON.parse(raw);
             existing.push(lastSubmittedRecord);
             localStorage.setItem('vrajix_enquiries_db_v1', JSON.stringify(existing));
+            updateNavCounters();
           } catch(err) {}
-          // 1. ROUTE 1: Web3Forms API
-          fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: JSON.stringify({
-              access_key: '732d8f35-74ee-44f2-bf2b-4079e4a1e26e',
-              subject: `New VRAJIX Project Lead [${refId}]: ${nameVal} - ${serviceVal}`,
-              from_name: 'VRAJIX Studio Website',
-              name: nameVal,
-              email: emailVal,
-              phone: phoneVal,
-              service: serviceVal,
-              budget: budgetVal,
-              timeline: timelineVal,
-              message: `Client: ${nameVal}\nPhone: ${phoneVal}\nEmail: ${emailVal}\nService: ${serviceVal}\nBudget: ${budgetVal}\nTimeline: ${timelineVal}\n\nRequirements:\n${detailsVal}`,
-              'Reference ID': refId
-            })
-          }).then(r => r.json()).then(data => {
-            console.log('Web3Forms dispatch response:', data);
-          }).catch(e => console.warn('Web3Forms note:', e));
 
-          // 2. ROUTE 2: FormSubmit Redundant Fail-Safe
-          fetch('https://formsubmit.co/ajax/vrajix11@gmail.com', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-            body: JSON.stringify({
-              _subject: `New VRAJIX Project Lead [${refId}]: ${nameVal}`,
-              'Client Name': nameVal,
-              'Mobile Number': phoneVal,
-              'Email Address': emailVal,
-              'Required Service': serviceVal,
-              'Budget Range': budgetVal,
-              'Timeline': timelineVal,
-              'Requirements': detailsVal,
-              _template: 'table',
-              _captcha: 'false'
-            })
-          }).catch(() => {});
-
-
-          // 2. ROUTE 1: Dispatch to Web3Forms (with all standard & custom fields)
+          // 2. ROUTE 1: Dispatch to Web3Forms API
           const web3Promise = fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -2312,7 +2238,7 @@ img { max-width: 100%; height: auto; }
               service: serviceVal,
               budget: budgetVal,
               timeline: timelineVal,
-              message: `Client: ${nameVal}\nPhone: ${phoneVal}\nEmail: ${emailVal}\nService: ${serviceVal}\nBudget: ${budgetVal}\nTimeline: ${timelineVal}\n\nRequirements:\n${detailsVal}`,
+              message: `Client: ${nameVal}\\nPhone: ${phoneVal}\\nEmail: ${emailVal}\\nService: ${serviceVal}\\nBudget: ${budgetVal}\\nTimeline: ${timelineVal}\\n\\nRequirements:\\n${detailsVal}`,
               'Reference ID': refId
             })
           }).then(r => r.json()).catch(() => ({ success: false }));
@@ -2335,8 +2261,7 @@ img { max-width: 100%; height: auto; }
             })
           }).catch(() => {});
 
-          // Complete in parallel
-          Promise.allSettled([web3Promise, formSubmitPromise]).then(([wRes]) => {
+          Promise.allSettled([web3Promise, formSubmitPromise]).then(() => {
             console.log('Lead multi-route dispatch completed.');
           });
 
@@ -2368,7 +2293,7 @@ img { max-width: 100%; height: auto; }
         sendCopyWhatsApp.addEventListener('click', () => {
           if (!lastSubmittedRecord) return;
           const msg = encodeURIComponent(
-            `Hi VRAJIX Team (Tarun & Himesh),\nI have submitted a project enquiry on your website.\n\n*Reference ID:* ${lastSubmittedRecord.refId}\n*Name:* ${lastSubmittedRecord.name}\n*Email:* ${lastSubmittedRecord.email}\n*Service:* ${lastSubmittedRecord.service}\n*Budget:* ${lastSubmittedRecord.budget}\n*Timeline:* ${lastSubmittedRecord.timeline}\n*Requirements:* ${lastSubmittedRecord.details}`
+            `Hi VRAJIX Team (Tarun & Himesh),\\nI have submitted a project enquiry on your website.\\n\\n*Reference ID:* ${lastSubmittedRecord.refId}\\n*Name:* ${lastSubmittedRecord.name}\\n*Email:* ${lastSubmittedRecord.email}\\n*Service:* ${lastSubmittedRecord.service}\\n*Budget:* ${lastSubmittedRecord.budget}\\n*Timeline:* ${lastSubmittedRecord.timeline}\\n*Requirements:* ${lastSubmittedRecord.details}`
           );
           window.open(`https://wa.me/917983129724?text=${msg}`, '_blank');
         });
@@ -2443,8 +2368,7 @@ img { max-width: 100%; height: auto; }
           const serviceName = btn.getAttribute('data-service');
           const dropdown = document.getElementById('requiredService');
           if (dropdown) dropdown.value = serviceName;
-          const enquirySection = document.getElementById('enquiry');
-          if (enquirySection) enquirySection.scrollIntoView({ behavior: 'smooth' });
+          scrollToEnquiry();
           showToast(`Service "${serviceName}" selected. Complete your brief below.`);
         });
       });
