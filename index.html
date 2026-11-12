@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.web3forms.com https://formsubmit.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com https://formsubmit.co;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>VRAJIX — Independent Digital Studio | High-Impact Web &amp; Mobile Engineering</title>
-  <meta name="description"
-    content="VRAJIX is a modern creative technology studio delivering high-performance websites, custom mobile applications, and data-driven digital growth. Founded by Tarun Sharma (Founder) &amp; Himesh Sharma (Co-Founder).">
+  <meta name="description" content="VRAJIX is a modern creative technology studio delivering high-performance websites, custom mobile applications, and data-driven digital growth. Founded by Tarun Sharma (Founder) &amp; Himesh Sharma (Co-Founder).">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://vrajix.pages.dev/">
 
@@ -14,8 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vrajix.pages.dev/">
   <meta property="og:title" content="VRAJIX — Independent Digital Studio">
-  <meta property="og:description"
-    content="High-impact web and mobile engineering with direct IP code ownership. Led by Tarun Sharma &amp; Himesh Sharma.">
+  <meta property="og:description" content="High-impact web and mobile engineering with direct IP code ownership. Led by Tarun Sharma &amp; Himesh Sharma.">
   <meta property="og:site_name" content="VRAJIX">
 
   <!-- Twitter Card -->
@@ -56,1594 +55,467 @@
   <!-- Non-blocking Google Fonts (Plus Jakarta Sans & Space Grotesk) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
-    media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
   <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
   </noscript>
 
   <!-- Complete Inlined Production Design System (Mobile & Laptop 100% Responsive) -->
   <style id="vrajix-production-styles">
-    :root {
-      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-      --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
-      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      --color-brand-charcoal: #0F172A;
-      --color-brand-dark: #18181B;
-      --color-brand-offwhite: #F8F9FA;
-      --color-brand-periwinkle: #6366F1;
-      --color-brand-periwinkleLight: #A5B4FC;
-      --color-brand-lime: #84CC16;
-      --color-brand-limeHover: #65A30D;
-      --color-brand-limeLight: #D9F99D;
-      --color-brand-softGray: #64748B;
-      --color-brand-borderLight: #E2E8F0;
-    }
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --color-brand-charcoal: #0F172A;
+  --color-brand-dark: #18181B;
+  --color-brand-offwhite: #F8F9FA;
+  --color-brand-periwinkle: #6366F1;
+  --color-brand-periwinkleLight: #A5B4FC;
+  --color-brand-lime: #84CC16;
+  --color-brand-limeHover: #65A30D;
+  --color-brand-limeLight: #D9F99D;
+  --color-brand-softGray: #64748B;
+  --color-brand-borderLight: #E2E8F0;
+}
+*, ::before, ::after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #E2E8F0; }
+html { line-height: 1.5; -webkit-text-size-adjust: 100%; font-family: var(--font-sans); scroll-behavior: smooth; }
+body { margin: 0; line-height: inherit; background-color: var(--color-brand-offwhite); color: var(--color-brand-charcoal); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; margin: 0; }
+a { color: inherit; text-decoration: inherit; }
+b, strong { font-weight: bolder; }
+p, ul, ol { margin: 0; padding: 0; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; font-weight: inherit; line-height: inherit; color: inherit; margin: 0; padding: 0; }
+button, select { text-transform: none; }
+button, [type='button'], [type='submit'] { -webkit-appearance: button; background-color: transparent; }
+input::placeholder, textarea::placeholder { opacity: 1; color: #94A3B8; }
+button, [role="button"] { cursor: pointer; }
+img, svg, canvas { display: block; vertical-align: middle; }
+img { max-width: 100%; height: auto; }
+[hidden] { display: none !important; }
+
+/* Display & Layout */
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline-flex { display: inline-flex; }
+.flex { display: flex; }
+.grid { display: grid; }
+.hidden { display: none; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.sticky { position: sticky; }
+.inset-0 { inset: 0px; }
+.inset-y-0 { top: 0px; bottom: 0px; }
+.top-0 { top: 0px; }
+.top-2 { top: 0.5rem; }
+.top-4 { top: 1rem; }
+.bottom-2 { bottom: 0.5rem; }
+.bottom-3 { bottom: 0.75rem; }
+.bottom-4 { bottom: 1rem; }
+.left-0 { left: 0px; }
+.left-3 { left: 0.75rem; }
+.left-4 { left: 1rem; }
+.right-0 { right: 0px; }
+.right-3 { right: 0.75rem; }
+.right-4 { right: 1rem; }
+.z-10 { z-index: 10; }
+.z-40 { z-index: 40; }
+.z-50 { z-index: 50; }
+
+/* Flex & Grid */
+.flex-1 { flex: 1 1 0%; }
+.flex-col { flex-direction: column; }
+.flex-grow { flex-grow: 1; }
+.flex-wrap { flex-wrap: wrap; }
+.shrink-0 { flex-shrink: 0; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-start { justify-content: flex-start; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.gap-1 { gap: 0.25rem; }
+.gap-1\.5 { gap: 0.375rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-2\.5 { gap: 0.625rem; }
+.gap-3 { gap: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.gap-5 { gap: 1.25rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+.gap-10 { gap: 2.5rem; }
+.gap-12 { gap: 3rem; }
+.space-y-0\.5 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.125rem; }
+.space-y-1 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.25rem; }
+.space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; }
+.space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem; }
+.space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
+.space-y-5 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.25rem; }
+.space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.5rem; }
+
+/* Dimensions */
+.w-1\.5 { width: 0.375rem; }
+.w-2 { width: 0.5rem; }
+.w-2\.5 { width: 0.625rem; }
+.w-3 { width: 0.75rem; }
+.w-3\.5 { width: 0.875rem; }
+.w-4 { width: 1rem; }
+.w-5 { width: 1.25rem; }
+.w-6 { width: 1.5rem; }
+.w-8 { width: 2rem; }
+.w-10 { width: 2.5rem; }
+.w-12 { width: 3rem; }
+.w-full { width: 100%; }
+.h-1\.5 { height: 0.375rem; }
+.h-2 { height: 0.5rem; }
+.h-2\.5 { height: 0.625rem; }
+.h-3 { height: 0.75rem; }
+.h-4 { height: 1rem; }
+.h-5 { height: 1.25rem; }
+.h-6 { height: 1.5rem; }
+.h-8 { height: 2rem; }
+.h-10 { height: 2.5rem; }
+.h-12 { height: 3rem; }
+.h-20 { height: 5rem; }
+.h-48 { height: 12rem; }
+.h-full { height: 100%; }
+.max-w-xs { max-width: 20rem; }
+.max-w-sm { max-width: 24rem; }
+.max-w-md { max-width: 28rem; }
+.max-w-xl { max-width: 36rem; }
+.max-w-2xl { max-width: 42rem; }
+.max-w-3xl { max-width: 48rem; }
+.max-w-4xl { max-width: 56rem; }
+.max-w-5xl { max-width: 64rem; }
+.max-w-7xl { max-width: 80rem; }
+.max-h-\[90vh\] { max-height: 90vh; }
+.min-h-screen { min-height: 100vh; }
+.aspect-square { aspect-ratio: 1 / 1; }
+
+/* Spacing */
+.m-0 { margin: 0px; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.ml-auto { margin-left: auto; }
+.mr-1 { margin-right: 0.25rem; }
+.mt-0\.5 { margin-top: 0.125rem; }
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 0.75rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mt-8 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 0.75rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-12 { margin-bottom: 3rem; }
+.mb-16 { margin-bottom: 4rem; }
+.-mt-1 { margin-top: -0.25rem; }
+
+.p-1 { padding: 0.25rem; }
+.p-1\.5 { padding: 0.375rem; }
+.p-2 { padding: 0.5rem; }
+.p-2\.5 { padding: 0.625rem; }
+.p-3 { padding: 0.75rem; }
+.p-4 { padding: 1rem; }
+.p-5 { padding: 1.25rem; }
+.p-6 { padding: 1.5rem; }
+.p-8 { padding: 2rem; }
+.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+.px-3\.5 { padding-left: 0.875rem; padding-right: 0.875rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-7 { padding-left: 1.75rem; padding-right: 1.75rem; }
+.px-8 { padding-left: 2rem; padding-right: 2rem; }
+.py-0\.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
+.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-1\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-2\.5 { padding-top: 0.625rem; padding-bottom: 0.625rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+.pt-0 { padding-top: 0px; }
+.pt-1 { padding-top: 0.25rem; }
+.pt-2 { padding-top: 0.5rem; }
+.pt-3 { padding-top: 0.75rem; }
+.pt-4 { padding-top: 1rem; }
+.pt-6 { padding-top: 1.5rem; }
+.pt-8 { padding-top: 2rem; }
+.pt-28 { padding-top: 7rem; }
+.pb-2 { padding-bottom: 0.5rem; }
+.pb-3 { padding-bottom: 0.75rem; }
+.pb-4 { padding-bottom: 1rem; }
+.pb-6 { padding-bottom: 1.5rem; }
+.pb-12 { padding-bottom: 3rem; }
+.pb-20 { padding-bottom: 5rem; }
+.pr-3 { padding-right: 0.75rem; }
+.pl-8 { padding-left: 2rem; }
+
+/* Typography */
+.font-sans { font-family: var(--font-sans); }
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+.text-\[10px\] { font-size: 10px; line-height: 14px; }
+.text-\[11px\] { font-size: 11px; line-height: 16px; }
+.text-xs { font-size: 0.75rem; line-height: 1rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.uppercase { text-transform: uppercase; }
+.italic { font-style: italic; }
+.tracking-tighter { letter-spacing: -0.05em; }
+.tracking-tight { letter-spacing: -0.025em; }
+.tracking-wide { letter-spacing: 0.025em; }
+.tracking-wider { letter-spacing: 0.05em; }
+.tracking-widest { letter-spacing: 0.1em; }
+.leading-tight { line-height: 1.25; }
+.leading-relaxed { line-height: 1.625; }
+.underline { text-decoration-line: underline; }
+.underline-offset-8 { text-underline-offset: 8px; }
+.decoration-4 { text-decoration-thickness: 4px; }
+.decoration-brand-lime { text-decoration-color: var(--color-brand-lime); }
+.line-clamp-2 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.line-clamp-3 { overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+
+/* Colors */
+.text-white { color: #ffffff; }
+.text-white\/80 { color: rgba(255, 255, 255, 0.8); }
+.text-brand-charcoal { color: var(--color-brand-charcoal); }
+.text-brand-lime { color: var(--color-brand-lime); }
+.text-brand-limeHover { color: var(--color-brand-limeHover); }
+.text-brand-periwinkle { color: var(--color-brand-periwinkle); }
+.text-brand-periwinkleLight { color: var(--color-brand-periwinkleLight); }
+.text-brand-softGray { color: var(--color-brand-softGray); }
+.text-slate-300 { color: #cbd5e1; }
+.text-slate-400 { color: #94a3b8; }
+.text-slate-500 { color: #64748b; }
+.text-emerald-800 { color: #065f46; }
+.text-emerald-950 { color: #022c22; }
+.text-red-500 { color: #ef4444; }
+.text-red-600 { color: #dc2626; }
+
+.bg-white { background-color: #ffffff; }
+.bg-transparent { background-color: transparent; }
+.bg-black { background-color: #000000; }
+.bg-black\/60 { background-color: rgba(0, 0, 0, 0.6); }
+.bg-brand-charcoal { background-color: var(--color-brand-charcoal); }
+.bg-brand-charcoal\/80 { background-color: rgba(15, 23, 42, 0.8); }
+.bg-brand-charcoal\/90 { background-color: rgba(15, 23, 42, 0.9); }
+.bg-brand-offwhite { background-color: var(--color-brand-offwhite); }
+.bg-brand-lime { background-color: var(--color-brand-lime); }
+.bg-brand-limeLight { background-color: var(--color-brand-limeLight); }
+.bg-brand-periwinkle { background-color: var(--color-brand-periwinkle); }
+.bg-purple-500 { background-color: #a855f7; }
+.bg-slate-50 { background-color: #f8fafc; }
+.bg-slate-100 { background-color: #f1f5f9; }
+.bg-slate-200 { background-color: #e2e8f0; }
+.bg-slate-800 { background-color: #1e293b; }
+.bg-slate-900 { background-color: #0f172a; }
+.bg-emerald-50 { background-color: #ecfdf5; }
+.bg-emerald-100 { background-color: #d1fae5; }
+.bg-emerald-500 { background-color: #10b981; }
+.bg-emerald-600 { background-color: #059669; }
+.bg-red-50 { background-color: #fef2f2; }
+
+.bg-gradient-to-t { background-image: linear-gradient(to top, var(--tw-gradient-stops, transparent, transparent)); }
+.bg-gradient-to-br { background-image: linear-gradient(to bottom right, var(--tw-gradient-stops, transparent, transparent)); }
+.from-brand-charcoal\/80 { --tw-gradient-from: rgba(15, 23, 42, 0.8); --tw-gradient-to: rgba(15, 23, 42, 0); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+.from-slate-900 { --tw-gradient-from: #0f172a; --tw-gradient-to: rgba(15, 23, 42, 0); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+.via-transparent { --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to); }
+.to-transparent { --tw-gradient-to: transparent; }
+.to-indigo-950 { --tw-gradient-to: #1e1b4b; }
+.to-emerald-950 { --tw-gradient-to: #022c22; }
+.to-brand-charcoal { --tw-gradient-to: #0F172A; }
+
+/* Borders & Shadows */
+.border { border-width: 1px; }
+.border-b { border-bottom-width: 1px; }
+.border-t { border-top-width: 1px; }
+.border-l { border-left-width: 1px; }
+.border-brand-borderLight { border-color: var(--color-brand-borderLight); }
+.border-brand-lime { border-color: var(--color-brand-lime); }
+.border-slate-200 { border-color: #e2e8f0; }
+.border-slate-800 { border-color: #1e293b; }
+.border-emerald-200 { border-color: #a7f3d0; }
+.border-emerald-300 { border-color: #6ee7b7; }
+.border-red-200 { border-color: #fecaca; }
+.border-white\/10 { border-color: rgba(255, 255, 255, 0.1); }
+.border-white\/20 { border-color: rgba(255, 255, 255, 0.2); }
+
+.rounded { border-radius: 0.25rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.rounded-xl { border-radius: 0.75rem; }
+.rounded-2xl { border-radius: 1rem; }
+.rounded-3xl { border-radius: 1.5rem; }
+.rounded-full { border-radius: 9999px; }
+
+.shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); }
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); }
+.shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+.shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+
+.backdrop-blur-sm { backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.backdrop-blur-md { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.overflow-hidden { overflow: hidden; }
+.overflow-y-auto { overflow-y: auto; }
+.cursor-pointer { cursor: pointer; }
+.cursor-grab { cursor: grab; }
+.active\:cursor-grabbing:active { cursor: grabbing; }
+.object-cover { object-fit: cover; }
+.object-top { object-position: top; }
+
+.transform { transform: translate(var(--tw-translate-x, 0), var(--tw-translate-y, 0)) scaleX(var(--tw-scale-x, 1)) scaleY(var(--tw-scale-y, 1)); }
+.translate-x-full { transform: translateX(100%); }
+.transition-all { transition-property: all; transition-duration: 150ms; }
+.transition-colors { transition-property: color, background-color, border-color; transition-duration: 150ms; }
+.transition-transform { transition-property: transform; transition-duration: 150ms; }
+.duration-300 { transition-duration: 300ms; }
+.duration-500 { transition-duration: 500ms; }
+
+.animate-spin { animation: spin 1s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* Hover & Focus */
+.hover\:bg-black:hover { background-color: #000000; }
+.hover\:bg-slate-50:hover { background-color: #f8fafc; }
+.hover\:bg-slate-100:hover { background-color: #f1f5f9; }
+.hover\:bg-slate-200:hover { background-color: #e2e8f0; }
+.hover\:bg-red-100:hover { background-color: #fee2e2; }
+.hover\:bg-brand-limeHover:hover { background-color: var(--color-brand-limeHover); }
+.hover\:bg-emerald-700:hover { background-color: #047857; }
+.hover\:bg-indigo-600:hover { background-color: #4f46e5; }
+.hover\:text-white:hover { color: #ffffff; }
+.hover\:text-brand-charcoal:hover { color: var(--color-brand-charcoal); }
+.hover\:text-brand-periwinkle:hover { color: var(--color-brand-periwinkle); }
+.hover\:text-brand-lime:hover { color: var(--color-brand-lime); }
+.hover\:border-brand-periwinkle:hover { border-color: var(--color-brand-periwinkle); }
+.hover\:border-brand-lime:hover { border-color: var(--color-brand-lime); }
+.hover\:shadow-xl:hover { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+.hover\:scale-105:hover { transform: scale(1.05); }
+.hover\:scale-125:hover { transform: scale(1.25); }
+.hover\:underline:hover { text-decoration-line: underline; }
+.group:hover .group-hover\:scale-105 { transform: scale(1.05); }
+.group:hover .group-hover\:translate-x-1 { transform: translateX(0.25rem); }
+.group:hover .group-hover\:text-brand-periwinkle { color: var(--color-brand-periwinkle); }
+.focus\:outline-none:focus { outline: 2px solid transparent; }
+.focus\:ring-1:focus { box-shadow: 0 0 0 1px var(--color-brand-periwinkle); }
+.focus\:ring-2:focus { box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.4); }
+.active\:scale-95:active { transform: scale(0.95); }
+.active\:scale-98:active { transform: scale(0.98); }
+
+/* Responsive Breakpoints (Phone & Laptop) */
+@media (min-width: 640px) {
+  .sm\:block { display: block; }
+  .sm\:inline-block { display: inline-block; }
+  .sm\:flex-row { flex-direction: row; }
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .sm\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+  .sm\:text-5xl { font-size: 3rem; line-height: 1; }
+  .sm\:text-6xl { font-size: 3.75rem; line-height: 1; }
+}
+@media (min-width: 768px) {
+  .md\:flex { display: flex; }
+  .md\:hidden { display: none; }
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .md\:grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .md\:pt-36 { padding-top: 9rem; }
+  .md\:pb-32 { padding-bottom: 8rem; }
+  .md\:py-28 { padding-top: 7rem; padding-bottom: 7rem; }
+}
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lg\:grid-cols-12 { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .lg\:col-span-5 { grid-column: span 5 / span 5; }
+  .lg\:col-span-7 { grid-column: span 7 / span 7; }
+  .lg\:gap-8 { gap: 2rem; }
+  .lg\:gap-10 { gap: 2.5rem; }
+  .lg\:gap-12 { gap: 3rem; }
+  .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+  .lg\:p-10 { padding: 2.5rem; }
+  .lg\:text-6xl { font-size: 3.75rem; line-height: 1; }
+}
+
+.glass-nav { background: rgba(248, 249, 250, 0.94); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.grid-pattern { background-image: radial-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px); background-size: 28px 28px; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #F1F5F9; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+  
+/* Smooth Visual Polish & Crisp Clarity (Preserves Exact VRAJIX Design) */
+header, nav {
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  backdrop-filter: saturate(180%) blur(14px);
+}
+.rounded-3xl, .rounded-2xl {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.22s ease;
+}
+button, a[class*="rounded-"] {
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+input, select, textarea {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.14);
+}
+@keyframes vrajixFadeSlideIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#toastContainer > div {
+  animation: vrajixFadeSlideIn 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
 
-    *,
-    ::before,
-    ::after {
-      box-sizing: border-box;
-      border-width: 0;
-      border-style: solid;
-      border-color: #E2E8F0;
-    }
-
-    html {
-      line-height: 1.5;
-      -webkit-text-size-adjust: 100%;
-      font-family: var(--font-sans);
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      line-height: inherit;
-      background-color: var(--color-brand-offwhite);
-      color: var(--color-brand-charcoal);
-      -webkit-font-smoothing: antialiased;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-size: inherit;
-      font-weight: inherit;
-      margin: 0;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: inherit;
-    }
-
-    b,
-    strong {
-      font-weight: bolder;
-    }
-
-    p,
-    ul,
-    ol {
-      margin: 0;
-      padding: 0;
-    }
-
-    button,
-    input,
-    select,
-    textarea {
-      font-family: inherit;
-      font-size: 100%;
-      font-weight: inherit;
-      line-height: inherit;
-      color: inherit;
-      margin: 0;
-      padding: 0;
-    }
-
-    button,
-    select {
-      text-transform: none;
-    }
-
-    button,
-    [type='button'],
-    [type='submit'] {
-      -webkit-appearance: button;
-      background-color: transparent;
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      opacity: 1;
-      color: #94A3B8;
-    }
-
-    button,
-    [role="button"] {
-      cursor: pointer;
-    }
-
-    img,
-    svg,
-    canvas {
-      display: block;
-      vertical-align: middle;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    [hidden] {
-      display: none !important;
-    }
-
-    /* Display & Layout */
-    .block {
-      display: block;
-    }
-
-    .inline-block {
-      display: inline-block;
-    }
-
-    .inline-flex {
-      display: inline-flex;
-    }
-
-    .flex {
-      display: flex;
-    }
-
-    .grid {
-      display: grid;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    .relative {
-      position: relative;
-    }
-
-    .absolute {
-      position: absolute;
-    }
-
-    .fixed {
-      position: fixed;
-    }
-
-    .sticky {
-      position: sticky;
-    }
-
-    .inset-0 {
-      inset: 0px;
-    }
-
-    .inset-y-0 {
-      top: 0px;
-      bottom: 0px;
-    }
-
-    .top-0 {
-      top: 0px;
-    }
-
-    .top-2 {
-      top: 0.5rem;
-    }
-
-    .top-4 {
-      top: 1rem;
-    }
-
-    .bottom-2 {
-      bottom: 0.5rem;
-    }
-
-    .bottom-3 {
-      bottom: 0.75rem;
-    }
-
-    .bottom-4 {
-      bottom: 1rem;
-    }
-
-    .left-0 {
-      left: 0px;
-    }
-
-    .left-3 {
-      left: 0.75rem;
-    }
-
-    .left-4 {
-      left: 1rem;
-    }
-
-    .right-0 {
-      right: 0px;
-    }
-
-    .right-3 {
-      right: 0.75rem;
-    }
-
-    .right-4 {
-      right: 1rem;
-    }
-
-    .z-10 {
-      z-index: 10;
-    }
-
-    .z-40 {
-      z-index: 40;
-    }
-
-    .z-50 {
-      z-index: 50;
-    }
-
-    /* Flex & Grid */
-    .flex-1 {
-      flex: 1 1 0%;
-    }
-
-    .flex-col {
-      flex-direction: column;
-    }
-
-    .flex-grow {
-      flex-grow: 1;
-    }
-
-    .flex-wrap {
-      flex-wrap: wrap;
-    }
-
-    .shrink-0 {
-      flex-shrink: 0;
-    }
-
-    .items-center {
-      align-items: center;
-    }
-
-    .items-start {
-      align-items: flex-start;
-    }
-
-    .justify-center {
-      justify-content: center;
-    }
-
-    .justify-between {
-      justify-content: space-between;
-    }
-
-    .justify-start {
-      justify-content: flex-start;
-    }
-
-    .grid-cols-1 {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-
-    .grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .grid-cols-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .gap-1 {
-      gap: 0.25rem;
-    }
-
-    .gap-1\.5 {
-      gap: 0.375rem;
-    }
-
-    .gap-2 {
-      gap: 0.5rem;
-    }
-
-    .gap-2\.5 {
-      gap: 0.625rem;
-    }
-
-    .gap-3 {
-      gap: 0.75rem;
-    }
-
-    .gap-4 {
-      gap: 1rem;
-    }
-
-    .gap-5 {
-      gap: 1.25rem;
-    }
-
-    .gap-6 {
-      gap: 1.5rem;
-    }
-
-    .gap-8 {
-      gap: 2rem;
-    }
-
-    .gap-10 {
-      gap: 2.5rem;
-    }
-
-    .gap-12 {
-      gap: 3rem;
-    }
-
-    .space-y-0\.5> :not([hidden])~ :not([hidden]) {
-      margin-top: 0.125rem;
-    }
-
-    .space-y-1> :not([hidden])~ :not([hidden]) {
-      margin-top: 0.25rem;
-    }
-
-    .space-y-2> :not([hidden])~ :not([hidden]) {
-      margin-top: 0.5rem;
-    }
-
-    .space-y-3> :not([hidden])~ :not([hidden]) {
-      margin-top: 0.75rem;
-    }
-
-    .space-y-4> :not([hidden])~ :not([hidden]) {
-      margin-top: 1rem;
-    }
-
-    .space-y-5> :not([hidden])~ :not([hidden]) {
-      margin-top: 1.25rem;
-    }
-
-    .space-y-6> :not([hidden])~ :not([hidden]) {
-      margin-top: 1.5rem;
-    }
-
-    /* Dimensions */
-    .w-1\.5 {
-      width: 0.375rem;
-    }
-
-    .w-2 {
-      width: 0.5rem;
-    }
-
-    .w-2\.5 {
-      width: 0.625rem;
-    }
-
-    .w-3 {
-      width: 0.75rem;
-    }
-
-    .w-3\.5 {
-      width: 0.875rem;
-    }
-
-    .w-4 {
-      width: 1rem;
-    }
-
-    .w-5 {
-      width: 1.25rem;
-    }
-
-    .w-6 {
-      width: 1.5rem;
-    }
-
-    .w-8 {
-      width: 2rem;
-    }
-
-    .w-10 {
-      width: 2.5rem;
-    }
-
-    .w-12 {
-      width: 3rem;
-    }
-
-    .w-full {
-      width: 100%;
-    }
-
-    .h-1\.5 {
-      height: 0.375rem;
-    }
-
-    .h-2 {
-      height: 0.5rem;
-    }
-
-    .h-2\.5 {
-      height: 0.625rem;
-    }
-
-    .h-3 {
-      height: 0.75rem;
-    }
-
-    .h-4 {
-      height: 1rem;
-    }
-
-    .h-5 {
-      height: 1.25rem;
-    }
-
-    .h-6 {
-      height: 1.5rem;
-    }
-
-    .h-8 {
-      height: 2rem;
-    }
-
-    .h-10 {
-      height: 2.5rem;
-    }
-
-    .h-12 {
-      height: 3rem;
-    }
-
-    .h-20 {
-      height: 5rem;
-    }
-
-    .h-48 {
-      height: 12rem;
-    }
-
-    .h-full {
-      height: 100%;
-    }
-
-    .max-w-xs {
-      max-width: 20rem;
-    }
-
-    .max-w-sm {
-      max-width: 24rem;
-    }
-
-    .max-w-md {
-      max-width: 28rem;
-    }
-
-    .max-w-xl {
-      max-width: 36rem;
-    }
-
-    .max-w-2xl {
-      max-width: 42rem;
-    }
-
-    .max-w-3xl {
-      max-width: 48rem;
-    }
-
-    .max-w-4xl {
-      max-width: 56rem;
-    }
-
-    .max-w-5xl {
-      max-width: 64rem;
-    }
-
-    .max-w-7xl {
-      max-width: 80rem;
-    }
-
-    .max-h-\[90vh\] {
-      max-height: 90vh;
-    }
-
-    .min-h-screen {
-      min-height: 100vh;
-    }
-
-    .aspect-square {
-      aspect-ratio: 1 / 1;
-    }
-
-    /* Spacing */
-    .m-0 {
-      margin: 0px;
-    }
-
-    .mx-auto {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .ml-auto {
-      margin-left: auto;
-    }
-
-    .mr-1 {
-      margin-right: 0.25rem;
-    }
-
-    .mt-0\.5 {
-      margin-top: 0.125rem;
-    }
-
-    .mt-1 {
-      margin-top: 0.25rem;
-    }
-
-    .mt-2 {
-      margin-top: 0.5rem;
-    }
-
-    .mt-3 {
-      margin-top: 0.75rem;
-    }
-
-    .mt-4 {
-      margin-top: 1rem;
-    }
-
-    .mt-6 {
-      margin-top: 1.5rem;
-    }
-
-    .mt-8 {
-      margin-top: 2rem;
-    }
-
-    .mb-1 {
-      margin-bottom: 0.25rem;
-    }
-
-    .mb-2 {
-      margin-bottom: 0.5rem;
-    }
-
-    .mb-3 {
-      margin-bottom: 0.75rem;
-    }
-
-    .mb-4 {
-      margin-bottom: 1rem;
-    }
-
-    .mb-6 {
-      margin-bottom: 1.5rem;
-    }
-
-    .mb-8 {
-      margin-bottom: 2rem;
-    }
-
-    .mb-12 {
-      margin-bottom: 3rem;
-    }
-
-    .mb-16 {
-      margin-bottom: 4rem;
-    }
-
-    .-mt-1 {
-      margin-top: -0.25rem;
-    }
-
-    .p-1 {
-      padding: 0.25rem;
-    }
-
-    .p-1\.5 {
-      padding: 0.375rem;
-    }
-
-    .p-2 {
-      padding: 0.5rem;
-    }
-
-    .p-2\.5 {
-      padding: 0.625rem;
-    }
-
-    .p-3 {
-      padding: 0.75rem;
-    }
-
-    .p-4 {
-      padding: 1rem;
-    }
-
-    .p-5 {
-      padding: 1.25rem;
-    }
-
-    .p-6 {
-      padding: 1.5rem;
-    }
-
-    .p-8 {
-      padding: 2rem;
-    }
-
-    .px-2 {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-    }
-
-    .px-2\.5 {
-      padding-left: 0.625rem;
-      padding-right: 0.625rem;
-    }
-
-    .px-3 {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-    }
-
-    .px-3\.5 {
-      padding-left: 0.875rem;
-      padding-right: 0.875rem;
-    }
-
-    .px-4 {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-
-    .px-5 {
-      padding-left: 1.25rem;
-      padding-right: 1.25rem;
-    }
-
-    .px-6 {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-
-    .px-7 {
-      padding-left: 1.75rem;
-      padding-right: 1.75rem;
-    }
-
-    .px-8 {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-
-    .py-0\.5 {
-      padding-top: 0.125rem;
-      padding-bottom: 0.125rem;
-    }
-
-    .py-1 {
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-    }
-
-    .py-1\.5 {
-      padding-top: 0.375rem;
-      padding-bottom: 0.375rem;
-    }
-
-    .py-2 {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-    }
-
-    .py-2\.5 {
-      padding-top: 0.625rem;
-      padding-bottom: 0.625rem;
-    }
-
-    .py-3 {
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-    }
-
-    .py-4 {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-
-    .py-16 {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
-    }
-
-    .py-20 {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-    }
-
-    .pt-0 {
-      padding-top: 0px;
-    }
-
-    .pt-1 {
-      padding-top: 0.25rem;
-    }
-
-    .pt-2 {
-      padding-top: 0.5rem;
-    }
-
-    .pt-3 {
-      padding-top: 0.75rem;
-    }
-
-    .pt-4 {
-      padding-top: 1rem;
-    }
-
-    .pt-6 {
-      padding-top: 1.5rem;
-    }
-
-    .pt-8 {
-      padding-top: 2rem;
-    }
-
-    .pt-28 {
-      padding-top: 7rem;
-    }
-
-    .pb-2 {
-      padding-bottom: 0.5rem;
-    }
-
-    .pb-3 {
-      padding-bottom: 0.75rem;
-    }
-
-    .pb-4 {
-      padding-bottom: 1rem;
-    }
-
-    .pb-6 {
-      padding-bottom: 1.5rem;
-    }
-
-    .pb-12 {
-      padding-bottom: 3rem;
-    }
-
-    .pb-20 {
-      padding-bottom: 5rem;
-    }
-
-    .pr-3 {
-      padding-right: 0.75rem;
-    }
-
-    .pl-8 {
-      padding-left: 2rem;
-    }
-
-    /* Typography */
-    .font-sans {
-      font-family: var(--font-sans);
-    }
-
-    .font-display {
-      font-family: var(--font-display);
-    }
-
-    .font-mono {
-      font-family: var(--font-mono);
-    }
-
-    .text-\[10px\] {
-      font-size: 10px;
-      line-height: 14px;
-    }
-
-    .text-\[11px\] {
-      font-size: 11px;
-      line-height: 16px;
-    }
-
-    .text-xs {
-      font-size: 0.75rem;
-      line-height: 1rem;
-    }
-
-    .text-sm {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-    }
-
-    .text-base {
-      font-size: 1rem;
-      line-height: 1.5rem;
-    }
-
-    .text-lg {
-      font-size: 1.125rem;
-      line-height: 1.75rem;
-    }
-
-    .text-xl {
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-    }
-
-    .text-2xl {
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
-
-    .text-3xl {
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-    }
-
-    .text-4xl {
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-    }
-
-    .font-normal {
-      font-weight: 400;
-    }
-
-    .font-medium {
-      font-weight: 500;
-    }
-
-    .font-semibold {
-      font-weight: 600;
-    }
-
-    .font-bold {
-      font-weight: 700;
-    }
-
-    .font-extrabold {
-      font-weight: 800;
-    }
-
-    .font-black {
-      font-weight: 900;
-    }
-
-    .text-left {
-      text-align: left;
-    }
-
-    .text-center {
-      text-align: center;
-    }
-
-    .text-right {
-      text-align: right;
-    }
-
-    .uppercase {
-      text-transform: uppercase;
-    }
-
-    .italic {
-      font-style: italic;
-    }
-
-    .tracking-tighter {
-      letter-spacing: -0.05em;
-    }
-
-    .tracking-tight {
-      letter-spacing: -0.025em;
-    }
-
-    .tracking-wide {
-      letter-spacing: 0.025em;
-    }
-
-    .tracking-wider {
-      letter-spacing: 0.05em;
-    }
-
-    .tracking-widest {
-      letter-spacing: 0.1em;
-    }
-
-    .leading-tight {
-      line-height: 1.25;
-    }
-
-    .leading-relaxed {
-      line-height: 1.625;
-    }
-
-    .underline {
-      text-decoration-line: underline;
-    }
-
-    .underline-offset-8 {
-      text-underline-offset: 8px;
-    }
-
-    .decoration-4 {
-      text-decoration-thickness: 4px;
-    }
-
-    .decoration-brand-lime {
-      text-decoration-color: var(--color-brand-lime);
-    }
-
-    .line-clamp-2 {
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
-    }
-
-    .line-clamp-3 {
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
-    }
-
-    /* Colors */
-    .text-white {
-      color: #ffffff;
-    }
-
-    .text-white\/80 {
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-    .text-brand-charcoal {
-      color: var(--color-brand-charcoal);
-    }
-
-    .text-brand-lime {
-      color: var(--color-brand-lime);
-    }
-
-    .text-brand-limeHover {
-      color: var(--color-brand-limeHover);
-    }
-
-    .text-brand-periwinkle {
-      color: var(--color-brand-periwinkle);
-    }
-
-    .text-brand-periwinkleLight {
-      color: var(--color-brand-periwinkleLight);
-    }
-
-    .text-brand-softGray {
-      color: var(--color-brand-softGray);
-    }
-
-    .text-slate-300 {
-      color: #cbd5e1;
-    }
-
-    .text-slate-400 {
-      color: #94a3b8;
-    }
-
-    .text-slate-500 {
-      color: #64748b;
-    }
-
-    .text-emerald-800 {
-      color: #065f46;
-    }
-
-    .text-emerald-950 {
-      color: #022c22;
-    }
-
-    .text-red-500 {
-      color: #ef4444;
-    }
-
-    .text-red-600 {
-      color: #dc2626;
-    }
-
-    .bg-white {
-      background-color: #ffffff;
-    }
-
-    .bg-transparent {
-      background-color: transparent;
-    }
-
-    .bg-black {
-      background-color: #000000;
-    }
-
-    .bg-black\/60 {
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-
-    .bg-brand-charcoal {
-      background-color: var(--color-brand-charcoal);
-    }
-
-    .bg-brand-charcoal\/80 {
-      background-color: rgba(15, 23, 42, 0.8);
-    }
-
-    .bg-brand-charcoal\/90 {
-      background-color: rgba(15, 23, 42, 0.9);
-    }
-
-    .bg-brand-offwhite {
-      background-color: var(--color-brand-offwhite);
-    }
-
-    .bg-brand-lime {
-      background-color: var(--color-brand-lime);
-    }
-
-    .bg-brand-limeLight {
-      background-color: var(--color-brand-limeLight);
-    }
-
-    .bg-brand-periwinkle {
-      background-color: var(--color-brand-periwinkle);
-    }
-
-    .bg-purple-500 {
-      background-color: #a855f7;
-    }
-
-    .bg-slate-50 {
-      background-color: #f8fafc;
-    }
-
-    .bg-slate-100 {
-      background-color: #f1f5f9;
-    }
-
-    .bg-slate-200 {
-      background-color: #e2e8f0;
-    }
-
-    .bg-slate-800 {
-      background-color: #1e293b;
-    }
-
-    .bg-slate-900 {
-      background-color: #0f172a;
-    }
-
-    .bg-emerald-50 {
-      background-color: #ecfdf5;
-    }
-
-    .bg-emerald-100 {
-      background-color: #d1fae5;
-    }
-
-    .bg-emerald-500 {
-      background-color: #10b981;
-    }
-
-    .bg-emerald-600 {
-      background-color: #059669;
-    }
-
-    .bg-red-50 {
-      background-color: #fef2f2;
-    }
-
-    .bg-gradient-to-t {
-      background-image: linear-gradient(to top, var(--tw-gradient-stops, transparent, transparent));
-    }
-
-    .bg-gradient-to-br {
-      background-image: linear-gradient(to bottom right, var(--tw-gradient-stops, transparent, transparent));
-    }
-
-    .from-brand-charcoal\/80 {
-      --tw-gradient-from: rgba(15, 23, 42, 0.8);
-      --tw-gradient-to: rgba(15, 23, 42, 0);
-      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    }
-
-    .from-slate-900 {
-      --tw-gradient-from: #0f172a;
-      --tw-gradient-to: rgba(15, 23, 42, 0);
-      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    }
-
-    .via-transparent {
-      --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to);
-    }
-
-    .to-transparent {
-      --tw-gradient-to: transparent;
-    }
-
-    .to-indigo-950 {
-      --tw-gradient-to: #1e1b4b;
-    }
-
-    .to-emerald-950 {
-      --tw-gradient-to: #022c22;
-    }
-
-    .to-brand-charcoal {
-      --tw-gradient-to: #0F172A;
-    }
-
-    /* Borders & Shadows */
-    .border {
-      border-width: 1px;
-    }
-
-    .border-b {
-      border-bottom-width: 1px;
-    }
-
-    .border-t {
-      border-top-width: 1px;
-    }
-
-    .border-l {
-      border-left-width: 1px;
-    }
-
-    .border-brand-borderLight {
-      border-color: var(--color-brand-borderLight);
-    }
-
-    .border-brand-lime {
-      border-color: var(--color-brand-lime);
-    }
-
-    .border-slate-200 {
-      border-color: #e2e8f0;
-    }
-
-    .border-slate-800 {
-      border-color: #1e293b;
-    }
-
-    .border-emerald-200 {
-      border-color: #a7f3d0;
-    }
-
-    .border-emerald-300 {
-      border-color: #6ee7b7;
-    }
-
-    .border-red-200 {
-      border-color: #fecaca;
-    }
-
-    .border-white\/10 {
-      border-color: rgba(255, 255, 255, 0.1);
-    }
-
-    .border-white\/20 {
-      border-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .rounded {
-      border-radius: 0.25rem;
-    }
-
-    .rounded-lg {
-      border-radius: 0.5rem;
-    }
-
-    .rounded-xl {
-      border-radius: 0.75rem;
-    }
-
-    .rounded-2xl {
-      border-radius: 1rem;
-    }
-
-    .rounded-3xl {
-      border-radius: 1.5rem;
-    }
-
-    .rounded-full {
-      border-radius: 9999px;
-    }
-
-    .shadow-sm {
-      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    }
-
-    .shadow-md {
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-    }
-
-    .shadow-lg {
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-    }
-
-    .shadow-xl {
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    }
-
-    .shadow-2xl {
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    }
-
-    .backdrop-blur-sm {
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-    }
-
-    .backdrop-blur-md {
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-
-    .overflow-hidden {
-      overflow: hidden;
-    }
-
-    .overflow-y-auto {
-      overflow-y: auto;
-    }
-
-    .cursor-pointer {
-      cursor: pointer;
-    }
-
-    .cursor-grab {
-      cursor: grab;
-    }
-
-    .active\:cursor-grabbing:active {
-      cursor: grabbing;
-    }
-
-    .object-cover {
-      object-fit: cover;
-    }
-
-    .object-top {
-      object-position: top;
-    }
-
-    .transform {
-      transform: translate(var(--tw-translate-x, 0), var(--tw-translate-y, 0)) scaleX(var(--tw-scale-x, 1)) scaleY(var(--tw-scale-y, 1));
-    }
-
-    .translate-x-full {
-      transform: translateX(100%);
-    }
-
-    .transition-all {
-      transition-property: all;
-      transition-duration: 150ms;
-    }
-
-    .transition-colors {
-      transition-property: color, background-color, border-color;
-      transition-duration: 150ms;
-    }
-
-    .transition-transform {
-      transition-property: transform;
-      transition-duration: 150ms;
-    }
-
-    .duration-300 {
-      transition-duration: 300ms;
-    }
-
-    .duration-500 {
-      transition-duration: 500ms;
-    }
-
-    .animate-spin {
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    /* Hover & Focus */
-    .hover\:bg-black:hover {
-      background-color: #000000;
-    }
-
-    .hover\:bg-slate-50:hover {
-      background-color: #f8fafc;
-    }
-
-    .hover\:bg-slate-100:hover {
-      background-color: #f1f5f9;
-    }
-
-    .hover\:bg-slate-200:hover {
-      background-color: #e2e8f0;
-    }
-
-    .hover\:bg-red-100:hover {
-      background-color: #fee2e2;
-    }
-
-    .hover\:bg-brand-limeHover:hover {
-      background-color: var(--color-brand-limeHover);
-    }
-
-    .hover\:bg-emerald-700:hover {
-      background-color: #047857;
-    }
-
-    .hover\:bg-indigo-600:hover {
-      background-color: #4f46e5;
-    }
-
-    .hover\:text-white:hover {
-      color: #ffffff;
-    }
-
-    .hover\:text-brand-charcoal:hover {
-      color: var(--color-brand-charcoal);
-    }
-
-    .hover\:text-brand-periwinkle:hover {
-      color: var(--color-brand-periwinkle);
-    }
-
-    .hover\:text-brand-lime:hover {
-      color: var(--color-brand-lime);
-    }
-
-    .hover\:border-brand-periwinkle:hover {
-      border-color: var(--color-brand-periwinkle);
-    }
-
-    .hover\:border-brand-lime:hover {
-      border-color: var(--color-brand-lime);
-    }
-
-    .hover\:shadow-xl:hover {
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    }
-
-    .hover\:scale-105:hover {
-      transform: scale(1.05);
-    }
-
-    .hover\:scale-125:hover {
-      transform: scale(1.25);
-    }
-
-    .hover\:underline:hover {
-      text-decoration-line: underline;
-    }
-
-    .group:hover .group-hover\:scale-105 {
-      transform: scale(1.05);
-    }
-
-    .group:hover .group-hover\:translate-x-1 {
-      transform: translateX(0.25rem);
-    }
-
-    .group:hover .group-hover\:text-brand-periwinkle {
-      color: var(--color-brand-periwinkle);
-    }
-
-    .focus\:outline-none:focus {
-      outline: 2px solid transparent;
-    }
-
-    .focus\:ring-1:focus {
-      box-shadow: 0 0 0 1px var(--color-brand-periwinkle);
-    }
-
-    .focus\:ring-2:focus {
-      box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.4);
-    }
-
-    .active\:scale-95:active {
-      transform: scale(0.95);
-    }
-
-    .active\:scale-98:active {
-      transform: scale(0.98);
-    }
-
-    /* Responsive Breakpoints (Phone & Laptop) */
-    @media (min-width: 640px) {
-      .sm\:block {
-        display: block;
-      }
-
-      .sm\:inline-block {
-        display: inline-block;
-      }
-
-      .sm\:flex-row {
-        flex-direction: row;
-      }
-
-      .sm\:grid-cols-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .sm\:px-6 {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-      }
-
-      .sm\:text-lg {
-        font-size: 1.125rem;
-        line-height: 1.75rem;
-      }
-
-      .sm\:text-5xl {
-        font-size: 3rem;
-        line-height: 1;
-      }
-
-      .sm\:text-6xl {
-        font-size: 3.75rem;
-        line-height: 1;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .md\:flex {
-        display: flex;
-      }
-
-      .md\:hidden {
-        display: none;
-      }
-
-      .md\:grid-cols-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .md\:grid-cols-5 {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-      }
-
-      .md\:pt-36 {
-        padding-top: 9rem;
-      }
-
-      .md\:pb-32 {
-        padding-bottom: 8rem;
-      }
-
-      .md\:py-28 {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .lg\:grid-cols-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      .lg\:grid-cols-12 {
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-      }
-
-      .lg\:col-span-5 {
-        grid-column: span 5 / span 5;
-      }
-
-      .lg\:col-span-7 {
-        grid-column: span 7 / span 7;
-      }
-
-      .lg\:gap-8 {
-        gap: 2rem;
-      }
-
-      .lg\:gap-10 {
-        gap: 2.5rem;
-      }
-
-      .lg\:gap-12 {
-        gap: 3rem;
-      }
-
-      .lg\:px-8 {
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-
-      .lg\:p-10 {
-        padding: 2.5rem;
-      }
-
-      .lg\:text-6xl {
-        font-size: 3.75rem;
-        line-height: 1;
-      }
-    }
-
-    .glass-nav {
-      background: rgba(248, 249, 250, 0.94);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    }
-
-    .grid-pattern {
-      background-image: radial-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px);
-      background-size: 28px 28px;
-    }
-
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #F1F5F9;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #CBD5E1;
-      border-radius: 4px;
-    }
   </style>
 
   <!-- Three.js (Deferred for PageSpeed 99+) -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
-
-<body
-  class="bg-brand-offwhite text-brand-charcoal antialiased selection:bg-brand-limeLight selection:text-brand-charcoal">
+<body class="bg-brand-offwhite text-brand-charcoal antialiased selection:bg-brand-limeLight selection:text-brand-charcoal">
 
   <!-- EXACT ORIGINAL NAVBAR HEADER (As shown in Image 1) -->
-  <header
-    class="fixed top-0 left-0 right-0 z-40 glass-nav border-b border-brand-borderLight transition-all duration-300">
+  <header class="fixed top-0 left-0 right-0 z-40 glass-nav border-b border-brand-borderLight transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-
+      
       <!-- Brand Logo: Black Rounded Square [V] + VRAJIX • + MAKE IT MATTER. -->
       <a href="#home" class="flex items-center gap-3 group focus:outline-none">
-        <span
-          class="w-10 h-10 rounded-xl bg-brand-charcoal text-white flex items-center justify-center font-display font-black text-xl tracking-tighter shadow-md group-hover:scale-105 transition-transform">
+        <span class="w-10 h-10 rounded-xl bg-brand-charcoal text-white flex items-center justify-center font-display font-black text-xl tracking-tighter shadow-md group-hover:scale-105 transition-transform">
           V
         </span>
         <div class="flex flex-col">
           <div class="flex items-center gap-1.5 leading-none">
-            <span
-              class="font-display font-black text-2xl tracking-tight text-brand-charcoal group-hover:text-brand-periwinkle transition-colors">
+            <span class="font-display font-black text-2xl tracking-tight text-brand-charcoal group-hover:text-brand-periwinkle transition-colors">
               VRAJIX
             </span>
             <span class="w-2 h-2 rounded-full bg-brand-lime"></span>
@@ -1667,22 +539,14 @@
       <!-- Desktop Right Controls (Exact Original: Enquiries Pill + Get Started Button) -->
       <div class="hidden md:flex items-center gap-3">
         <!-- Enquiries 0 Button (Opens Admin Vault) -->
-        <button id="toggleAdminBtn"
-          class="py-2.5 px-4 rounded-xl border border-brand-borderLight hover:border-brand-periwinkle text-brand-charcoal bg-white font-semibold text-xs transition-all shadow-sm flex items-center gap-2"
-          title="Studio Admin Vault">
-          <svg class="w-4 h-4 text-brand-softGray" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
-            </path>
-          </svg>
+        <button id="toggleAdminBtn" class="py-2.5 px-4 rounded-xl border border-brand-borderLight hover:border-brand-periwinkle text-brand-charcoal bg-white font-semibold text-xs transition-all shadow-sm flex items-center gap-2" title="Studio Admin Vault">
+          <svg class="w-4 h-4 text-brand-softGray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
           <span>Enquiries</span>
-          <span id="navEnquiryBadge"
-            class="w-5 h-5 rounded-full bg-brand-periwinkle text-white text-[10px] font-mono font-bold flex items-center justify-center">0</span>
+          <span id="navEnquiryBadge" class="w-5 h-5 rounded-full bg-brand-periwinkle text-white text-[10px] font-mono font-bold flex items-center justify-center">0</span>
         </button>
 
         <!-- Get Started -> Button (Smoothly scrolls to enquiry form) -->
-        <a href="#enquiry" id="navGetStartedBtn"
-          class="py-2.5 px-5 rounded-xl bg-brand-lime hover:bg-brand-limeHover text-brand-charcoal font-bold text-xs uppercase tracking-wider transition-all shadow-md active:scale-95 flex items-center gap-1.5">
+        <a href="#enquiry" id="navGetStartedBtn" class="py-2.5 px-5 rounded-xl bg-brand-lime hover:bg-brand-limeHover text-brand-charcoal font-bold text-xs uppercase tracking-wider transition-all shadow-md active:scale-95 flex items-center gap-1.5">
           <span>Get Started</span>
           <span class="text-sm font-bold">→</span>
         </a>
@@ -1690,32 +554,19 @@
 
       <!-- Mobile Hamburger & Admin Trigger -->
       <div class="flex items-center gap-2 md:hidden">
-        <button id="mobileAdminBtn"
-          class="p-2.5 rounded-xl border border-brand-borderLight text-brand-charcoal bg-white flex items-center gap-1.5 text-xs font-bold"
-          aria-label="Open Studio Admin Vault">
-          <svg class="w-4 h-4 text-brand-softGray" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
-            </path>
-          </svg>
-          <span id="mobileNavBadge"
-            class="w-4 h-4 rounded-full bg-brand-periwinkle text-white text-[10px] font-mono flex items-center justify-center">0</span>
+        <button id="mobileAdminBtn" class="p-2.5 rounded-xl border border-brand-borderLight text-brand-charcoal bg-white flex items-center gap-1.5 text-xs font-bold" aria-label="Open Studio Admin Vault">
+          <svg class="w-4 h-4 text-brand-softGray" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+          <span id="mobileNavBadge" class="w-4 h-4 rounded-full bg-brand-periwinkle text-white text-[10px] font-mono flex items-center justify-center">0</span>
         </button>
-        <button id="mobileMenuBtn" aria-label="Toggle navigation menu"
-          class="p-2.5 rounded-xl border border-brand-borderLight bg-white text-brand-charcoal focus:outline-none">
-          <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-          <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
+        <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="p-2.5 rounded-xl border border-brand-borderLight bg-white text-brand-charcoal focus:outline-none">
+          <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
         </button>
       </div>
     </div>
 
     <!-- Mobile Drawer Dropdown -->
-    <div id="mobileDrawer"
-      class="hidden md:hidden border-b border-brand-borderLight bg-white px-4 pt-3 pb-6 space-y-3 shadow-lg">
+    <div id="mobileDrawer" class="hidden md:hidden border-b border-brand-borderLight bg-white px-4 pt-3 pb-6 space-y-3 shadow-lg">
       <nav class="flex flex-col space-y-2 text-base font-semibold text-brand-charcoal">
         <a href="#home" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50">Home</a>
         <a href="#services" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50">Services</a>
@@ -1725,8 +576,7 @@
         <a href="#enquiry" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50">Contact</a>
       </nav>
       <div class="pt-3 border-t border-brand-borderLight flex flex-col gap-2">
-        <a href="#enquiry"
-          class="mobile-nav-link w-full py-3 px-4 rounded-xl bg-brand-lime text-brand-charcoal font-bold text-sm text-center shadow-md">
+        <a href="#enquiry" class="mobile-nav-link w-full py-3 px-4 rounded-xl bg-brand-lime text-brand-charcoal font-bold text-sm text-center shadow-md">
           Get Started →
         </a>
       </div>
@@ -1735,47 +585,39 @@
 
   <main>
     <!-- EXACT ORIGINAL HERO SECTION (As shown in Image 1) -->
-    <section id="home"
-      class="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden border-b border-brand-borderLight grid-pattern">
+    <section id="home" class="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden border-b border-brand-borderLight grid-pattern">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-
+          
           <!-- Hero Text Content -->
           <div class="lg:col-span-7 space-y-6">
             <!-- Pill Tag: Independent Digital Studio • Accepting Q4 & Q1 Projects -->
-            <div
-              class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-brand-borderLight text-xs font-semibold text-brand-charcoal shadow-sm">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-brand-borderLight text-xs font-semibold text-brand-charcoal shadow-sm">
               <span class="w-2 h-2 rounded-full bg-brand-lime animate-pulse"></span>
               <span>Independent Digital Studio • Accepting Q4 &amp; Q1 Projects</span>
             </div>
 
             <!-- Big Heading: Digital Solutions That Make It Matter. -->
-            <h1
-              class="font-display font-black text-4xl sm:text-6xl lg:text-6xl text-brand-charcoal tracking-tight leading-tight">
+            <h1 class="font-display font-black text-4xl sm:text-6xl lg:text-6xl text-brand-charcoal tracking-tight leading-tight">
               Digital Solutions That <br>
-              <span class="text-brand-periwinkle underline decoration-brand-lime decoration-4 underline-offset-8">Make
-                It Matter.</span>
+              <span class="text-brand-periwinkle underline decoration-brand-lime decoration-4 underline-offset-8">Make It Matter.</span>
             </h1>
 
             <!-- Subtitle -->
             <p class="text-base sm:text-lg text-brand-softGray max-w-2xl leading-relaxed">
-              VRAJIX is a modern creative technology studio delivering high-performance websites, custom mobile
-              applications, and data-driven digital growth for startups and established enterprises.
+              VRAJIX is a modern creative technology studio delivering high-performance websites, custom mobile applications, and data-driven digital growth for startups and established enterprises.
             </p>
 
             <!-- Buttons Row: Start Your Project -> | Explore Our Work | vrajix11@gmail.com -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-              <a href="#enquiry"
-                class="hero-cta-btn py-4 px-8 rounded-xl text-base font-bold text-brand-charcoal bg-brand-lime hover:bg-brand-limeHover hover:text-white transition-all shadow-md active:scale-98 text-center flex items-center justify-center gap-2">
+              <a href="#enquiry" class="hero-cta-btn py-4 px-8 rounded-xl text-base font-bold text-brand-charcoal bg-brand-lime hover:bg-brand-limeHover hover:text-white transition-all shadow-md active:scale-98 text-center flex items-center justify-center gap-2">
                 <span>Start Your Project</span>
                 <span class="text-lg">→</span>
               </a>
-              <a href="#work"
-                class="py-4 px-8 rounded-xl text-base font-bold text-brand-charcoal bg-white border border-brand-borderLight hover:border-brand-periwinkle hover:text-brand-periwinkle transition-all shadow-sm text-center">
+              <a href="#work" class="py-4 px-8 rounded-xl text-base font-bold text-brand-charcoal bg-white border border-brand-borderLight hover:border-brand-periwinkle hover:text-brand-periwinkle transition-all shadow-sm text-center">
                 Explore Our Work
               </a>
-              <a href="mailto:vrajix11@gmail.com"
-                class="py-4 px-4 text-sm font-semibold text-brand-softGray hover:text-brand-charcoal flex items-center justify-center gap-1.5 transition-colors">
+              <a href="mailto:vrajix11@gmail.com" class="py-4 px-4 text-sm font-semibold text-brand-softGray hover:text-brand-charcoal flex items-center justify-center gap-1.5 transition-colors">
                 <span>✉</span>
                 <span class="underline">vrajix11@gmail.com</span>
               </a>
@@ -1784,8 +626,7 @@
 
           <!-- Hero 3D Card (Exact Original: 3D STUDIO ENGINE) -->
           <div class="lg:col-span-5 relative flex justify-center">
-            <div
-              class="w-full max-w-md aspect-square rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl relative overflow-hidden flex flex-col justify-between p-5 group">
+            <div class="w-full max-w-md aspect-square rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl relative overflow-hidden flex flex-col justify-between p-5 group">
               <!-- Top Header: 3D STUDIO ENGINE (left) + Wireframe & Reset (right) -->
               <div class="flex items-center justify-between text-xs text-white/80 z-10">
                 <div class="flex items-center gap-2">
@@ -1809,15 +650,9 @@
                   <span>Drag to rotate • Touch enabled</span>
                   <!-- 3 Color Palette Dots -->
                   <div class="flex items-center gap-1.5">
-                    <button
-                      class="color-dot-3d w-3.5 h-3.5 rounded-full bg-brand-periwinkle border border-white/20 hover:scale-125 transition-transform"
-                      data-color="6366f1" title="Periwinkle"></button>
-                    <button
-                      class="color-dot-3d w-3.5 h-3.5 rounded-full bg-brand-lime border border-white/20 hover:scale-125 transition-transform"
-                      data-color="84cc16" title="Lime"></button>
-                    <button
-                      class="color-dot-3d w-3.5 h-3.5 rounded-full bg-cyan-400 border border-white/20 hover:scale-125 transition-transform"
-                      data-color="22d3ee" title="Cyan"></button>
+                    <button class="color-dot-3d w-3.5 h-3.5 rounded-full bg-brand-periwinkle border border-white/20 hover:scale-125 transition-transform" data-color="6366f1" title="Periwinkle"></button>
+                    <button class="color-dot-3d w-3.5 h-3.5 rounded-full bg-brand-lime border border-white/20 hover:scale-125 transition-transform" data-color="84cc16" title="Lime"></button>
+                    <button class="color-dot-3d w-3.5 h-3.5 rounded-full bg-cyan-400 border border-white/20 hover:scale-125 transition-transform" data-color="22d3ee" title="Cyan"></button>
                   </div>
                 </div>
                 <div class="flex items-center justify-between text-[10px] font-mono text-slate-500">
@@ -1836,8 +671,7 @@
     <section id="services" class="py-20 md:py-28 bg-white border-b border-brand-borderLight">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div
-            class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-periwinkle mb-3">
+          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-periwinkle mb-3">
             <span class="w-1.5 h-1.5 rounded-full bg-brand-periwinkle"></span>
             Technical Capabilities
           </div>
@@ -1845,40 +679,31 @@
             High-Impact Engineering
           </h2>
           <p class="text-base text-brand-softGray mt-4 font-normal">
-            We focus exclusively on two foundational pillars of digital commerce and product engineering with direct IP
-            ownership.
+            We focus exclusively on two foundational pillars of digital commerce and product engineering with direct IP ownership.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
           <!-- Pillar 1: Website Development -->
-          <div
-            class="bg-brand-offwhite rounded-3xl p-8 lg:p-10 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="bg-brand-offwhite rounded-3xl p-8 lg:p-10 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
             <div class="space-y-4">
-              <div
-                class="w-12 h-12 rounded-2xl bg-brand-charcoal text-brand-lime flex items-center justify-center font-bold text-xl shadow-md">
+              <div class="w-12 h-12 rounded-2xl bg-brand-charcoal text-brand-lime flex items-center justify-center font-bold text-xl shadow-md">
                 &lt;/&gt;
               </div>
               <h3 class="font-display font-extrabold text-2xl text-brand-charcoal">
                 Website Development
               </h3>
               <p class="text-sm text-brand-softGray leading-relaxed">
-                High-performance web platforms, enterprise marketing systems, and web applications engineered with clean
-                semantics, pre-compiled performance, sub-second latency, and complete search visibility.
+                High-performance web platforms, enterprise marketing systems, and web applications engineered with clean semantics, pre-compiled performance, sub-second latency, and complete search visibility.
               </p>
               <ul class="space-y-2 text-xs font-semibold text-brand-charcoal pt-2">
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span>
-                  Cloudflare Edge &amp; Jamstack Deployment</li>
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span>
-                  Headless CMS &amp; E-Commerce Integration</li>
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> 95+
-                  Core Web Vitals Guaranteed</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> Cloudflare Edge &amp; Jamstack Deployment</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> Headless CMS &amp; E-Commerce Integration</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span> 95+ Core Web Vitals Guaranteed</li>
               </ul>
             </div>
             <div class="pt-8 mt-8 border-t border-brand-borderLight flex items-center justify-between">
-              <a href="#enquiry"
-                class="select-service-btn text-xs font-bold text-brand-charcoal hover:text-brand-periwinkle flex items-center gap-1.5 transition-colors"
-                data-service="Website Development">
+              <a href="#enquiry" class="select-service-btn text-xs font-bold text-brand-charcoal hover:text-brand-periwinkle flex items-center gap-1.5 transition-colors" data-service="Website Development">
                 <span>Select Website Development</span>
                 <span class="group-hover:translate-x-1 transition-transform">→</span>
               </a>
@@ -1887,33 +712,25 @@
           </div>
 
           <!-- Pillar 2: App Development -->
-          <div
-            class="bg-brand-offwhite rounded-3xl p-8 lg:p-10 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="bg-brand-offwhite rounded-3xl p-8 lg:p-10 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
             <div class="space-y-4">
-              <div
-                class="w-12 h-12 rounded-2xl bg-brand-periwinkle text-white flex items-center justify-center font-bold text-xl shadow-md">
+              <div class="w-12 h-12 rounded-2xl bg-brand-periwinkle text-white flex items-center justify-center font-bold text-xl shadow-md">
                 📱
               </div>
               <h3 class="font-display font-extrabold text-2xl text-brand-charcoal">
                 App Development
               </h3>
               <p class="text-sm text-brand-softGray leading-relaxed">
-                Bespoke iOS, Android, and cross-platform mobile applications crafted with intuitive gesture UI, native
-                offline capabilities, resilient APIs, and seamless real-time synchronization.
+                Bespoke iOS, Android, and cross-platform mobile applications crafted with intuitive gesture UI, native offline capabilities, resilient APIs, and seamless real-time synchronization.
               </p>
               <ul class="space-y-2 text-xs font-semibold text-brand-charcoal pt-2">
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-periwinkle"></span>
-                  React Native &amp; Native Mobile Architectures</li>
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-periwinkle"></span>
-                  Secure Authentication &amp; Payment SDKs</li>
-                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-periwinkle"></span>
-                  App Store &amp; Play Store Launch Pipeline</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-periwinkle"></span> React Native &amp; Native Mobile Architectures</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-periwinkle"></span> Secure Authentication &amp; Payment SDKs</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-periwinkle"></span> App Store &amp; Play Store Launch Pipeline</li>
               </ul>
             </div>
             <div class="pt-8 mt-8 border-t border-brand-borderLight flex items-center justify-between">
-              <a href="#enquiry"
-                class="select-service-btn text-xs font-bold text-brand-charcoal hover:text-brand-periwinkle flex items-center gap-1.5 transition-colors"
-                data-service="Mobile Applications">
+              <a href="#enquiry" class="select-service-btn text-xs font-bold text-brand-charcoal hover:text-brand-periwinkle flex items-center gap-1.5 transition-colors" data-service="Mobile Applications">
                 <span>Select App Development</span>
                 <span class="group-hover:translate-x-1 transition-transform">→</span>
               </a>
@@ -1928,8 +745,7 @@
     <section id="work" class="py-20 md:py-28 bg-brand-offwhite border-b border-brand-borderLight">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div
-            class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-periwinkle mb-3">
+          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-periwinkle mb-3">
             <span class="w-1.5 h-1.5 rounded-full bg-brand-periwinkle"></span>
             Case Studies
           </div>
@@ -1942,11 +758,9 @@
         </div>
 
         <div id="portfolioGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+          <div class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
             <div class="space-y-4">
-              <div
-                class="w-full h-48 rounded-2xl bg-gradient-to-br from-slate-900 to-indigo-950 p-6 flex flex-col justify-between text-white">
+              <div class="w-full h-48 rounded-2xl bg-gradient-to-br from-slate-900 to-indigo-950 p-6 flex flex-col justify-between text-white">
                 <span class="text-[10px] font-mono uppercase tracking-widest text-brand-lime">Web Platform</span>
                 <div>
                   <h4 class="font-display font-extrabold text-xl text-white">AuraPay Gateway</h4>
@@ -1958,22 +772,16 @@
               </p>
             </div>
             <div class="pt-4 mt-4 border-t border-brand-borderLight flex items-center justify-between text-xs">
-              <button
-                class="view-project-modal-btn font-bold text-brand-charcoal hover:text-brand-periwinkle transition-colors"
-                data-title="AuraPay Gateway" data-client="Aura Financial Corp"
-                data-desc="Complete payment infrastructure rebuild with zero vendor lock-in."
-                data-tech="Node.js, PostgreSQL, Cloudflare Workers" data-impact="+340% Processing Capacity">
+              <button class="view-project-modal-btn font-bold text-brand-charcoal hover:text-brand-periwinkle transition-colors" data-title="AuraPay Gateway" data-client="Aura Financial Corp" data-desc="Complete payment infrastructure rebuild with zero vendor lock-in." data-tech="Node.js, PostgreSQL, Cloudflare Workers" data-impact="+340% Processing Capacity">
                 View Architecture →
               </button>
               <span class="font-mono text-brand-lime font-bold">340% ROI</span>
             </div>
           </div>
 
-          <div
-            class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+          <div class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
             <div class="space-y-4">
-              <div
-                class="w-full h-48 rounded-2xl bg-gradient-to-br from-slate-900 to-emerald-950 p-6 flex flex-col justify-between text-white">
+              <div class="w-full h-48 rounded-2xl bg-gradient-to-br from-slate-900 to-emerald-950 p-6 flex flex-col justify-between text-white">
                 <span class="text-[10px] font-mono uppercase tracking-widest text-brand-lime">Mobile Application</span>
                 <div>
                   <h4 class="font-display font-extrabold text-xl text-white">PulseTrack Pro</h4>
@@ -1985,24 +793,17 @@
               </p>
             </div>
             <div class="pt-4 mt-4 border-t border-brand-borderLight flex items-center justify-between text-xs">
-              <button
-                class="view-project-modal-btn font-bold text-brand-charcoal hover:text-brand-periwinkle transition-colors"
-                data-title="PulseTrack Pro" data-client="Pulse MedTech"
-                data-desc="React Native cross-platform application with BLE hardware integration."
-                data-tech="React Native, SQLite, Rust Core" data-impact="120k Daily Active Users">
+              <button class="view-project-modal-btn font-bold text-brand-charcoal hover:text-brand-periwinkle transition-colors" data-title="PulseTrack Pro" data-client="Pulse MedTech" data-desc="React Native cross-platform application with BLE hardware integration." data-tech="React Native, SQLite, Rust Core" data-impact="120k Daily Active Users">
                 View Architecture →
               </button>
               <span class="font-mono text-brand-lime font-bold">280% ROI</span>
             </div>
           </div>
 
-          <div
-            class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+          <div class="portfolio-card bg-white rounded-3xl p-6 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
             <div class="space-y-4">
-              <div
-                class="w-full h-48 rounded-2xl bg-gradient-to-br from-slate-900 to-brand-charcoal p-6 flex flex-col justify-between text-white">
-                <span class="text-[10px] font-mono uppercase tracking-widest text-brand-periwinkle">Cloud
-                  Architecture</span>
+              <div class="w-full h-48 rounded-2xl bg-gradient-to-br from-slate-900 to-brand-charcoal p-6 flex flex-col justify-between text-white">
+                <span class="text-[10px] font-mono uppercase tracking-widest text-brand-periwinkle">Cloud Architecture</span>
                 <div>
                   <h4 class="font-display font-extrabold text-xl text-white">Vortex Engine</h4>
                   <p class="text-xs text-slate-300">Distributed Microservices</p>
@@ -2013,11 +814,7 @@
               </p>
             </div>
             <div class="pt-4 mt-4 border-t border-brand-borderLight flex items-center justify-between text-xs">
-              <button
-                class="view-project-modal-btn font-bold text-brand-charcoal hover:text-brand-periwinkle transition-colors"
-                data-title="Vortex Engine" data-client="Vortex Media Group"
-                data-desc="Zero-egress serverless pipeline reducing infrastructure bills by 65%."
-                data-tech="Cloudflare D1, WebSockets, WASM" data-impact="65% Cloud Cost Reduction">
+              <button class="view-project-modal-btn font-bold text-brand-charcoal hover:text-brand-periwinkle transition-colors" data-title="Vortex Engine" data-client="Vortex Media Group" data-desc="Zero-egress serverless pipeline reducing infrastructure bills by 65%." data-tech="Cloudflare D1, WebSockets, WASM" data-impact="65% Cloud Cost Reduction">
                 View Architecture →
               </button>
               <span class="font-mono text-brand-lime font-bold">420% ROI</span>
@@ -2031,8 +828,7 @@
     <section id="founders" class="py-20 md:py-28 bg-white border-b border-brand-borderLight">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div
-            class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-periwinkle mb-3">
+          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-periwinkle mb-3">
             <span class="w-1.5 h-1.5 rounded-full bg-brand-periwinkle"></span>
             Studio Leadership
           </div>
@@ -2040,29 +836,21 @@
             Meet The Founders
           </h2>
           <p class="text-base text-brand-softGray mt-4 font-normal">
-            VRAJIX is led by Tarun Sharma (Founder) and Himesh Sharma (Co-Founder), uniting complementary disciplines
-            across software engineering, product architecture, and digital strategy.
+            VRAJIX is led by Tarun Sharma (Founder) and Himesh Sharma (Co-Founder), uniting complementary disciplines across software engineering, product architecture, and digital strategy.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 max-w-4xl mx-auto">
           <!-- Founder 1: Tarun Sharma (Founder) -->
-          <div
-            class="bg-brand-offwhite rounded-3xl p-8 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="bg-brand-offwhite rounded-3xl p-8 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
             <div>
-              <div
-                class="relative w-full aspect-square rounded-2xl bg-slate-900 border border-brand-borderLight overflow-hidden mb-6 shadow-md"
-                id="tarunPhotoContainer">
+              <div class="relative w-full aspect-square rounded-2xl bg-slate-900 border border-brand-borderLight overflow-hidden mb-6 shadow-md" id="tarunPhotoContainer">
                 <picture class="w-full h-full">
                   <source srcset="tarun-sharma.webp" type="image/webp">
-                  <img id="tarunHeadshot" src="tarun-sharma.jpg" alt="Tarun Sharma — Founder, VRAJIX" width="600"
-                    height="600" loading="lazy" decoding="async"
-                    class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                  <img id="tarunHeadshot" src="tarun-sharma.jpg" alt="Tarun Sharma — Founder, VRAJIX" width="600" height="600" loading="lazy" decoding="async" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
                 </picture>
-                <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent">
-                </div>
-                <div
-                  class="absolute top-4 left-4 bg-brand-charcoal/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-white/10 shadow-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent"></div>
+                <div class="absolute top-4 left-4 bg-brand-charcoal/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-white/10 shadow-sm">
                   Founder
                 </div>
                 <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
@@ -2083,13 +871,8 @@
             </div>
 
             <div class="pt-6 mt-6 border-t border-brand-borderLight flex items-center justify-between">
-              <a href="mailto:vrajix11@gmail.com?subject=Direct%20Enquiry%20for%20Tarun%20Sharma%20-%20VRAJIX"
-                class="inline-flex items-center gap-2 text-xs font-bold text-brand-charcoal hover:text-brand-periwinkle transition-colors">
-                <svg class="w-4 h-4 text-brand-periwinkle" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                  </path>
-                </svg>
+              <a href="mailto:vrajix11@gmail.com?subject=Direct%20Enquiry%20for%20Tarun%20Sharma%20-%20VRAJIX" class="inline-flex items-center gap-2 text-xs font-bold text-brand-charcoal hover:text-brand-periwinkle transition-colors">
+                <svg class="w-4 h-4 text-brand-periwinkle" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 <span>Connect with Tarun</span>
               </a>
               <span class="text-xs font-mono text-brand-periwinkle font-bold">VRAJIX Studio</span>
@@ -2097,22 +880,15 @@
           </div>
 
           <!-- Founder 2: Himesh Sharma (Co-Founder) -->
-          <div
-            class="bg-brand-offwhite rounded-3xl p-8 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="bg-brand-offwhite rounded-3xl p-8 border border-brand-borderLight shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
             <div>
-              <div
-                class="relative w-full aspect-square rounded-2xl bg-slate-900 border border-brand-borderLight overflow-hidden mb-6 shadow-md"
-                id="himeshPhotoContainer">
+              <div class="relative w-full aspect-square rounded-2xl bg-slate-900 border border-brand-borderLight overflow-hidden mb-6 shadow-md" id="himeshPhotoContainer">
                 <picture class="w-full h-full">
                   <source srcset="himesh-sharma.webp" type="image/webp">
-                  <img id="himeshHeadshot" src="himesh-sharma.jpg" alt="Himesh Sharma — Co-Founder, VRAJIX" width="600"
-                    height="600" loading="lazy" decoding="async"
-                    class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                  <img id="himeshHeadshot" src="himesh-sharma.jpg" alt="Himesh Sharma — Co-Founder, VRAJIX" width="600" height="600" loading="lazy" decoding="async" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
                 </picture>
-                <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent">
-                </div>
-                <div
-                  class="absolute top-4 left-4 bg-brand-charcoal/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-white/10 shadow-sm">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent"></div>
+                <div class="absolute top-4 left-4 bg-brand-charcoal/90 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-white/10 shadow-sm">
                   Co-Founder
                 </div>
                 <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
@@ -2133,13 +909,8 @@
             </div>
 
             <div class="pt-6 mt-6 border-t border-brand-borderLight flex items-center justify-between">
-              <a href="mailto:vrajix11@gmail.com?subject=Direct%20Enquiry%20for%20Himesh%20Sharma%20-%20VRAJIX"
-                class="inline-flex items-center gap-2 text-xs font-bold text-brand-charcoal hover:text-brand-periwinkle transition-colors">
-                <svg class="w-4 h-4 text-brand-periwinkle" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                  </path>
-                </svg>
+              <a href="mailto:vrajix11@gmail.com?subject=Direct%20Enquiry%20for%20Himesh%20Sharma%20-%20VRAJIX" class="inline-flex items-center gap-2 text-xs font-bold text-brand-charcoal hover:text-brand-periwinkle transition-colors">
+                <svg class="w-4 h-4 text-brand-periwinkle" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 <span>Connect with Himesh</span>
               </a>
               <span class="text-xs font-mono text-brand-lime font-bold">VRAJIX Studio</span>
@@ -2169,32 +940,27 @@
           <div class="bg-white p-6 rounded-2xl border border-brand-borderLight space-y-3 shadow-sm">
             <span class="font-mono text-xs font-bold text-brand-lime">Stage 01</span>
             <h4 class="font-display font-extrabold text-lg text-brand-charcoal">Discovery</h4>
-            <p class="text-xs text-brand-softGray">Requirements audit, technical feasibility, and budget architecture.
-            </p>
+            <p class="text-xs text-brand-softGray">Requirements audit, technical feasibility, and budget architecture.</p>
           </div>
           <div class="bg-white p-6 rounded-2xl border border-brand-borderLight space-y-3 shadow-sm">
             <span class="font-mono text-xs font-bold text-brand-periwinkle">Stage 02</span>
             <h4 class="font-display font-extrabold text-lg text-brand-charcoal">Architecture</h4>
-            <p class="text-xs text-brand-softGray">Interactive wireframes, high-fidelity UI design, and schema modeling.
-            </p>
+            <p class="text-xs text-brand-softGray">Interactive wireframes, high-fidelity UI design, and schema modeling.</p>
           </div>
           <div class="bg-white p-6 rounded-2xl border border-brand-borderLight space-y-3 shadow-sm">
             <span class="font-mono text-xs font-bold text-brand-lime">Stage 03</span>
             <h4 class="font-display font-extrabold text-lg text-brand-charcoal">Sprint Build</h4>
-            <p class="text-xs text-brand-softGray">Two-week code cycles with live preview deployments for client
-              testing.</p>
+            <p class="text-xs text-brand-softGray">Two-week code cycles with live preview deployments for client testing.</p>
           </div>
           <div class="bg-white p-6 rounded-2xl border border-brand-borderLight space-y-3 shadow-sm">
             <span class="font-mono text-xs font-bold text-brand-periwinkle">Stage 04</span>
             <h4 class="font-display font-extrabold text-lg text-brand-charcoal">Quality QA</h4>
-            <p class="text-xs text-brand-softGray">Security penetration testing, accessibility review, and Core Web
-              Vitals audit.</p>
+            <p class="text-xs text-brand-softGray">Security penetration testing, accessibility review, and Core Web Vitals audit.</p>
           </div>
           <div class="bg-white p-6 rounded-2xl border border-brand-borderLight space-y-3 shadow-sm">
             <span class="font-mono text-xs font-bold text-brand-lime">Stage 05</span>
             <h4 class="font-display font-extrabold text-lg text-brand-charcoal">Production</h4>
-            <p class="text-xs text-brand-softGray">Zero-downtime deployment, DNS setup, and complete 100% IP code
-              handover.</p>
+            <p class="text-xs text-brand-softGray">Zero-downtime deployment, DNS setup, and complete 100% IP code handover.</p>
           </div>
         </div>
       </div>
@@ -2204,8 +970,7 @@
     <section id="faq" class="py-20 md:py-28 bg-white border-b border-brand-borderLight">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <div
-            class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-periwinkle mb-3">
+          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-periwinkle mb-3">
             <span class="w-1.5 h-1.5 rounded-full bg-brand-periwinkle"></span>
             Client Transparency
           </div>
@@ -2216,42 +981,32 @@
 
         <div class="space-y-4">
           <div class="border border-brand-borderLight rounded-2xl overflow-hidden bg-brand-offwhite">
-            <button
-              class="faq-question w-full p-6 text-left font-display font-extrabold text-lg text-brand-charcoal flex items-center justify-between">
+            <button class="faq-question w-full p-6 text-left font-display font-extrabold text-lg text-brand-charcoal flex items-center justify-between">
               <span>What does 100% direct IP code ownership mean?</span>
               <span class="faq-icon text-xl text-brand-periwinkle font-mono">+</span>
             </button>
-            <div
-              class="faq-answer hidden p-6 pt-0 text-sm text-brand-softGray border-t border-brand-borderLight bg-white">
-              Upon final milestone completion, all source code, repository rights, cloud deployment configurations, and
-              intellectual property are directly transferred to your company. No licensing fees, no recurring lock-in,
-              and no hidden dependencies.
+            <div class="faq-answer hidden p-6 pt-0 text-sm text-brand-softGray border-t border-brand-borderLight bg-white">
+              Upon final milestone completion, all source code, repository rights, cloud deployment configurations, and intellectual property are directly transferred to your company. No licensing fees, no recurring lock-in, and no hidden dependencies.
             </div>
           </div>
 
           <div class="border border-brand-borderLight rounded-2xl overflow-hidden bg-brand-offwhite">
-            <button
-              class="faq-question w-full p-6 text-left font-display font-extrabold text-lg text-brand-charcoal flex items-center justify-between">
+            <button class="faq-question w-full p-6 text-left font-display font-extrabold text-lg text-brand-charcoal flex items-center justify-between">
               <span>How fast will you respond to my project enquiry?</span>
               <span class="faq-icon text-xl text-brand-periwinkle font-mono">+</span>
             </button>
-            <div
-              class="faq-answer hidden p-6 pt-0 text-sm text-brand-softGray border-t border-brand-borderLight bg-white">
-              The studio partners personally review every project brief. You will receive a direct technical response
-              and proposal breakdown within 24 hours of submission.
+            <div class="faq-answer hidden p-6 pt-0 text-sm text-brand-softGray border-t border-brand-borderLight bg-white">
+              The studio partners personally review every project brief. You will receive a direct technical response and proposal breakdown within 24 hours of submission.
             </div>
           </div>
 
           <div class="border border-brand-borderLight rounded-2xl overflow-hidden bg-brand-offwhite">
-            <button
-              class="faq-question w-full p-6 text-left font-display font-extrabold text-lg text-brand-charcoal flex items-center justify-between">
+            <button class="faq-question w-full p-6 text-left font-display font-extrabold text-lg text-brand-charcoal flex items-center justify-between">
               <span>Do both founders participate in client projects?</span>
               <span class="faq-icon text-xl text-brand-periwinkle font-mono">+</span>
             </button>
-            <div
-              class="faq-answer hidden p-6 pt-0 text-sm text-brand-softGray border-t border-brand-borderLight bg-white">
-              Yes. Tarun Sharma and Himesh Sharma operate as direct active leaders on every engagement, personally
-              overseeing system architecture, code quality, and delivery milestones.
+            <div class="faq-answer hidden p-6 pt-0 text-sm text-brand-softGray border-t border-brand-borderLight bg-white">
+              Yes. Tarun Sharma and Himesh Sharma operate as direct active leaders on every engagement, personally overseeing system architecture, code quality, and delivery milestones.
             </div>
           </div>
         </div>
@@ -2262,10 +1017,9 @@
     <section id="enquiry" class="py-20 md:py-28 bg-brand-offwhite border-b border-brand-borderLight">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-
+          
           <div class="lg:col-span-5 space-y-6">
-            <div
-              class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-lime mb-1">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-lime mb-1">
               <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span>
               Start Engagement
             </div>
@@ -2273,34 +1027,26 @@
               Tell Us About <br>Your Next System.
             </h2>
             <p class="text-sm text-brand-softGray leading-relaxed">
-              Submit your requirements below. Every brief is sent directly to founders Tarun Sharma &amp; Himesh Sharma
-              with immediate response within 24 hours.
+              Submit your requirements below. Every brief is sent directly to founders Tarun Sharma &amp; Himesh Sharma with immediate response within 24 hours.
             </p>
 
             <div class="space-y-4 pt-4">
-              <div
-                class="p-5 rounded-2xl bg-white border border-brand-borderLight shadow-sm flex items-center justify-between">
+              <div class="p-5 rounded-2xl bg-white border border-brand-borderLight shadow-sm flex items-center justify-between">
                 <div>
-                  <p class="text-[11px] font-bold uppercase tracking-wider text-brand-softGray">Direct WhatsApp Hotline
-                  </p>
+                  <p class="text-[11px] font-bold uppercase tracking-wider text-brand-softGray">Direct WhatsApp Hotline</p>
                   <p class="text-base font-bold text-brand-charcoal mt-0.5">+91 79831 29724</p>
                 </div>
-                <a href="https://wa.me/917983129724?text=Hi%20VRAJIX%2C%20I%20have%20a%20project%20enquiry."
-                  target="_blank" rel="noopener noreferrer"
-                  class="py-2 px-3.5 rounded-xl bg-brand-lime text-brand-charcoal hover:bg-brand-limeHover hover:text-white font-bold text-xs transition-colors shadow-sm">
+                <a href="https://wa.me/917983129724?text=Hi%20VRAJIX%2C%20I%20have%20a%20project%20enquiry." target="_blank" rel="noopener noreferrer" class="py-2 px-3.5 rounded-xl bg-brand-lime text-brand-charcoal hover:bg-brand-limeHover hover:text-white font-bold text-xs transition-colors shadow-sm">
                   Chat Now
                 </a>
               </div>
 
-              <div
-                class="p-5 rounded-2xl bg-white border border-brand-borderLight shadow-sm flex items-center justify-between">
+              <div class="p-5 rounded-2xl bg-white border border-brand-borderLight shadow-sm flex items-center justify-between">
                 <div>
-                  <p class="text-[11px] font-bold uppercase tracking-wider text-brand-softGray">Official Studio Email
-                  </p>
+                  <p class="text-[11px] font-bold uppercase tracking-wider text-brand-softGray">Official Studio Email</p>
                   <p class="text-base font-bold text-brand-charcoal mt-0.5">vrajix11@gmail.com</p>
                 </div>
-                <button id="copyEmailBtn"
-                  class="py-2 px-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-brand-charcoal font-bold text-xs transition-colors">
+                <button id="copyEmailBtn" class="py-2 px-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-brand-charcoal font-bold text-xs transition-colors">
                   Copy
                 </button>
               </div>
@@ -2315,48 +1061,36 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label for="clientName"
-                      class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
+                    <label for="clientName" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Full Name <span class="text-red-500">*</span>
                     </label>
-                    <input type="text" id="clientName" name="name" required placeholder="e.g. Rahul Sharma"
-                      class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
-                    <p id="nameError" class="text-[11px] text-red-500 mt-1 hidden">Please provide your name (at least 2
-                      characters).</p>
+                    <input type="text" id="clientName" name="name" required placeholder="e.g. Rahul Sharma" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
+                    <p id="nameError" class="text-[11px] text-red-500 mt-1 hidden">Please provide your name (at least 2 characters).</p>
                   </div>
 
                   <div>
-                    <label for="clientEmail"
-                      class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
+                    <label for="clientEmail" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Email Address <span class="text-red-500">*</span>
                     </label>
-                    <input type="email" id="clientEmail" name="email" required placeholder="name@company.com"
-                      class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
-                    <p id="emailError" class="text-[11px] text-red-500 mt-1 hidden">Please provide a valid email
-                      address.</p>
+                    <input type="email" id="clientEmail" name="email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
+                    <p id="emailError" class="text-[11px] text-red-500 mt-1 hidden">Please provide a valid email address.</p>
                   </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label for="clientPhone"
-                      class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
+                    <label for="clientPhone" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Phone Number (10 Digits) <span class="text-red-500">*</span>
                     </label>
-                    <input type="tel" id="clientPhone" name="phone" required placeholder="10-digit mobile number"
-                      maxlength="10" inputmode="numeric" pattern="[0-9]{10}"
-                      class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
-                    <p id="phoneError" class="text-[11px] text-red-500 mt-1 hidden">Please enter a valid 10-digit mobile
-                      number.</p>
+                    <input type="tel" id="clientPhone" name="phone" required placeholder="10-digit mobile number" maxlength="10" inputmode="numeric" pattern="[0-9]{10}" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
+                    <p id="phoneError" class="text-[11px] text-red-500 mt-1 hidden">Please enter a valid 10-digit mobile number.</p>
                   </div>
 
                   <div>
-                    <label for="requiredService"
-                      class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
+                    <label for="requiredService" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Required Service <span class="text-red-500">*</span>
                     </label>
-                    <select id="requiredService" name="service" required
-                      class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
+                    <select id="requiredService" name="service" required class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
                       <option value="" disabled selected>Select Core Pillar</option>
                       <option value="Website Development">Website Development</option>
                       <option value="Mobile Applications">Mobile Applications (App Development)</option>
@@ -2368,12 +1102,10 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label for="projectBudget"
-                      class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
+                    <label for="projectBudget" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Estimated Budget
                     </label>
-                    <select id="projectBudget" name="budget"
-                      class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
+                    <select id="projectBudget" name="budget" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
                       <option value="₹25k - ₹50k">₹25,000 – ₹50,000 (Launch MVP)</option>
                       <option value="₹50k - ₹1.5L" selected>₹50,000 – ₹1,50,000 (Standard Growth)</option>
                       <option value="₹1.5L - ₹5L">₹1,50,000 – ₹5,00,000 (Enterprise Solution)</option>
@@ -2382,12 +1114,10 @@
                   </div>
 
                   <div>
-                    <label for="projectTimeline"
-                      class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
+                    <label for="projectTimeline" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-2">
                       Target Timeline
                     </label>
-                    <select id="projectTimeline" name="timeline"
-                      class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
+                    <select id="projectTimeline" name="timeline" class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
                       <option value="Immediate (< 2 Weeks)">Immediate (&lt; 2 Weeks)</option>
                       <option value="2 to 4 Weeks" selected>2 to 4 Weeks</option>
                       <option value="1 to 3 Months">1 to 3 Months</option>
@@ -2398,27 +1128,19 @@
 
                 <div>
                   <div class="flex items-center justify-between mb-2">
-                    <label for="projectDetails"
-                      class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal">
+                    <label for="projectDetails" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal">
                       Project Requirements <span class="text-red-500">*</span>
                     </label>
                     <span id="charCount" class="text-[11px] text-brand-softGray font-mono">0 characters</span>
                   </div>
-                  <textarea id="projectDetails" name="message" rows="4" required
-                    placeholder="Describe your product idea, target audience, core features, or technical requirements..."
-                    class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all"></textarea>
-                  <p id="detailsError" class="text-[11px] text-red-500 mt-1 hidden">Please provide at least 10
-                    characters describing your project.</p>
+                  <textarea id="projectDetails" name="message" rows="4" required placeholder="Describe your product idea, target audience, core features, or technical requirements..." class="w-full px-4 py-3 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all"></textarea>
+                  <p id="detailsError" class="text-[11px] text-red-500 mt-1 hidden">Please provide at least 10 characters describing your project.</p>
                 </div>
 
                 <div>
-                  <button type="submit" id="submitEnquiryBtn"
-                    class="w-full py-4 px-6 rounded-xl text-base font-bold text-brand-charcoal bg-brand-lime hover:bg-brand-limeHover hover:text-white transition-all shadow-md active:scale-98 flex items-center justify-center gap-2">
+                  <button type="submit" id="submitEnquiryBtn" class="w-full py-4 px-6 rounded-xl text-base font-bold text-brand-charcoal bg-brand-lime hover:bg-brand-limeHover hover:text-white transition-all shadow-md active:scale-98 flex items-center justify-center gap-2">
                     <span id="submitBtnText">Submit Project Enquiry</span>
-                    <svg id="submitSpinner" class="w-5 h-5 animate-spin hidden" fill="none" viewBox="0 0 24 24">
-                      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
-                    </svg>
+                    <svg id="submitSpinner" class="w-5 h-5 animate-spin hidden" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path></svg>
                   </button>
                   <p class="text-[11px] text-center text-brand-softGray mt-3">
                     Dispatched directly to founders Tarun Sharma &amp; Himesh Sharma with 24h response guarantee.
@@ -2430,27 +1152,19 @@
               <div id="enquirySuccessBox" class="hidden mt-6 p-6 rounded-2xl bg-emerald-50 border border-emerald-200">
                 <div class="flex items-start gap-4">
                   <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                   </div>
                   <div class="space-y-3 flex-1">
                     <div>
                       <h4 class="font-display font-extrabold text-lg text-emerald-950">Enquiry Confirmed!</h4>
                       <p class="text-xs text-emerald-800 mt-1">
-                        Tracking Reference: <strong id="successRefId"
-                          class="font-mono bg-white px-2 py-0.5 rounded text-emerald-950 font-bold">VRX-0000</strong>.
-                        Your brief has been dispatched directly to the founders.
+                        Tracking Reference: <strong id="successRefId" class="font-mono bg-white px-2 py-0.5 rounded text-emerald-950 font-bold">VRX-0000</strong>. Your brief has been dispatched directly to the founders.
                       </p>
                     </div>
 
                     <div class="pt-2">
-                      <button id="sendCopyWhatsApp"
-                        class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors shadow-sm flex items-center justify-center gap-2">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                          <path
-                            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.587 1.956.884 3.03.884 3.183 0 5.77-2.586 5.77-5.766.001-3.181-2.585-5.77-5.769-5.77zm3.385 8.169c-.145.409-.838.775-1.15.825-.313.05-.726.075-2.285-.568-1.559-.643-2.548-2.23-2.626-2.333-.078-.104-.627-.834-.627-1.59 0-.756.398-1.127.538-1.28.14-.153.308-.192.411-.192.103 0 .206.002.296.007.094.005.221-.036.345.263.129.313.438 1.07.477 1.149.039.079.064.171.013.273-.051.103-.077.167-.154.257-.077.09-.162.201-.232.27-.077.077-.158.162-.068.317.09.154.398.657.854 1.064.587.524 1.082.686 1.236.763.154.077.244.064.334-.039.09-.103.386-.449.489-.603.103-.154.206-.129.345-.077.14.051.884.417 1.036.493.153.077.255.115.293.179.038.064.038.373-.107.782z" />
-                        </svg>
+                      <button id="sendCopyWhatsApp" class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-colors shadow-sm flex items-center justify-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.587 1.956.884 3.03.884 3.183 0 5.77-2.586 5.77-5.766.001-3.181-2.585-5.77-5.769-5.77zm3.385 8.169c-.145.409-.838.775-1.15.825-.313.05-.726.075-2.285-.568-1.559-.643-2.548-2.23-2.626-2.333-.078-.104-.627-.834-.627-1.59 0-.756.398-1.127.538-1.28.14-.153.308-.192.411-.192.103 0 .206.002.296.007.094.005.221-.036.345.263.129.313.438 1.07.477 1.149.039.079.064.171.013.273-.051.103-.077.167-.154.257-.077.09-.162.201-.232.27-.077.077-.158.162-.068.317.09.154.398.657.854 1.064.587.524 1.082.686 1.236.763.154.077.244.064.334-.039.09-.103.386-.449.489-.603.103-.154.206-.129.345-.077.14.051.884.417 1.036.493.153.077.255.115.293.179.038.064.038.373-.107.782z"/></svg>
                         <span>Send Copy via WhatsApp (+91 79831 29724)</span>
                       </button>
                     </div>
@@ -2482,8 +1196,7 @@
             <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span>
           </div>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Independent Digital Studio engineering web platforms and mobile applications with 100% direct IP code
-            ownership.
+            Independent Digital Studio engineering web platforms and mobile applications with 100% direct IP code ownership.
           </p>
         </div>
         <div>
@@ -2506,12 +1219,9 @@
         <div>
           <h5 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Direct Contact</h5>
           <ul class="space-y-2 text-xs text-slate-400">
-            <li><a href="mailto:vrajix11@gmail.com" class="hover:text-white transition-colors">vrajix11@gmail.com</a>
-            </li>
-            <li><a href="https://wa.me/917983129724" target="_blank" rel="noopener noreferrer"
-                class="hover:text-white transition-colors">WhatsApp: +91 79831 29724</a></li>
-            <li class="pt-2 text-slate-500 font-mono text-[11px]">Tarun Sharma (Founder) &amp; Himesh Sharma
-              (Co-Founder)</li>
+            <li><a href="mailto:vrajix11@gmail.com" class="hover:text-white transition-colors">vrajix11@gmail.com</a></li>
+            <li><a href="https://wa.me/917983129724" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp: +91 79831 29724</a></li>
+            <li class="pt-2 text-slate-500 font-mono text-[11px]">Tarun Sharma (Founder) &amp; Himesh Sharma (Co-Founder)</li>
           </ul>
         </div>
       </div>
@@ -2523,17 +1233,14 @@
   </footer>
 
   <!-- CASE STUDY MODAL -->
-  <div id="caseStudyModal"
-    class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+  <div id="caseStudyModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-white rounded-3xl max-w-2xl w-full p-8 shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto">
       <div class="flex items-center justify-between border-b border-brand-borderLight pb-4">
         <div>
-          <span id="modalClient" class="text-xs font-mono uppercase tracking-wider text-brand-periwinkle">Client
-            Name</span>
+          <span id="modalClient" class="text-xs font-mono uppercase tracking-wider text-brand-periwinkle">Client Name</span>
           <h3 id="modalTitle" class="font-display font-extrabold text-2xl text-brand-charcoal">Project Title</h3>
         </div>
-        <button id="closeModalBtn" class="p-2 rounded-lg hover:bg-slate-100 text-brand-charcoal"
-          aria-label="Close modal">✕</button>
+        <button id="closeModalBtn" class="p-2 rounded-lg hover:bg-slate-100 text-brand-charcoal" aria-label="Close modal">✕</button>
       </div>
       <div class="space-y-4 text-xs">
         <div>
@@ -2552,18 +1259,14 @@
         </div>
       </div>
       <div class="flex justify-end gap-3 pt-4 border-t border-brand-borderLight">
-        <button id="modalDismissBtn"
-          class="py-2.5 px-5 rounded-xl border border-brand-borderLight text-xs font-bold text-brand-charcoal hover:bg-slate-50">Close</button>
-        <a href="#enquiry" id="modalEnquiryCta"
-          class="py-2.5 px-5 rounded-xl bg-brand-charcoal text-white text-xs font-bold hover:bg-black">Request Similar
-          System</a>
+        <button id="modalDismissBtn" class="py-2.5 px-5 rounded-xl border border-brand-borderLight text-xs font-bold text-brand-charcoal hover:bg-slate-50">Close</button>
+        <a href="#enquiry" id="modalEnquiryCta" class="py-2.5 px-5 rounded-xl bg-brand-charcoal text-white text-xs font-bold hover:bg-black">Request Similar System</a>
       </div>
     </div>
   </div>
 
   <!-- STUDIO ADMIN INQUIRIES DRAWER (STRICT PASSWORD SECURITY + FORGOT PASSWORD OTP TO EMAIL) -->
-  <div id="enquiriesDrawer"
-    class="fixed inset-y-0 right-0 z-50 w-full max-w-md bg-white shadow-2xl border-l border-brand-borderLight transform translate-x-full transition-transform duration-300 flex flex-col">
+  <div id="enquiriesDrawer" class="fixed inset-y-0 right-0 z-50 w-full max-w-md bg-white shadow-2xl border-l border-brand-borderLight transform translate-x-full transition-transform duration-300 flex flex-col">
     <!-- Drawer Header -->
     <div class="p-6 border-b border-brand-borderLight flex items-center justify-between bg-slate-50">
       <div>
@@ -2573,107 +1276,75 @@
           <span>Studio Lead Management Vault</span>
         </p>
       </div>
-      <button id="closeDrawerBtn" class="p-2 rounded-lg hover:bg-slate-200 text-brand-charcoal transition-colors"
-        aria-label="Close Drawer">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
+      <button id="closeDrawerBtn" class="p-2 rounded-lg hover:bg-slate-200 text-brand-charcoal transition-colors" aria-label="Close Drawer">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
       </button>
     </div>
 
     <!-- VIEW 1: ADMIN LOGIN VIEW -->
     <div id="adminLoginView" class="p-6 flex-grow flex flex-col justify-center space-y-5">
       <div class="text-center space-y-2">
-        <div
-          class="w-12 h-12 rounded-2xl bg-brand-charcoal text-white mx-auto flex items-center justify-center shadow-md">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
-            </path>
-          </svg>
+        <div class="w-12 h-12 rounded-2xl bg-brand-charcoal text-white mx-auto flex items-center justify-center shadow-md">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
         </div>
         <h4 class="font-display font-extrabold text-xl text-brand-charcoal">Studio Admin Authentication</h4>
         <p class="text-xs text-brand-softGray">Enter your verified studio credentials to access leads.</p>
       </div>
 
-      <div id="adminLoginError"
-        class="hidden p-3 rounded-xl bg-red-50 border border-red-200 text-xs text-red-600 font-medium text-center">
-      </div>
+      <div id="adminLoginError" class="hidden p-3 rounded-xl bg-red-50 border border-red-200 text-xs text-red-600 font-medium text-center"></div>
 
       <!-- Main Login Form -->
       <form id="adminLoginForm" class="space-y-4" onsubmit="return false;">
         <div>
-          <label for="adminUsernameInput"
-            class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1">Username</label>
-          <input type="text" id="adminUsernameInput" value="admin" required
-            class="w-full px-4 py-2.5 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
+          <label for="adminUsernameInput" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1">Username</label>
+          <input type="text" id="adminUsernameInput" value="admin" required class="w-full px-4 py-2.5 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
         </div>
 
         <div>
           <div class="flex items-center justify-between mb-1">
-            <label for="adminPasswordInput"
-              class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal">Password</label>
+            <label for="adminPasswordInput" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal">Password</label>
             <!-- FORGOT PASSWORD LINK -->
-            <button type="button" id="openForgotPwBtn"
-              class="text-[11px] text-brand-periwinkle hover:underline font-semibold">Forgot Password?</button>
+            <button type="button" id="openForgotPwBtn" class="text-[11px] text-brand-periwinkle hover:underline font-semibold">Forgot Password?</button>
           </div>
-          <input type="password" id="adminPasswordInput" placeholder="••••••••••••" required
-            class="w-full px-4 py-2.5 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
+          <input type="password" id="adminPasswordInput" placeholder="••••••••••••" required class="w-full px-4 py-2.5 rounded-xl border border-brand-borderLight text-sm text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-periwinkle transition-all">
         </div>
 
-        <button type="submit" id="adminLoginSubmitBtn"
-          class="w-full py-3 px-4 rounded-xl text-sm font-bold text-white bg-brand-charcoal hover:bg-black transition-all shadow-md active:scale-98 flex items-center justify-center gap-2">
+        <button type="submit" id="adminLoginSubmitBtn" class="w-full py-3 px-4 rounded-xl text-sm font-bold text-white bg-brand-charcoal hover:bg-black transition-all shadow-md active:scale-98 flex items-center justify-center gap-2">
           <span>Authenticate &amp; View Leads</span>
-          <svg id="adminLoginSpinner" class="w-4 h-4 animate-spin hidden" fill="none" viewBox="0 0 24 24">
-            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
-          </svg>
+          <svg id="adminLoginSpinner" class="w-4 h-4 animate-spin hidden" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path></svg>
         </button>
       </form>
 
       <!-- FORGOT PASSWORD RESET PANEL (DISPATCHES OTP DIRECTLY TO vrajix11@gmail.com) -->
-      <div id="forgotPasswordPanel"
-        class="hidden p-5 rounded-2xl bg-slate-100 border border-brand-borderLight space-y-4 text-xs">
+      <div id="forgotPasswordPanel" class="hidden p-5 rounded-2xl bg-slate-100 border border-brand-borderLight space-y-4 text-xs">
         <div class="flex items-center justify-between">
           <span class="font-bold text-brand-charcoal flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-brand-periwinkle" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-              </path>
-            </svg>
+            <svg class="w-4 h-4 text-brand-periwinkle" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
             <span>Reset Password via Email</span>
           </span>
-          <button type="button" id="closeForgotPwBtn"
-            class="text-slate-400 hover:text-brand-charcoal text-xs">✕</button>
+          <button type="button" id="closeForgotPwBtn" class="text-slate-400 hover:text-brand-charcoal text-xs">✕</button>
         </div>
 
         <p class="text-[11px] text-brand-softGray leading-relaxed">
-          A secure verification code will be sent to your registered studio email: <strong
-            class="text-brand-charcoal font-mono">vrajix11@gmail.com</strong>.
+          A secure verification code will be sent to your registered studio email: <strong class="text-brand-charcoal font-mono">vrajix11@gmail.com</strong>.
         </p>
 
         <!-- Step 1: Send Code Button -->
-        <button type="button" id="sendResetCodeBtn"
-          class="w-full py-2.5 px-4 rounded-xl bg-brand-periwinkle hover:bg-indigo-600 text-white font-bold text-xs transition-colors shadow-sm flex items-center justify-center gap-1.5">
+        <button type="button" id="sendResetCodeBtn" class="w-full py-2.5 px-4 rounded-xl bg-brand-periwinkle hover:bg-indigo-600 text-white font-bold text-xs transition-colors shadow-sm flex items-center justify-center gap-1.5">
           <span>Send Reset Code to vrajix11@gmail.com</span>
         </button>
 
         <!-- Step 2: Verification Input Form (Shown after sending code) -->
         <div id="verifyCodeGroup" class="hidden space-y-3 pt-2 border-t border-slate-200">
           <div>
-            <label class="block text-[10px] font-bold uppercase tracking-wider text-brand-charcoal mb-1">Enter Code from
-              Email</label>
-            <input type="text" id="emailOtpInput" placeholder="6-digit code (e.g. 849201)" maxlength="6"
-              class="w-full px-3 py-2 rounded-lg border border-brand-borderLight text-xs font-mono text-center tracking-widest text-brand-charcoal bg-white focus:outline-none focus:ring-1 focus:ring-brand-periwinkle">
+            <label class="block text-[10px] font-bold uppercase tracking-wider text-brand-charcoal mb-1">Enter Code from Email</label>
+            <input type="text" id="emailOtpInput" placeholder="6-digit code (e.g. 849201)" maxlength="6" class="w-full px-3 py-2 rounded-lg border border-brand-borderLight text-xs font-mono text-center tracking-widest text-brand-charcoal bg-white focus:outline-none focus:ring-1 focus:ring-brand-periwinkle">
           </div>
           <div>
-            <label class="block text-[10px] font-bold uppercase tracking-wider text-brand-charcoal mb-1">Enter New
-              Secret Password</label>
-            <input type="password" id="resetNewPasswordInput" placeholder="Enter new secret password..."
-              class="w-full px-3 py-2 rounded-lg border border-brand-borderLight text-xs text-brand-charcoal bg-white focus:outline-none focus:ring-1 focus:ring-brand-periwinkle">
+            <label class="block text-[10px] font-bold uppercase tracking-wider text-brand-charcoal mb-1">Enter New Secret Password</label>
+            <input type="password" id="resetNewPasswordInput" placeholder="Enter new secret password..." class="w-full px-3 py-2 rounded-lg border border-brand-borderLight text-xs text-brand-charcoal bg-white focus:outline-none focus:ring-1 focus:ring-brand-periwinkle">
           </div>
-          <button type="button" id="confirmResetPasswordBtn"
-            class="w-full py-2.5 px-4 rounded-xl bg-brand-charcoal hover:bg-black text-white font-bold text-xs transition-colors shadow-sm">
+          <button type="button" id="confirmResetPasswordBtn" class="w-full py-2.5 px-4 rounded-xl bg-brand-charcoal hover:bg-black text-white font-bold text-xs transition-colors shadow-sm">
             Verify Code &amp; Activate New Password
           </button>
         </div>
@@ -2693,41 +1364,26 @@
           <span id="adminSessionUsername" class="font-mono text-brand-periwinkle font-semibold">admin</span>
         </div>
         <div class="flex items-center gap-2">
-          <span class="text-xs text-brand-softGray mr-1">Total: <strong id="drawerRecordCount"
-              class="text-brand-periwinkle font-mono font-bold">0</strong></span>
-
+          <span class="text-xs text-brand-softGray mr-1">Total: <strong id="drawerRecordCount" class="text-brand-periwinkle font-mono font-bold">0</strong></span>
+          
           <!-- Key Icon to Change Password -->
-          <button id="openChangePwBtn" class="p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors"
-            title="Change Admin Password" aria-label="Change Admin Password">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z">
-              </path>
-            </svg>
+          <button id="openChangePwBtn" class="p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 transition-colors" title="Change Admin Password" aria-label="Change Admin Password">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg>
           </button>
 
           <!-- Export CSV Button -->
-          <button id="exportCsvBtn"
-            class="px-2.5 py-1 rounded-lg bg-brand-charcoal hover:bg-black text-white font-semibold transition-colors flex items-center gap-1 shadow-sm"
-            title="Export Enquiries to CSV">
-            <svg class="w-3.5 h-3.5 text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-              </path>
-            </svg>
+          <button id="exportCsvBtn" class="px-2.5 py-1 rounded-lg bg-brand-charcoal hover:bg-black text-white font-semibold transition-colors flex items-center gap-1 shadow-sm" title="Export Enquiries to CSV">
+            <svg class="w-3.5 h-3.5 text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
             <span>Export CSV</span>
           </button>
 
           <!-- Clear All Button -->
-          <button id="clearRecordsBtn"
-            class="px-2.5 py-1 rounded-lg bg-red-50 hover:bg-red-100 text-red-600 font-semibold transition-colors"
-            title="Clear all stored leads">
+          <button id="clearRecordsBtn" class="px-2.5 py-1 rounded-lg bg-red-50 hover:bg-red-100 text-red-600 font-semibold transition-colors" title="Clear all stored leads">
             Clear All
           </button>
 
           <!-- Logout Button -->
-          <button id="adminLogoutBtn"
-            class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-brand-charcoal font-semibold transition-colors">
+          <button id="adminLogoutBtn" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-brand-charcoal font-semibold transition-colors">
             Logout
           </button>
         </div>
@@ -2737,29 +1393,20 @@
       <div id="changePasswordBox" class="hidden p-5 border-b border-brand-borderLight bg-slate-100 space-y-3 text-xs">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-1.5 font-bold text-brand-charcoal">
-            <svg class="w-4 h-4 text-brand-periwinkle" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z">
-              </path>
-            </svg>
+            <svg class="w-4 h-4 text-brand-periwinkle" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg>
             <span>Set New Admin Password</span>
           </div>
-          <button id="cancelChangePwBtn"
-            class="p-1 rounded hover:bg-slate-200 text-slate-500 hover:text-brand-charcoal">✕</button>
+          <button id="cancelChangePwBtn" class="p-1 rounded hover:bg-slate-200 text-slate-500 hover:text-brand-charcoal">✕</button>
         </div>
 
         <div class="space-y-1">
-          <input type="password" id="newAdminPasswordInput" placeholder="Enter new secret password..."
-            class="w-full px-3 py-2.5 rounded-xl border border-brand-borderLight text-xs text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle">
+          <input type="password" id="newAdminPasswordInput" placeholder="Enter new secret password..." class="w-full px-3 py-2.5 rounded-xl border border-brand-borderLight text-xs text-brand-charcoal bg-white focus:outline-none focus:ring-2 focus:ring-brand-periwinkle">
           <p class="text-[10px] text-brand-softGray">Type new password and press Enter (or click Save below).</p>
         </div>
 
         <div class="flex items-center justify-end gap-2 pt-1">
-          <button id="saveNewPasswordBtn"
-            class="w-full py-2.5 px-4 rounded-xl bg-brand-charcoal hover:bg-black text-white font-bold text-xs transition-all shadow-md active:scale-98 flex items-center justify-center gap-1.5">
-            <svg class="w-3.5 h-3.5 text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
+          <button id="saveNewPasswordBtn" class="w-full py-2.5 px-4 rounded-xl bg-brand-charcoal hover:bg-black text-white font-bold text-xs transition-all shadow-md active:scale-98 flex items-center justify-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-brand-lime" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
             <span>Save &amp; Activate Password</span>
           </button>
         </div>
@@ -2768,16 +1415,10 @@
       <!-- Search & Filter Bar -->
       <div class="p-3 border-b border-brand-borderLight bg-slate-50 flex gap-2 text-xs">
         <div class="relative flex-1">
-          <input type="text" id="adminSearchInput" placeholder="Search by name, email, phone, or ref..."
-            class="w-full pl-8 pr-3 py-1.5 rounded-lg border border-brand-borderLight text-xs text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-periwinkle bg-white">
-          <svg class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-          </svg>
+          <input type="text" id="adminSearchInput" placeholder="Search by name, email, phone, or ref..." class="w-full pl-8 pr-3 py-1.5 rounded-lg border border-brand-borderLight text-xs text-brand-charcoal placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-periwinkle bg-white">
+          <svg class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
         </div>
-        <select id="adminStatusFilter"
-          class="px-2 py-1.5 rounded-lg border border-brand-borderLight text-xs text-brand-charcoal bg-white focus:outline-none">
+        <select id="adminStatusFilter" class="px-2 py-1.5 rounded-lg border border-brand-borderLight text-xs text-brand-charcoal bg-white focus:outline-none">
           <option value="all">All Statuses</option>
           <option value="New">New</option>
           <option value="Contacted">Contacted</option>
@@ -2789,11 +1430,7 @@
       <!-- Enquiries Records List Container -->
       <div id="enquiriesListContainer" class="flex-grow p-4 overflow-y-auto space-y-3">
         <div id="emptyEnquiriesNotice" class="text-center py-16 text-brand-softGray text-xs">
-          <svg class="w-10 h-10 mx-auto text-slate-300 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-              d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4">
-            </path>
-          </svg>
+          <svg class="w-10 h-10 mx-auto text-slate-300 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path></svg>
           <p class="font-medium text-brand-charcoal">No Enquiries Found</p>
           <p class="mt-1">Submissions appear here automatically in real time.</p>
         </div>
@@ -2818,25 +1455,45 @@
 
     let currentAdminSession = null;
     let cachedLeads = [];
-    let generatedResetCode = null;
+    let generatedResetCodeHash = null;
     let resetCodeExpires = 0;
+    let otpFailedAttempts = 0;
+    let lastOtpSentAt = 0;
 
     function showToast(message, type = 'success') {
       const container = document.getElementById('toastContainer');
       if (!container) return;
+
       const toast = document.createElement('div');
-      toast.className = `p-4 rounded-xl shadow-xl border text-xs font-bold transition-all duration-300 flex items-center justify-between pointer-events-auto ${type === 'success'
+      toast.className = `p-4 rounded-xl shadow-xl border text-xs font-bold transition-all duration-300 flex items-center justify-between pointer-events-auto ${
+        type === 'success'
           ? 'bg-brand-charcoal text-white border-brand-lime'
           : 'bg-red-600 text-white border-red-400'
-        }`;
-      toast.innerHTML = `
-        <div class="flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full ${type === 'success' ? 'bg-brand-lime' : 'bg-white'}"></span>
-          <span>${escapeHtml(message)}</span>
-        </div>
-        <button class="ml-3 text-slate-400 hover:text-white" onclick="this.parentElement.remove()">✕</button>
-      `;
+      }`;
+
+      const left = document.createElement('div');
+      left.className = 'flex items-center gap-2';
+
+      const dot = document.createElement('span');
+      dot.className = `w-2 h-2 rounded-full ${type === 'success' ? 'bg-brand-lime' : 'bg-white'}`;
+
+      const msgSpan = document.createElement('span');
+      msgSpan.textContent = String(message || '');
+
+      left.appendChild(dot);
+      left.appendChild(msgSpan);
+
+      const closeBtn = document.createElement('button');
+      closeBtn.type = 'button';
+      closeBtn.className = 'ml-3 text-slate-400 hover:text-white';
+      closeBtn.setAttribute('aria-label', 'Dismiss notification');
+      closeBtn.textContent = '✕';
+      closeBtn.addEventListener('click', () => toast.remove());
+
+      toast.appendChild(left);
+      toast.appendChild(closeBtn);
       container.appendChild(toast);
+
       setTimeout(() => {
         toast.style.opacity = '0';
         setTimeout(() => toast.remove(), 300);
@@ -3143,7 +1800,7 @@
         try {
           const raw = localStorage.getItem('vrajix_enquiries_db_v1');
           if (raw) count = JSON.parse(raw).length;
-        } catch (e) { }
+        } catch(e) {}
         const navB = document.getElementById('navEnquiryBadge');
         const mobB = document.getElementById('mobileNavBadge');
         const drB = document.getElementById('drawerRecordCount');
@@ -3186,39 +1843,117 @@
         if (adminSessionUsername) adminSessionUsername.textContent = username || 'admin';
       }
 
-      // STRICT PASSWORD VERIFICATION
-      // 9999 is NEVER accepted under any circumstance!
-      function verifyAdminPassword(inputPassword) {
+      // CRYPTOGRAPHIC HASHING HELPERS (Web Crypto SHA-256 + Random Salt)
+      async function sha256Hex(text) {
+        const data = new TextEncoder().encode(String(text));
+        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+        return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+      }
+
+      function generateRandomHex(bytesLen = 16) {
+        const arr = new Uint8Array(bytesLen);
+        crypto.getRandomValues(arr);
+        return Array.from(arr).map(b => b.toString(16).padStart(2, '0')).join('');
+      }
+
+      function generateSecureOtp() {
+        const arr = new Uint32Array(1);
+        crypto.getRandomValues(arr);
+        return String(100000 + (arr[0] % 900000));
+      }
+
+      function timingSafeEqualStr(a, b) {
+        if (typeof a !== 'string' || typeof b !== 'string' || a.length !== b.length) return false;
+        let diff = 0;
+        for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+        return diff === 0;
+      }
+
+      const WEAK_PASSWORDS = new Set(['9999', 'admin', '1234', '123456', '12345678', 'password', 'vrajix']);
+
+      function isStrongPassword(pw) {
+        if (!pw || pw.length < 8) return false;
+        if (WEAK_PASSWORDS.has(pw.toLowerCase())) return false;
+        return true;
+      }
+
+      async function saveHashedAdminPassword(plainPw) {
+        const salt = generateRandomHex(16);
+        const hash = await sha256Hex(`${salt}:${plainPw}`);
+        localStorage.setItem('vrajix_admin_pw_hash', JSON.stringify({ salt, hash }));
+        localStorage.removeItem('vrajix_admin_custom_password');
+      }
+
+      // STRICT PASSWORD VERIFICATION (Hashed Storage + 9999 Permanently Blocked)
+      async function verifyAdminPassword(inputPassword) {
         const cleaned = (inputPassword || '').trim();
-        if (cleaned === '9999') return false; // 9999 is STRICTLY BLOCKED!
+        if (cleaned === '9999') return false;
 
-        let customPw = null;
         try {
-          customPw = localStorage.getItem('vrajix_admin_custom_password');
-        } catch (e) { }
+          // Migrate legacy plaintext key if present
+          const legacyPlain = localStorage.getItem('vrajix_admin_custom_password');
+          if (legacyPlain && legacyPlain.trim().length > 0) {
+            await saveHashedAdminPassword(legacyPlain.trim());
+          }
 
-        if (customPw && customPw.trim().length > 0) {
-          // STRICT SECURITY: ONLY the admin's chosen password works!
-          return cleaned === customPw.trim();
+          const storedRaw = localStorage.getItem('vrajix_admin_pw_hash');
+          if (storedRaw) {
+            const parsed = JSON.parse(storedRaw);
+            if (parsed && typeof parsed.salt === 'string' && typeof parsed.hash === 'string') {
+              const candidateHash = await sha256Hex(`${parsed.salt}:${cleaned}`);
+              return timingSafeEqualStr(candidateHash, parsed.hash);
+            }
+          }
+        } catch(e) {
+          return false;
         }
 
-        // Default initial password before admin sets their own
+        // Initial setup fallback ONLY before admin sets a custom password
         return cleaned === 'admin';
       }
 
+      // LOGIN BRUTE-FORCE RATE LIMITER (Max 5 failed attempts -> 60s lockout)
+      function getLoginLockState() {
+        try {
+          const raw = localStorage.getItem('vrajix_admin_lockout');
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            if (parsed && typeof parsed.fails === 'number' && typeof parsed.until === 'number') {
+              return parsed;
+            }
+          }
+        } catch(e) {}
+        return { fails: 0, until: 0 };
+      }
+
+      function recordFailedLogin() {
+        const state = getLoginLockState();
+        state.fails += 1;
+        if (state.fails >= 5) {
+          state.until = Date.now() + 60 * 1000;
+          state.fails = 0;
+        }
+        try { localStorage.setItem('vrajix_admin_lockout', JSON.stringify(state)); } catch(e) {}
+        return state;
+      }
+
+      function clearLoginLock() {
+        try { localStorage.removeItem('vrajix_admin_lockout'); } catch(e) {}
+      }
+
       // Change Password Inside Dashboard
-      function executePasswordChange() {
+      async function executePasswordChange() {
         const newPw = newAdminPasswordInput.value.trim();
-        if (!newPw || newPw.length < 3) {
-          showToast('Password must be at least 3 characters long.', 'error');
+        if (!isStrongPassword(newPw)) {
+          showToast('Use at least 8 characters (cannot be 9999, admin, or common words).', 'error');
           return;
         }
         try {
-          localStorage.setItem('vrajix_admin_custom_password', newPw);
-          showToast('Admin password updated successfully! 9999 is blocked.');
+          await saveHashedAdminPassword(newPw);
+          showToast('Admin password hashed & updated! 9999 is blocked.');
           if (changePasswordBox) changePasswordBox.classList.add('hidden');
           newAdminPasswordInput.value = '';
-        } catch (e) {
+        } catch(e) {
           showToast('Unable to save password in browser storage.', 'error');
         }
       }
@@ -3249,7 +1984,7 @@
       }
 
       // ======================================================================
-      // FORGOT PASSWORD VIA EMAIL (DISPATCHES OTP CODE DIRECTLY TO vrajix11@gmail.com)
+      // FORGOT PASSWORD VIA EMAIL (CSPRNG OTP + HASHED IN MEMORY + 60s COOLDOWN)
       // ======================================================================
       if (openForgotPwBtn && forgotPasswordPanel) {
         openForgotPwBtn.addEventListener('click', () => {
@@ -3265,30 +2000,44 @@
       }
 
       if (sendResetCodeBtn) {
-        sendResetCodeBtn.addEventListener('click', () => {
+        sendResetCodeBtn.addEventListener('click', async () => {
+          const now = Date.now();
+          if (now - lastOtpSentAt < 60000) {
+            const waitSec = Math.ceil((60000 - (now - lastOtpSentAt)) / 1000);
+            showToast(`Please wait ${waitSec}s before requesting another code.`, 'error');
+            return;
+          }
+
           sendResetCodeBtn.disabled = true;
           sendResetCodeBtn.textContent = 'Dispatching to vrajix11@gmail.com...';
 
-          generatedResetCode = String(Math.floor(100000 + Math.random() * 900000));
+          const otpPlain = generateSecureOtp();
+          generatedResetCodeHash = await sha256Hex(otpPlain);
           resetCodeExpires = Date.now() + 15 * 60 * 1000;
+          otpFailedAttempts = 0;
+          lastOtpSentAt = Date.now();
 
           fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify({
               access_key: '732d8f35-74ee-44f2-bf2b-4079e4a1e26e',
-              subject: `VRAJIX Studio: Admin Password Reset Code [${generatedResetCode}]`,
+              subject: `VRAJIX Studio: Admin Password Reset Code [${otpPlain}]`,
               from_name: 'VRAJIX Security Service',
               name: 'VRAJIX Studio Security',
               email: 'vrajix11@gmail.com',
-              message: `Your VRAJIX Admin Password Reset Security Code is: ${generatedResetCode}\\n\\nEnter this 6-digit code on your website to set your new secret password. This code expires in 15 minutes.`
+              message: `Your VRAJIX Admin Password Reset Security Code is: ${otpPlain}\n\nEnter this 6-digit code on your website to set your new secret password. This code expires in 15 minutes.`
             })
-          }).then(res => res.json()).then(data => {
+          }).then(res => res.json()).then(() => {
             showToast('Security code sent to vrajix11@gmail.com! Check Inbox & Spam.');
             sendResetCodeBtn.textContent = 'Code Sent to vrajix11@gmail.com ✓';
             if (verifyCodeGroup) verifyCodeGroup.classList.remove('hidden');
             if (emailOtpInput) emailOtpInput.focus();
-          }).catch(err => {
+            setTimeout(() => {
+              sendResetCodeBtn.disabled = false;
+              sendResetCodeBtn.textContent = 'Resend Reset Code';
+            }, 60000);
+          }).catch(() => {
             showToast('Failed to dispatch code. Please check internet connection.', 'error');
             sendResetCodeBtn.disabled = false;
             sendResetCodeBtn.textContent = 'Send Reset Code to vrajix11@gmail.com';
@@ -3297,44 +2046,61 @@
       }
 
       if (confirmResetPasswordBtn) {
-        confirmResetPasswordBtn.addEventListener('click', () => {
+        confirmResetPasswordBtn.addEventListener('click', async () => {
           const inputCode = (emailOtpInput.value || '').trim();
           const newPass = (resetNewPasswordInput.value || '').trim();
 
-          if (!inputCode || inputCode !== generatedResetCode) {
-            showToast('Invalid security code. Please check your Gmail.', 'error');
+          if (!generatedResetCodeHash || Date.now() > resetCodeExpires) {
+            showToast('Security code expired or not requested. Send a new code.', 'error');
             return;
           }
 
-          if (Date.now() > resetCodeExpires) {
-            showToast('Security code has expired. Please send a new code.', 'error');
+          const inputHash = await sha256Hex(inputCode);
+          if (!inputCode || !timingSafeEqualStr(inputHash, generatedResetCodeHash)) {
+            otpFailedAttempts += 1;
+            if (otpFailedAttempts >= 5) {
+              generatedResetCodeHash = null;
+              showToast('Too many invalid OTP attempts. Request a new code.', 'error');
+            } else {
+              showToast('Invalid security code. Please check your Gmail.', 'error');
+            }
             return;
           }
 
-          if (!newPass || newPass.length < 3) {
-            showToast('New password must be at least 3 characters long.', 'error');
+          if (!isStrongPassword(newPass)) {
+            showToast('Password must be 8+ chars and not a common password.', 'error');
             return;
           }
 
           try {
-            localStorage.setItem('vrajix_admin_custom_password', newPass);
-            showToast('Password reset successfully! Now log in with your new password.');
+            await saveHashedAdminPassword(newPass);
+            generatedResetCodeHash = null;
+            clearLoginLock();
+            showToast('Password reset & hashed! Log in with your new password.');
             forgotPasswordPanel.classList.add('hidden');
             if (verifyCodeGroup) verifyCodeGroup.classList.add('hidden');
             emailOtpInput.value = '';
             resetNewPasswordInput.value = '';
             adminPasswordInput.value = '';
             adminPasswordInput.focus();
-          } catch (e) {
+          } catch(e) {
             showToast('Unable to save password in browser.', 'error');
           }
         });
       }
 
-      // Admin Login Form Submit
+      // Admin Login Form Submit (With Rate Limiting)
       if (adminLoginForm) {
         adminLoginForm.addEventListener('submit', (e) => {
           e.preventDefault();
+          const lockState = getLoginLockState();
+          if (lockState.until > Date.now()) {
+            const waitSec = Math.ceil((lockState.until - Date.now()) / 1000);
+            adminLoginError.textContent = `Too many failed attempts. Try again in ${waitSec}s.`;
+            adminLoginError.classList.remove('hidden');
+            return;
+          }
+
           const username = (adminUsernameInput.value || '').trim();
           const password = adminPasswordInput.value;
 
@@ -3347,17 +2113,22 @@
           adminLoginSubmitBtn.disabled = true;
           adminLoginSpinner.classList.remove('hidden');
 
-          setTimeout(() => {
+          setTimeout(async () => {
+            const isValid = username.toLowerCase() === 'admin' && await verifyAdminPassword(password);
             adminLoginSubmitBtn.disabled = false;
             adminLoginSpinner.classList.add('hidden');
 
-            if (username.toLowerCase() === 'admin' && verifyAdminPassword(password)) {
+            if (isValid) {
+              clearLoginLock();
               currentAdminSession = { username: 'admin' };
               showToast('Admin authenticated successfully!');
               showDashboardView('admin');
               loadStoredLeads();
             } else {
-              adminLoginError.textContent = 'Invalid username or password.';
+              const st = recordFailedLogin();
+              adminLoginError.textContent = st.until > Date.now()
+                ? 'Too many failed attempts. Locked for 60 seconds.'
+                : 'Invalid username or password.';
               adminLoginError.classList.remove('hidden');
             }
           }, 250);
@@ -3366,18 +2137,20 @@
 
       if (adminLogoutBtn) {
         adminLogoutBtn.addEventListener('click', () => {
+          currentAdminSession = null;
           showToast('Logged out of Admin Vault.');
           showLoginView();
         });
       }
 
-      // Load & Render Leads
+      // Load & Render Leads (Safe Array Validation + Pure DOM Rendering, Zero innerHTML XSS)
       function loadStoredLeads() {
         let records = [];
         try {
           const raw = localStorage.getItem('vrajix_enquiries_db_v1');
-          if (raw) records = JSON.parse(raw);
-        } catch (e) { }
+          const parsed = raw ? JSON.parse(raw) : [];
+          if (Array.isArray(parsed)) records = parsed;
+        } catch(e) {}
         cachedLeads = records;
         renderLeadsList(cachedLeads);
         updateNavCounters();
@@ -3389,8 +2162,9 @@
         const q = adminSearchInput ? adminSearchInput.value.trim().toLowerCase() : '';
         const status = adminStatusFilter ? adminStatusFilter.value : 'all';
 
-        let filtered = leads.filter(l => {
-          const matchQ = !q || (l.name || '').toLowerCase().includes(q) || (l.email || '').toLowerCase().includes(q) || (l.phone || '').includes(q) || (l.refId || '').toLowerCase().includes(q);
+        const filtered = leads.filter(l => {
+          if (!l || typeof l !== 'object') return false;
+          const matchQ = !q || String(l.name || '').toLowerCase().includes(q) || String(l.email || '').toLowerCase().includes(q) || String(l.phone || '').includes(q) || String(l.refId || '').toLowerCase().includes(q);
           const matchS = status === 'all' || (l.status || 'New') === status;
           return matchQ && matchS;
         });
@@ -3398,41 +2172,115 @@
         const drawerCount = document.getElementById('drawerRecordCount');
         if (drawerCount) drawerCount.textContent = filtered.length;
 
+        enquiriesListContainer.replaceChildren();
+
         if (filtered.length === 0) {
-          enquiriesListContainer.innerHTML = `
-            <div class="text-center py-16 text-brand-softGray text-xs">
-              <svg class="w-10 h-10 mx-auto text-slate-300 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path></svg>
-              <p class="font-medium text-brand-charcoal">No Enquiries Found</p>
-              <p class="mt-1">Submissions appear here automatically in real time.</p>
-            </div>
-          `;
+          const emptyWrap = document.createElement('div');
+          emptyWrap.className = 'text-center py-16 text-brand-softGray text-xs';
+          const p1 = document.createElement('p');
+          p1.className = 'font-medium text-brand-charcoal';
+          p1.textContent = 'No Enquiries Found';
+          const p2 = document.createElement('p');
+          p2.className = 'mt-1';
+          p2.textContent = 'Submissions appear here automatically in real time.';
+          emptyWrap.appendChild(p1);
+          emptyWrap.appendChild(p2);
+          enquiriesListContainer.appendChild(emptyWrap);
           return;
         }
 
-        enquiriesListContainer.innerHTML = '';
         filtered.slice().reverse().forEach((lead) => {
           const card = document.createElement('div');
           card.className = 'p-4 rounded-xl border border-brand-borderLight bg-slate-50 space-y-2 text-xs hover:border-brand-periwinkle transition-colors';
 
-          card.innerHTML = `
-            <div class="flex items-center justify-between">
-              <span class="font-mono font-bold text-brand-periwinkle">${escapeHtml(lead.refId || 'VRX-0000')}</span>
-              <span class="text-[10px] text-brand-softGray">${lead.timestamp ? new Date(lead.timestamp).toLocaleDateString() : 'Recent'}</span>
-            </div>
-            <div class="flex items-center justify-between">
-              <p class="font-bold text-brand-charcoal text-sm">${escapeHtml(lead.name)}</p>
-              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300">${escapeHtml(lead.status || 'New')}</span>
-            </div>
-            <div class="space-y-0.5 text-brand-softGray text-[11px]">
-              <p><strong>Email:</strong> <a href="mailto:${escapeHtml(lead.email)}" class="text-brand-periwinkle hover:underline">${escapeHtml(lead.email)}</a></p>
-              <p><strong>Phone:</strong> <a href="https://wa.me/91${lead.phone}" target="_blank" class="text-brand-limeHover font-semibold hover:underline">+91 ${escapeHtml(lead.phone)}</a></p>
-              <p><strong>Service:</strong> <span class="text-brand-charcoal font-medium">${escapeHtml(lead.service)}</span></p>
-              <p><strong>Budget:</strong> ${escapeHtml(lead.budget)} • <strong>Timeline:</strong> ${escapeHtml(lead.timeline)}</p>
-            </div>
-            <div class="pt-2 border-t border-slate-200 mt-2">
-              <p class="text-brand-charcoal italic line-clamp-3">"${escapeHtml(lead.details)}"</p>
-            </div>
-          `;
+          const topRow = document.createElement('div');
+          topRow.className = 'flex items-center justify-between';
+          const refSpan = document.createElement('span');
+          refSpan.className = 'font-mono font-bold text-brand-periwinkle';
+          refSpan.textContent = String(lead.refId || 'VRX-0000');
+          const dateSpan = document.createElement('span');
+          dateSpan.className = 'text-[10px] text-brand-softGray';
+          dateSpan.textContent = lead.timestamp ? new Date(lead.timestamp).toLocaleDateString() : 'Recent';
+          topRow.appendChild(refSpan);
+          topRow.appendChild(dateSpan);
+
+          const nameRow = document.createElement('div');
+          nameRow.className = 'flex items-center justify-between';
+          const nameP = document.createElement('p');
+          nameP.className = 'font-bold text-brand-charcoal text-sm';
+          nameP.textContent = String(lead.name || '');
+          const statusBadge = document.createElement('span');
+          statusBadge.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300';
+          statusBadge.textContent = String(lead.status || 'New');
+          nameRow.appendChild(nameP);
+          nameRow.appendChild(statusBadge);
+
+          const metaBox = document.createElement('div');
+          metaBox.className = 'space-y-0.5 text-brand-softGray text-[11px]';
+
+          const cleanEmail = String(lead.email || '').trim();
+          const emailP = document.createElement('p');
+          const emailStrong = document.createElement('strong');
+          emailStrong.textContent = 'Email: ';
+          emailP.appendChild(emailStrong);
+          if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
+            const emailA = document.createElement('a');
+            emailA.href = `mailto:${cleanEmail}`;
+            emailA.className = 'text-brand-periwinkle hover:underline';
+            emailA.textContent = cleanEmail;
+            emailP.appendChild(emailA);
+          } else {
+            emailP.appendChild(document.createTextNode(cleanEmail));
+          }
+
+          const cleanPhone = String(lead.phone || '').replace(/\D/g, '').slice(0, 10);
+          const phoneP = document.createElement('p');
+          const phoneStrong = document.createElement('strong');
+          phoneStrong.textContent = 'Phone: ';
+          phoneP.appendChild(phoneStrong);
+          const phoneA = document.createElement('a');
+          phoneA.href = `https://wa.me/91${cleanPhone}`;
+          phoneA.target = '_blank';
+          phoneA.rel = 'noopener noreferrer';
+          phoneA.className = 'text-brand-limeHover font-semibold hover:underline';
+          phoneA.textContent = `+91 ${cleanPhone}`;
+          phoneP.appendChild(phoneA);
+
+          const serviceP = document.createElement('p');
+          const serviceStrong = document.createElement('strong');
+          serviceStrong.textContent = 'Service: ';
+          const serviceVal = document.createElement('span');
+          serviceVal.className = 'text-brand-charcoal font-medium';
+          serviceVal.textContent = String(lead.service || '');
+          serviceP.appendChild(serviceStrong);
+          serviceP.appendChild(serviceVal);
+
+          const budgetP = document.createElement('p');
+          const budgetStrong = document.createElement('strong');
+          budgetStrong.textContent = 'Budget: ';
+          const timelineStrong = document.createElement('strong');
+          timelineStrong.textContent = 'Timeline: ';
+          budgetP.appendChild(budgetStrong);
+          budgetP.appendChild(document.createTextNode(`${String(lead.budget || '')} • `));
+          budgetP.appendChild(timelineStrong);
+          budgetP.appendChild(document.createTextNode(String(lead.timeline || '')));
+
+          metaBox.appendChild(emailP);
+          metaBox.appendChild(phoneP);
+          metaBox.appendChild(serviceP);
+          metaBox.appendChild(budgetP);
+
+          const detailsWrap = document.createElement('div');
+          detailsWrap.className = 'pt-2 border-t border-slate-200 mt-2';
+          const detailsP = document.createElement('p');
+          detailsP.className = 'text-brand-charcoal italic line-clamp-3';
+          detailsP.textContent = `"${String(lead.details || '')}"`;
+          detailsWrap.appendChild(detailsP);
+
+          card.appendChild(topRow);
+          card.appendChild(nameRow);
+          card.appendChild(metaBox);
+          card.appendChild(detailsWrap);
           enquiriesListContainer.appendChild(card);
         });
       }
@@ -3440,14 +2288,23 @@
       if (adminSearchInput) adminSearchInput.addEventListener('input', () => renderLeadsList(cachedLeads));
       if (adminStatusFilter) adminStatusFilter.addEventListener('change', () => renderLeadsList(cachedLeads));
 
-      // CSV EXPORT (Downloads Excel-compatible file immediately)
+      // CSV EXPORT (With CSV Formula Injection Protection + Blob Download)
+      function sanitizeCsvCell(val) {
+        let str = String(val || '');
+        if (/^[=+\-@\t\r]/.test(str)) {
+          str = "'" + str;
+        }
+        return `"${str.replace(/"/g, '""')}"`;
+      }
+
       if (exportCsvBtn) {
         exportCsvBtn.addEventListener('click', () => {
           let records = [];
           try {
             const raw = localStorage.getItem('vrajix_enquiries_db_v1');
-            if (raw) records = JSON.parse(raw);
-          } catch (e) { }
+            const parsed = raw ? JSON.parse(raw) : [];
+            if (Array.isArray(parsed)) records = parsed;
+          } catch(e) {}
 
           if (!records || records.length === 0) {
             showToast('No enquiries to export yet.', 'error');
@@ -3456,25 +2313,27 @@
 
           const headers = ['RefID', 'Name', 'Email', 'Phone', 'Service', 'Budget', 'Timeline', 'Requirements', 'Date'];
           const rows = records.map(l => [
-            `"${l.refId || ''}"`,
-            `"${(l.name || '').replace(/"/g, '""')}"`,
-            `"${l.email || ''}"`,
-            `"${l.phone || ''}"`,
-            `"${l.service || ''}"`,
-            `"${l.budget || ''}"`,
-            `"${l.timeline || ''}"`,
-            `"${(l.details || '').replace(/"/g, '""')}"`,
-            `"${l.timestamp || ''}"`
+            sanitizeCsvCell(l.refId),
+            sanitizeCsvCell(l.name),
+            sanitizeCsvCell(l.email),
+            sanitizeCsvCell(l.phone),
+            sanitizeCsvCell(l.service),
+            sanitizeCsvCell(l.budget),
+            sanitizeCsvCell(l.timeline),
+            sanitizeCsvCell(l.details),
+            sanitizeCsvCell(l.timestamp)
           ]);
 
-          const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(r => r.join(','))].join('\\r\\n');
-          const encodedUri = encodeURI(csvContent);
+          const csvBody = [headers.join(','), ...rows.map(r => r.join(','))].join('\r\n');
+          const blob = new Blob([csvBody], { type: 'text/csv;charset=utf-8;' });
+          const blobUrl = URL.createObjectURL(blob);
           const link = document.createElement('a');
-          link.setAttribute('href', encodedUri);
-          link.setAttribute('download', `vrajix_leads_${new Date().toISOString().slice(0, 10)}.csv`);
+          link.href = blobUrl;
+          link.download = `vrajix_leads_${new Date().toISOString().slice(0,10)}.csv`;
           document.body.appendChild(link);
           link.click();
           link.remove();
+          setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
           showToast('Enquiries exported to CSV successfully!');
         });
       }
@@ -3484,7 +2343,7 @@
         clearRecordsBtn.addEventListener('click', () => {
           try {
             localStorage.removeItem('vrajix_enquiries_db_v1');
-          } catch (e) { }
+          } catch(e) {}
           cachedLeads = [];
           renderLeadsList([]);
           updateNavCounters();
@@ -3528,6 +2387,22 @@
       if (form) {
         form.addEventListener('submit', async (e) => {
           e.preventDefault();
+
+          // Honeypot bot check
+          const hpField = form.querySelector('input[name="_hp_company"]');
+          if (hpField && hpField.value.trim().length > 0) {
+            return;
+          }
+
+          // Submission Rate Limit (30s cooldown to prevent spam flooding)
+          try {
+            const lastSubmitTs = Number(localStorage.getItem('vrajix_last_submit_ts') || 0);
+            if (Date.now() - lastSubmitTs < 30000) {
+              const waitSec = Math.ceil((30000 - (Date.now() - lastSubmitTs)) / 1000);
+              showToast(`Please wait ${waitSec}s before submitting another enquiry.`, 'error');
+              return;
+            }
+          } catch(e) {}
 
           document.getElementById('nameError').classList.add('hidden');
           document.getElementById('emailError').classList.add('hidden');
@@ -3581,7 +2456,10 @@
           submitSpinner.classList.remove('hidden');
           submitBtn.disabled = true;
 
-          const refId = `VRX-${Math.floor(1000 + Math.random() * 9000)}`;
+          try { localStorage.setItem('vrajix_last_submit_ts', String(Date.now())); } catch(e) {}
+          const _rng = new Uint32Array(1);
+          crypto.getRandomValues(_rng);
+          const refId = `VRX-${1000 + (_rng[0] % 9000)}`;
 
           lastSubmittedRecord = {
             refId: refId,
@@ -3604,7 +2482,7 @@
             existing.push(lastSubmittedRecord);
             localStorage.setItem('vrajix_enquiries_db_v1', JSON.stringify(existing));
             updateNavCounters();
-          } catch (err) { }
+          } catch(err) {}
 
           // 2. Prepare FormData for Web3Forms (FormData avoids mobile CORS preflight drops)
           const web3FormData = new FormData();
@@ -3656,7 +2534,7 @@ ${detailsVal}`);
             } else {
               console.warn('Web3Forms response:', data1.message);
             }
-          } catch (e1) {
+          } catch(e1) {
             console.warn('Web3Forms fetch error:', e1);
           }
 
@@ -3665,8 +2543,8 @@ ${detailsVal}`);
             fetch('https://formsubmit.co/ajax/vrajix11@gmail.com', {
               method: 'POST',
               body: fsFormData
-            }).catch(() => { });
-          } catch (e2) { }
+            }).catch(() => {});
+          } catch(e2) {}
 
           // Reset UI
           submitBtnText.textContent = 'Submit Project Enquiry';
@@ -3684,7 +2562,7 @@ ${detailsVal}`);
           }
         });
       }
-      if (resetFormBtn) {
+if (resetFormBtn) {
         resetFormBtn.addEventListener('click', () => {
           form.reset();
           if (charCount) charCount.textContent = '0 characters';
@@ -3699,7 +2577,7 @@ ${detailsVal}`);
           const msg = encodeURIComponent(
             `Hi VRAJIX Team (Tarun & Himesh),\\nI have submitted a project enquiry on your website.\\n\\n*Reference ID:* ${lastSubmittedRecord.refId}\\n*Name:* ${lastSubmittedRecord.name}\\n*Email:* ${lastSubmittedRecord.email}\\n*Service:* ${lastSubmittedRecord.service}\\n*Budget:* ${lastSubmittedRecord.budget}\\n*Timeline:* ${lastSubmittedRecord.timeline}\\n*Requirements:* ${lastSubmittedRecord.details}`
           );
-          window.open(`https://wa.me/917983129724?text=${msg}`, '_blank');
+          window.open(`https://wa.me/917983129724?text=${msg}`, '_blank', 'noopener,noreferrer');
         });
       }
 
@@ -3780,5 +2658,4 @@ ${detailsVal}`);
     });
   </script>
 </body>
-
 </html>
