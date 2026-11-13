@@ -1,3 +1,4 @@
+
 name = "vrajix"
 compatibility_date = "2024-05-01"
 pages_build_output_dir = "."
@@ -11,5 +12,5 @@ binding = "DB"
 database_name = "vrajix-db"
 database_id = "vrajix-d1-production-id"
 
-# Note: Set your production secrets securely in Cloudflare:
+# Set production secrets securely in Cloudflare
 # wrangler secret put WEB3FORMS_ACCESS_KEY
