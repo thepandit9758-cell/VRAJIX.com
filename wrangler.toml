@@ -10,7 +10,7 @@ ENVIRONMENT = "production"
 [[d1_databases]]
 binding = "DB"
 database_name = "vrajix-db"
-database_id = "vrajix-d1-production-id"
+database_id = "0a2dd347-63a8-435a-a4cb-b46e1479c466"
 
 # Set production secrets securely in Cloudflare
 # wrangler secret put WEB3FORMS_ACCESS_KEY
