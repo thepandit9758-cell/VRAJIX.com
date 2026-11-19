@@ -3743,12 +3743,12 @@ content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.clo
         });
       }
 
-      // ======================================================================
-      // MULTI-ROUTE REDUNDANT LEAD DISPATCH SYSTEM
-      // Route 1: Web3Forms API
-      // Route 2: FormSubmit AJAX Backup
-      // Route 3: Direct WhatsApp Connect
-      // ======================================================================
+    
+      // ============================================================
+      // VRAJIX ENQUIRY SYSTEM
+      // Cloudflare D1 + Web3Forms Email Notification
+      // ============================================================
+
       const form = document.getElementById('projectEnquiryForm');
       const submitBtn = document.getElementById('submitEnquiryBtn');
       const submitBtnText = document.getElementById('submitBtnText');
@@ -3764,28 +3764,40 @@ content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.clo
         form.addEventListener('submit', async (e) => {
           e.preventDefault();
 
-          // Honeypot bot check
+          // 1. Honeypot bot check
           const hpField = form.querySelector('input[name="_hp_company"]');
+
           if (hpField && hpField.value.trim().length > 0) {
             return;
           }
 
-          // Submission Rate Limit (30s cooldown to prevent spam flooding)
+          // 2. Submission cooldown
           try {
-            const lastSubmitTs = Number(localStorage.getItem('vrajix_last_submit_ts') || 0);
+            const lastSubmitTs = Number(
+              localStorage.getItem('vrajix_last_submit_ts') || 0
+            );
+
             if (Date.now() - lastSubmitTs < 30000) {
-              const waitSec = Math.ceil((30000 - (Date.now() - lastSubmitTs)) / 1000);
-              showToast(`Please wait ${waitSec}s before submitting another enquiry.`, 'error');
+              const waitSec = Math.ceil(
+                (30000 - (Date.now() - lastSubmitTs)) / 1000
+              );
+
+              showToast(
+                `Please wait ${waitSec}s before submitting another enquiry.`,
+                'error'
+              );
               return;
             }
-          } catch (e) { }
+          } catch (e) {}
 
+          // 3. Clear previous errors
           document.getElementById('nameError').classList.add('hidden');
           document.getElementById('emailError').classList.add('hidden');
           document.getElementById('phoneError').classList.add('hidden');
           document.getElementById('serviceError').classList.add('hidden');
           document.getElementById('detailsError').classList.add('hidden');
 
+          // 4. Collect form values
           const nameVal = document.getElementById('clientName').value.trim();
           const emailVal = document.getElementById('clientEmail').value.trim();
           const phoneVal = document.getElementById('clientPhone').value.trim();
@@ -3796,29 +3808,37 @@ content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.clo
 
           let hasError = false;
 
+          // 5. Name validation
           if (!nameVal || nameVal.length < 2) {
             document.getElementById('nameError').classList.remove('hidden');
             hasError = true;
           }
 
+          // 6. Email validation
           const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
           if (!emailVal || !emailRegex.test(emailVal)) {
             document.getElementById('emailError').classList.remove('hidden');
             hasError = true;
           }
 
-          if (!phoneVal || !/^\d{10}$/.test(phoneVal)) {
-            document.getElementById('phoneError').textContent = 'Please enter a valid 10-digit mobile number.';
+          // 7. Phone validation
+          if (!/^\d{10}$/.test(phoneVal)) {
+            document.getElementById('phoneError').textContent =
+              'Please enter a valid 10-digit mobile number.';
+
             document.getElementById('phoneError').classList.remove('hidden');
             hasError = true;
           }
 
+          // 8. Service validation
           if (!serviceVal) {
             document.getElementById('serviceError').classList.remove('hidden');
             hasError = true;
           }
 
-          if (!detailsVal || detailsVal.length < 3) {
+          // 9. Project details validation
+          if (!detailsVal || detailsVal.length < 15) {
             document.getElementById('detailsError').classList.remove('hidden');
             hasError = true;
           }
@@ -3828,17 +3848,28 @@ content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.clo
             return;
           }
 
-          submitBtnText.textContent = 'Sending to vrajix11@gmail.com...';
+          // 10. Loading state
+          submitBtnText.textContent = 'Submitting Enquiry...';
           submitSpinner.classList.remove('hidden');
           submitBtn.disabled = true;
 
-          try { localStorage.setItem('vrajix_last_submit_ts', String(Date.now())); } catch (e) { }
+          // 11. Save cooldown
+          try {
+            localStorage.setItem(
+              'vrajix_last_submit_ts',
+              String(Date.now())
+            );
+          } catch (e) {}
+
+          // 12. Temporary reference ID
           const _rng = new Uint32Array(1);
           crypto.getRandomValues(_rng);
-          const refId = `VRX-${1000 + (_rng[0] % 9000)}`;
 
+          let refId = `VRX-${1000 + (_rng[0] % 9000)}`;
+
+          // 13. Prepare enquiry record
           lastSubmittedRecord = {
-            refId: refId,
+            refId,
             name: nameVal,
             email: emailVal,
             phone: phoneVal,
@@ -3850,84 +3881,119 @@ content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.clo
             timestamp: new Date().toISOString()
           };
 
-          // 1. Immediately store in local database for Admin Dashboard
-       try {
-  const response = await fetch('/api/enquiries', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      clientName: nameVal,
-      clientEmail: emailVal,
-      clientPhone: phoneVal,
-      requiredService: serviceVal,
-      projectBudget: budgetVal,
-      projectTimeline: timelineVal,
-      projectDetails: detailsVal
-    })
-  });
+          // 14. Submit to Cloudflare API
+          try {
+            const response = await fetch('/api/enquiries', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                clientName: nameVal,
+                clientEmail: emailVal,
+                clientPhone: phoneVal,
+                requiredService: serviceVal,
+                projectBudget: budgetVal,
+                projectTimeline: timelineVal,
+                projectDetails: detailsVal
+              })
+            });
 
-  const result = await response.json();
+            const result = await response.json();
 
-  if (!response.ok || !result.success) {
-    throw new Error(result.error || 'Database submission failed.');
-  }
+            if (
+              !response.ok ||
+              !result.success ||
+              !result.dbStored ||
+              !result.refId
+            ) {
+              throw new Error(
+                result.error || 'Unable to save enquiry.'
+              );
+            }
 
-  refId = result.refId;
+            // 15. Server-generated reference ID
+            refId = result.refId;
+            lastSubmittedRecord.refId = refId;
 
-  lastSubmittedRecord.refId = refId;
+            // 16. Local Admin Dashboard copy
+            try {
+              const existing = JSON.parse(
+                localStorage.getItem('vrajix_enquiries_db_v1') || '[]'
+              );
 
-  try {
-    const existing = JSON.parse(
-      localStorage.getItem('vrajix_enquiries_db_v1') || '[]'
-    );
-    existing.push(lastSubmittedRecord);
-    localStorage.setItem(
-      'vrajix_enquiries_db_v1',
-      JSON.stringify(existing)
-    );
-    updateNavCounters();
-  } catch (err) {
-    console.warn(err);
-  }
+              if (Array.isArray(existing)) {
+                existing.push(lastSubmittedRecord);
 
-} catch (error) {
-  console.error(error);
-  showToast(error.message, 'error');
-  submitBtn.disabled = false;
-  submitBtnText.textContent = 'Submit Project Enquiry';
-  submitSpinner.classList.add('hidden');
-  try {
-    localStorage.removeItem('vrajix_last_submit_ts');
-  } catch (e) {}
-  return;
-}
-          // Reset UI
-          submitBtnText.textContent = 'Submit Project Enquiry';
-          submitSpinner.classList.add('hidden');
-          submitBtn.disabled = false;
+                localStorage.setItem(
+                  'vrajix_enquiries_db_v1',
+                  JSON.stringify(existing)
+                );
 
-          successRefId.textContent = refId;
-          form.classList.add('hidden');
-          successBox.classList.remove('hidden');
+                updateNavCounters();
+              }
+            } catch (storageError) {
+              console.warn('Local storage error:', storageError);
+            }
 
-          if (deliverySuccess) {
-            showToast(`Enquiry ${refId} sent successfully to vrajix11@gmail.com!`);
-          } else {
-            try { localStorage.removeItem('vrajix_last_submit_ts'); } catch (e) { }
-            showToast(`Email gateway blocked for ${refId}. Please click "Send Copy via WhatsApp" below!`, 'error');
+            // 17. Success screen
+            submitBtnText.textContent = 'Submit Project Enquiry';
+            submitSpinner.classList.add('hidden');
+            submitBtn.disabled = false;
+
+            successRefId.textContent = refId;
+            form.classList.add('hidden');
+            successBox.classList.remove('hidden');
+
+            // 18. Actual notification status
+            if (result.emailSent === true) {
+              showToast(
+                `Enquiry ${refId} saved and notification email sent!`
+              );
+            } else {
+              showToast(
+                `Enquiry ${refId} saved, but email notification failed.`,
+                'error'
+              );
+            }
+
+          } catch (error) {
+            console.error('Enquiry submission error:', error);
+
+            submitBtnText.textContent = 'Submit Project Enquiry';
+            submitSpinner.classList.add('hidden');
+            submitBtn.disabled = false;
+
+            try {
+              localStorage.removeItem('vrajix_last_submit_ts');
+            } catch (e) {}
+
+            showToast(
+              error.message || 'Unable to submit enquiry.',
+              'error'
+            );
+
+            return;
           }
         });
       }
+
+      // 19. Reset form
       if (resetFormBtn) {
         resetFormBtn.addEventListener('click', () => {
           form.reset();
-          if (charCount) charCount.textContent = '0 characters';
+
+          if (typeof charCount !== 'undefined' && charCount) {
+            charCount.textContent = '0 characters';
+          }
+
+          lastSubmittedRecord = null;
+
           successBox.classList.add('hidden');
           form.classList.remove('hidden');
         });
       }
+
 
       if (sendCopyWhatsApp) {
         sendCopyWhatsApp.addEventListener('click', () => {
