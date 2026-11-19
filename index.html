@@ -3851,73 +3851,58 @@ content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.clo
           };
 
           // 1. Immediately store in local database for Admin Dashboard
-          try {
-            let existing = [];
-            const raw = localStorage.getItem('vrajix_enquiries_db_v1');
-            if (raw) existing = JSON.parse(raw);
-            existing.push(lastSubmittedRecord);
-            localStorage.setItem('vrajix_enquiries_db_v1', JSON.stringify(existing));
-            updateNavCounters();
-          } catch (err) { }
+       try {
+  const response = await fetch('/api/enquiries', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      clientName: nameVal,
+      clientEmail: emailVal,
+      clientPhone: phoneVal,
+      requiredService: serviceVal,
+      projectBudget: budgetVal,
+      projectTimeline: timelineVal,
+      projectDetails: detailsVal
+    })
+  });
 
-          // 2. Prepare FormData for Web3Forms (FormData avoids mobile CORS preflight drops)
-          const web3FormData = new FormData();
-          web3FormData.append('access_key', '732d8f35-74ee-44f2-bf2b-4079e4a1e26e');
-          web3FormData.append('subject', `New VRAJIX Project Lead [${refId}]: ${nameVal} - ${serviceVal}`);
-          web3FormData.append('from_name', 'VRAJIX Studio Website');
-          web3FormData.append('name', nameVal);
-          web3FormData.append('email', emailVal);
-          web3FormData.append('phone', phoneVal);
-          web3FormData.append('service', serviceVal);
-          web3FormData.append('budget', budgetVal);
-          web3FormData.append('timeline', timelineVal);
-          web3FormData.append('message', `Client: ${nameVal}
-Mobile: ${phoneVal}
-Email: ${emailVal}
-Service: ${serviceVal}
-Budget: ${budgetVal}
-Timeline: ${timelineVal}
+  const result = await response.json();
 
-Requirements:
-${detailsVal}`);
-          web3FormData.append('Reference_ID', refId);
+  if (!response.ok || !result.success) {
+    throw new Error(result.error || 'Database submission failed.');
+  }
 
-          // 3. Prepare FormData for FormSubmit Backup
-          const fsFormData = new FormData();
-          fsFormData.append('_subject', `New VRAJIX Project Lead [${refId}]: ${nameVal}`);
-          fsFormData.append('Customer_Name', nameVal);
-          fsFormData.append('Mobile_Number', phoneVal);
-          fsFormData.append('Email_Address', emailVal);
-          fsFormData.append('Service_Requested', serviceVal);
-          fsFormData.append('Budget', budgetVal);
-          fsFormData.append('Timeline', timelineVal);
-          fsFormData.append('Project_Brief', detailsVal);
-          fsFormData.append('_captcha', 'false');
-          fsFormData.append('_template', 'table');
+  refId = result.refId;
 
-          let deliverySuccess = false;
+  lastSubmittedRecord.refId = refId;
 
-          const sendWeb3 = fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: { 'Accept': 'application/json' },
-            body: web3FormData
-          }).then(async (res) => {
-            const data = await res.json().catch(() => ({}));
-            return Boolean(res.ok && data && data.success);
-          }).catch(() => false);
+  try {
+    const existing = JSON.parse(
+      localStorage.getItem('vrajix_enquiries_db_v1') || '[]'
+    );
+    existing.push(lastSubmittedRecord);
+    localStorage.setItem(
+      'vrajix_enquiries_db_v1',
+      JSON.stringify(existing)
+    );
+    updateNavCounters();
+  } catch (err) {
+    console.warn(err);
+  }
 
-          const sendFormSubmit = fetch('https://formsubmit.co/ajax/vrajix11@gmail.com', {
-            method: 'POST',
-            headers: { 'Accept': 'application/json' },
-            body: fsFormData
-          }).then(async (res) => {
-            const data = await res.json().catch(() => ({}));
-            return Boolean(res.ok && (data.success === 'true' || data.success === true));
-          }).catch(() => false);
-
-          const [ok1, ok2] = await Promise.all([sendWeb3, sendFormSubmit]);
-          deliverySuccess = ok1 || ok2;
-
+} catch (error) {
+  console.error(error);
+  showToast(error.message, 'error');
+  submitBtn.disabled = false;
+  submitBtnText.textContent = 'Submit Project Enquiry';
+  submitSpinner.classList.add('hidden');
+  try {
+    localStorage.removeItem('vrajix_last_submit_ts');
+  } catch (e) {}
+  return;
+}
           // Reset UI
           submitBtnText.textContent = 'Submit Project Enquiry';
           submitSpinner.classList.add('hidden');
