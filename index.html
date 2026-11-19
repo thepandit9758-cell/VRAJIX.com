@@ -3995,13 +3995,31 @@ content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.clo
       }
 
 
+   
+      // WhatsApp enquiry copy
       if (sendCopyWhatsApp) {
         sendCopyWhatsApp.addEventListener('click', () => {
           if (!lastSubmittedRecord) return;
+
           const msg = encodeURIComponent(
-            `Hi VRAJIX Team,\\nI have submitted a project enquiry on your website.\\n\\n*Reference ID:* ${lastSubmittedRecord.refId}\\n*Name:* ${lastSubmittedRecord.name}\\n*Email:* ${lastSubmittedRecord.email}\\n*Service:* ${lastSubmittedRecord.service}\\n*Budget:* ${lastSubmittedRecord.budget}\\n*Timeline:* ${lastSubmittedRecord.timeline}\\n*Requirements:* ${lastSubmittedRecord.details}`
+            `Hi VRAJIX Team,
+I have submitted a project enquiry on your website.
+
+Reference ID: ${lastSubmittedRecord.refId}
+Name: ${lastSubmittedRecord.name}
+Email: ${lastSubmittedRecord.email}
+Phone: ${lastSubmittedRecord.phone}
+Service: ${lastSubmittedRecord.service}
+Budget: ${lastSubmittedRecord.budget || 'Not specified'}
+Timeline: ${lastSubmittedRecord.timeline || 'Not specified'}
+Requirements: ${lastSubmittedRecord.details}`
           );
-          window.open(`https://wa.me/917983129724?text=${msg}`, '_blank', 'noopener,noreferrer');
+
+          window.open(
+            `https://wa.me/917983129724?text=${msg}`,
+            '_blank',
+            'noopener,noreferrer'
+          );
         });
       }
 
