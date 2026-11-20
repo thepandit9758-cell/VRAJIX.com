@@ -3517,18 +3517,49 @@ content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.clo
       }
 
       // Load & Render Leads (Safe Array Validation + Pure DOM Rendering, Zero innerHTML XSS)
-      function loadStoredLeads() {
-        let records = [];
-        try {
-          const raw = localStorage.getItem('vrajix_enquiries_db_v1');
-          const parsed = raw ? JSON.parse(raw) : [];
-          if (Array.isArray(parsed)) records = parsed;
-        } catch (e) { }
-        cachedLeads = records;
-        renderLeadsList(cachedLeads);
-        updateNavCounters();
-      }
+    // Load Leads from Cloudflare D1 Database
+async function loadStoredLeads() {
+  try {
+    const response = await fetch('/api/admin/enquiries', {
+      method: 'GET',
+      credentials: 'same-origin',
+      headers: {
+        'Accept': 'application/json'
+      },
+      cache: 'no-store'
+    });
 
+    const data = await response.json();
+
+    if (response.status === 401) {
+      cachedLeads = [];
+      renderLeadsList([]);
+      window.location.reload();
+      return;
+    }
+
+    if (!response.ok || !data.success) {
+      throw new Error(data.error || 'Unable to load enquiries.');
+    }
+
+    cachedLeads = Array.isArray(data.enquiries)
+      ? data.enquiries
+      : [];
+
+    renderLeadsList(cachedLeads);
+    updateNavCounters();
+
+  } catch (error) {
+    console.error('Enquiry loading error:', error);
+
+    cachedLeads = [];
+    renderLeadsList([]);
+
+    if (typeof showToast === 'function') {
+      showToast('Unable to load enquiries from server.', 'error');
+    }
+  }
+}
       function renderLeadsList(leads) {
         if (!enquiriesListContainer) return;
 
