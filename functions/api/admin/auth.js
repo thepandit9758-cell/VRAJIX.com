@@ -39,8 +39,7 @@ export async function onRequestGet({ request, env }) {
   const token = cookie
     .split("; ")
     .find(item => item.startsWith("vrajix_admin_session="))
-    ?.split("=")[1];
-
+    ?.slice("vrajix_admin_session=".length);
   const valid = token && env.ADMIN_SESSION_SECRET
     ? await verifySession(token, env.ADMIN_SESSION_SECRET)
     : false;
