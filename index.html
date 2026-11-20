@@ -3462,51 +3462,95 @@ content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.clo
         });
       }
 
-      // Admin Login Form Submit (With Rate Limiting)
-      if (adminLoginForm) {
-        adminLoginForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          const lockState = getLoginLockState();
-          if (lockState.until > Date.now()) {
-            const waitSec = Math.ceil((lockState.until - Date.now()) / 1000);
-            adminLoginError.textContent = `Too many failed attempts. Try again in ${waitSec}s.`;
-            adminLoginError.classList.remove('hidden');
-            return;
-          }
+     // Admin Login Form Submit (Cloudflare Server Authentication)
+if (adminLoginForm) {
+  adminLoginForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-          const username = (adminUsernameInput.value || '').trim();
-          const password = adminPasswordInput.value;
+    const lockState = getLoginLockState();
 
-          if (!username || !password) {
-            adminLoginError.textContent = 'Please enter both username and password.';
-            adminLoginError.classList.remove('hidden');
-            return;
-          }
+    if (lockState.until > Date.now()) {
+      const waitSec = Math.ceil((lockState.until - Date.now()) / 1000);
+      adminLoginError.textContent =
+        `Too many failed attempts. Try again in ${waitSec}s.`;
+      adminLoginError.classList.remove('hidden');
+      return;
+    }
 
-          adminLoginSubmitBtn.disabled = true;
-          adminLoginSpinner.classList.remove('hidden');
+    const username = (adminUsernameInput.value || '').trim();
+    const password = adminPasswordInput.value;
 
-          setTimeout(async () => {
-            const isValid = username.toLowerCase() === 'admin' && await verifyAdminPassword(password);
-            adminLoginSubmitBtn.disabled = false;
-            adminLoginSpinner.classList.add('hidden');
+    if (!username || !password) {
+      adminLoginError.textContent =
+        'Please enter both username and password.';
+      adminLoginError.classList.remove('hidden');
+      return;
+    }
 
-            if (isValid) {
-              clearLoginLock();
-              currentAdminSession = { username: 'admin' };
-              showToast('Admin authenticated successfully!');
-              showDashboardView('admin');
-              loadStoredLeads();
-            } else {
-              const st = recordFailedLogin();
-              adminLoginError.textContent = st.until > Date.now()
-                ? 'Too many failed attempts. Locked for 60 seconds.'
-                : 'Invalid username or password.';
-              adminLoginError.classList.remove('hidden');
-            }
-          }, 250);
-        });
+    if (username.toLowerCase() !== 'admin') {
+      const st = recordFailedLogin();
+      adminLoginError.textContent =
+        st.until > Date.now()
+          ? 'Too many failed attempts. Locked for 60 seconds.'
+          : 'Invalid username or password.';
+      adminLoginError.classList.remove('hidden');
+      return;
+    }
+
+    adminLoginSubmitBtn.disabled = true;
+    adminLoginSpinner.classList.remove('hidden');
+    adminLoginError.classList.add('hidden');
+
+    try {
+      const response = await fetch('/api/admin/login', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({ password })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        const st = recordFailedLogin();
+
+        adminLoginError.textContent =
+          st.until > Date.now()
+            ? 'Too many failed attempts. Locked for 60 seconds.'
+            : (data.error || 'Invalid username or password.');
+
+        adminLoginError.classList.remove('hidden');
+        return;
       }
+
+      clearLoginLock();
+
+      currentAdminSession = { username: 'admin' };
+
+      adminPasswordInput.value = '';
+
+      showToast('Admin authenticated successfully!');
+      showDashboardView('admin');
+
+      await loadStoredLeads();
+
+    } catch (error) {
+      console.error('Admin login error:', error);
+
+      adminLoginError.textContent =
+        'Unable to connect to server. Please try again.';
+
+      adminLoginError.classList.remove('hidden');
+
+    } finally {
+      adminLoginSubmitBtn.disabled = false;
+      adminLoginSpinner.classList.add('hidden');
+    }
+  });
+}
 
       if (adminLogoutBtn) {
         adminLogoutBtn.addEventListener('click', () => {
